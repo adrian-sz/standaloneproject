@@ -70,8 +70,8 @@ export class CharactermixComponent {
 
   selectedJob : Jobs = {
     id: 0,
-      name: '',
-      role: '',
+      name: 'None',
+      role: 'None',
       strength: 0,
       dexterity: 0,
       vitality: 0,
