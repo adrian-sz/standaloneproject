@@ -2,12 +2,25 @@ import { Component, OnInit } from '@angular/core';
 import { Jobs } from '../db/jobs';
 import { Items } from '../db/items';
 import { Observable } from 'rxjs/internal/Observable';
+import {FormsModule} from '@angular/forms';
+import {MatInputModule} from '@angular/material/input';
+import {MatSelectModule} from '@angular/material/select';
+import {MatFormFieldModule} from '@angular/material/form-field';
 
+interface JobsDrop{
+  value: string;
+  viewValue: string;
+}
 
 @Component({
   selector: 'app-character-stats',
   standalone: true,
-  imports: [],
+  imports: [
+    MatFormFieldModule,
+    MatSelectModule,
+    MatInputModule,
+    FormsModule
+    ],
   template: `
     <div class="character-stats">
   <h2>Character Stats</h2>
@@ -26,6 +39,17 @@ import { Observable } from 'rxjs/internal/Observable';
       <input type="text" placeholder="Filter by city">
       <button class="primary" type="button">Search</button>
     </form>
+
+    <h4>Basic mat-select</h4>
+    <mat-form-field>
+    <mat-label>Favorite food</mat-label>
+    <mat-select>
+    @for (job of jobs; track job) {
+      <mat-option [value]="job.value">{{job.viewValue}}</mat-option>
+    }
+    </mat-select>
+    </mat-form-field>
+
   </section>
   `,
   styleUrl: './character-stats.component.css'
@@ -41,6 +65,11 @@ export class CharacterStatsComponent implements OnInit{
     piety: 95
   };
 
+  jobs: JobsDrop[] = [
+    {value: 'jobs.name', viewValue: 'jobs.name'},
+    {value: 'pizza-1', viewValue: 'Pizza'},
+    {value: 'tacos-2', viewValue: 'Tacos'},
+  ];
   //jobs : Observable<Jobs[]>
 
   constructor() {}

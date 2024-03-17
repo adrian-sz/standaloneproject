@@ -8,4 +8,5 @@ export interface Jobs {
     intelligence: number;
     mind: number;
     piety: number;
+    photo: string
 }

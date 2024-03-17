@@ -3,6 +3,8 @@ import { RouterOutlet } from '@angular/router';
 import { CharacterStatsComponent } from './character-stats/character-stats.component';
 import { MenuComponent } from './menu/menu.component';
 import { CharacterComponent } from './character/character.component';
+import { CharactermixComponent } from './charactermix/charactermix.component';
+
 
 @Component({
   selector: 'app-root',
@@ -11,7 +13,8 @@ import { CharacterComponent } from './character/character.component';
     RouterOutlet,
     CharacterStatsComponent,
     MenuComponent,
-    CharacterComponent
+    CharacterComponent,
+    CharactermixComponent
   ],
   //templateUrl: './app.component.html',
   template: `
@@ -32,6 +35,11 @@ import { CharacterComponent } from './character/character.component';
     <section class="characterstats">
       <app-character-stats></app-character-stats>
     </section>
+    
+    <section class="charactermix">
+      <app-charactermix></app-charactermix>
+    </section>
+    
 
   </main>
 `,

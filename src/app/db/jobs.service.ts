@@ -18,7 +18,8 @@ export class JobsService {
       vitality: 2000,
       intelligence: 300,
       mind: 300,
-      piety: 300
+      piety: 300,
+      photo: 'https://static.wikia.nocookie.net/ffxiv_gamepedia/images/9/97/Warrior.png/revision/latest?cb=20190121220614'
     },
     {
       id: 1,
@@ -29,7 +30,8 @@ export class JobsService {
       vitality: 1000,
       intelligence: 2000,
       mind: 2000,
-      piety: 2000
+      piety: 2000,
+      photo: 'https://static.wikia.nocookie.net/ffxiv_gamepedia/images/e/e7/White_Mage.png/revision/latest?cb=20190121220625'
     },
     {
       id: 2,
@@ -40,7 +42,8 @@ export class JobsService {
       vitality: 1000,
       intelligence: 500,
       mind: 500,
-      piety: 500
+      piety: 500,
+      photo: 'https://static.wikia.nocookie.net/ffxiv_gamepedia/images/2/21/Ninja.png/revision/latest?cb=20190121220449'
     },
     {
       id: 3,
@@ -51,9 +54,14 @@ export class JobsService {
       vitality: 1000,
       intelligence: 500,
       mind: 500,
-      piety: 500
+      piety: 500,
+      photo: 'https://static.wikia.nocookie.net/ffxiv_gamepedia/images/4/41/Dancer.png/revision/latest?cb=20190630044446'
     },
   ]
 
-  constructor() { }
+  getJobs() : Jobs[] {
+    return this.jobsList
+  }
+
+  //constructor() { }
 }
