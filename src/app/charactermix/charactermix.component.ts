@@ -16,13 +16,15 @@ import { CommonModule } from '@angular/common';
     <div class="character-stats">
   <h2>Character Stats</h2>
   <ul *ngFor="let job of Joblist">
+    <li><strong>Job:</strong> {{ job.name }}</li>
+    <li><strong>Role:</strong> {{ job.role }}</li>
     <li><strong>Strength:</strong> {{ job.strength }}</li>
     <li><strong>Dexterity:</strong> {{ job.dexterity }}</li>
     <li><strong>Vitality:</strong> {{ job.vitality }}</li>
     <li><strong>Intelligence:</strong> {{ job.intelligence }}</li>
     <li><strong>Mind:</strong> {{ job.mind }}</li>
     <li><strong>Piety:</strong> {{ job.piety }}</li>
-    <img class="job-photo" [src]="job.photo">
+    <img class="job-photo" [src]="job.photo " width="100" height="100">
   </ul>
     </div>
 

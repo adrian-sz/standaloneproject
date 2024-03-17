@@ -5,12 +5,11 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   template: `
-    <section>
-    <form>
-      <input type="text" placeholder="Filter by city">
-      <button class="primary" type="button">Search</button>
-    </form>
-  </section>
+  <div> 
+  Menu
+  </div>
+  ----------------------
+
   `,
   styleUrl: './menu.component.css'
 })

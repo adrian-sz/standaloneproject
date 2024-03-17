@@ -4,6 +4,8 @@ import { CharacterStatsComponent } from './character-stats/character-stats.compo
 import { MenuComponent } from './menu/menu.component';
 import { CharacterComponent } from './character/character.component';
 import { CharactermixComponent } from './charactermix/charactermix.component';
+import { DropdownComponent } from './dropdown/dropdown.component';
+
 
 
 @Component({
@@ -14,32 +16,25 @@ import { CharactermixComponent } from './charactermix/charactermix.component';
     CharacterStatsComponent,
     MenuComponent,
     CharacterComponent,
-    CharactermixComponent
+    CharactermixComponent,
+    DropdownComponent
   ],
   //templateUrl: './app.component.html',
   template: `
   <main>
 
-    <header class="brand-name">
-      <img class="brand-logo" src="/assets/supersus.png" alt="logo" aria-hidden="true">
-    </header>
-
     <section class="menu">
       <app-menu></app-menu>
-    </section>
-    
-    <section class="character">
-      <app-character></app-character>
-    </section>
-
-    <section class="characterstats">
-      <app-character-stats></app-character-stats>
     </section>
     
     <section class="charactermix">
       <app-charactermix></app-charactermix>
     </section>
     
+    <section class="dropdown">
+      <app-dropdown></app-dropdown>
+    </section>
+
   </main>
 `,
   styleUrl: './app.component.css'
