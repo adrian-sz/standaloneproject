@@ -31,9 +31,9 @@ import { DropdownComponent } from './dropdown/dropdown.component';
       <app-charactermix></app-charactermix>
     </section>
     
-    <section class="dropdown">
+    <!-- <section class="dropdown">
       <app-dropdown></app-dropdown>
-    </section>
+    </section> -->
 
   </main>
 `,
