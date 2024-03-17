@@ -13,7 +13,7 @@ import { CharacterStatsComponent } from './character-stats/character-stats.compo
   template: `
   <main>
     <header class="brand-name">
-      <img class="brand-logo" src="/assets/logo.svg" alt="logo" aria-hidden="true">
+      <img class="brand-logo" src="/assets/supersus.png" alt="logo" aria-hidden="true">
     </header>
     <section class="content">
       <app-character-stats></app-character-stats>
