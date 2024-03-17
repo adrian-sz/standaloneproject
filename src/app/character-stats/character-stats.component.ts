@@ -3,6 +3,7 @@ import { Jobs } from '../db/jobs';
 import { Items } from '../db/items';
 import { Observable } from 'rxjs/internal/Observable';
 
+
 @Component({
   selector: 'app-character-stats',
   standalone: true,
