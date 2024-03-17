@@ -40,7 +40,6 @@ import { CharactermixComponent } from './charactermix/charactermix.component';
       <app-charactermix></app-charactermix>
     </section>
     
-
   </main>
 `,
   styleUrl: './app.component.css'

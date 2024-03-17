@@ -55,7 +55,7 @@ export class JobsService {
       intelligence: 500,
       mind: 500,
       piety: 500,
-      photo: 'https://static.wikia.nocookie.net/ffxiv_gamepedia/images/4/41/Dancer.png/revision/latest?cb=20190630044446'
+      photo: 'G:\Studia\standalone\standaloneapp\src\assets\dancer.png'
     },
   ]
 
