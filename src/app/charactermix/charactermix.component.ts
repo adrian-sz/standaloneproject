@@ -13,7 +13,7 @@ import { CommonModule } from '@angular/common';
     CommonModule
   ],
   template: `
-    <div class="character-stats">
+  <div class="character-stats">
   <h2>Character Stats</h2>
   <ul *ngFor="let job of Joblist">
     <li><strong>Job:</strong> {{ job.name }}</li>
@@ -26,7 +26,7 @@ import { CommonModule } from '@angular/common';
     <li><strong>Piety:</strong> {{ job.piety }}</li>
     <img class="job-photo" [src]="job.photo " width="100" height="100">
   </ul>
-    </div>
+  </div>
 
   `,
   styleUrl: './charactermix.component.css'
