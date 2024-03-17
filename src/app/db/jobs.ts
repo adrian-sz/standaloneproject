@@ -7,6 +7,14 @@ export interface Jobs {
     vitality: number;
     intelligence: number;
     mind: number;
+    criticalhit: number;
+    determination: number;
+    directhit: number;
+    defense: number;
+    magicdefense: number;
+    tenacity: number;
     piety: number;
-    photo: string
+    skillspeed: number;
+    spellspeed: number;
+    photo: string;
 }

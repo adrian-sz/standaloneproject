@@ -58,7 +58,15 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     <li><strong>Vitality:</strong> {{ selectedJob.vitality }}</li>
     <li><strong>Intelligence:</strong> {{ selectedJob.intelligence }}</li>
     <li><strong>Mind:</strong> {{ selectedJob.mind }}</li>
+    <li><strong>Critical hit:</strong> {{ selectedJob.criticalhit }}</li>
+    <li><strong>Determination:</strong> {{ selectedJob.determination }}</li>
+    <li><strong>Direct hit:</strong> {{ selectedJob.directhit }}</li>
+    <li><strong>Defense:</strong> {{ selectedJob.defense }}</li>
+    <li><strong>Magic defense:</strong> {{ selectedJob.magicdefense }}</li>
+    <li><strong>Tenacity:</strong> {{ selectedJob.tenacity }}</li>
     <li><strong>Piety:</strong> {{ selectedJob.piety }}</li>
+    <li><strong>Skill speed:</strong> {{ selectedJob.skillspeed }}</li>
+    <li><strong>Spell speed:</strong> {{ selectedJob.spellspeed }}</li>
     </ul>
 </div>
 
@@ -77,7 +85,15 @@ export class CharactermixComponent {
       vitality: 0,
       intelligence: 0,
       mind: 0,
+      criticalhit: 0,
+      determination: 0,
+      directhit: 0,
+      defense: 0,
+      magicdefense: 0,
+      tenacity: 0,
       piety: 0,
+      skillspeed: 0,
+      spellspeed: 0,
       photo: 'https://upload.wikimedia.org/wikipedia/commons/b/bd/Question-mark-grey.jpg'
 }
 
@@ -96,7 +112,15 @@ export class CharactermixComponent {
     this.selectedJob.vitality = value.vitality;
     this.selectedJob.intelligence = value.intelligence;
     this.selectedJob.mind = value.mind;
+    this.selectedJob.criticalhit = value.mind;
+    this.selectedJob.determination = value.determination;
+    this.selectedJob.directhit = value.directhit;
+    this.selectedJob.defense = value.defense;
+    this.selectedJob.magicdefense = value.magicdefense;
+    this.selectedJob.tenacity = value.tenacity;
     this.selectedJob.piety = value.piety;
+    this.selectedJob.skillspeed = value.skillspeed;
+    this.selectedJob.spellspeed = value.spellspeed;
     this.selectedJob.photo = value.photo;
   }
 
