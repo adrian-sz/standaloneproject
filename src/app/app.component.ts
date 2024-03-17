@@ -4,6 +4,7 @@ import { CharacterStatsComponent } from './character-stats/character-stats.compo
 import { MenuComponent } from './menu/menu.component';
 
 import { CharactermixComponent } from './charactermix/charactermix.component';
+import { ItemmixComponent } from './itemmix/itemmix.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
 
 
@@ -16,6 +17,7 @@ import { DropdownComponent } from './dropdown/dropdown.component';
     CharacterStatsComponent,
     MenuComponent,
     CharactermixComponent,
+    ItemmixComponent,
     DropdownComponent
   ],
   //templateUrl: './app.component.html',
@@ -28,6 +30,12 @@ import { DropdownComponent } from './dropdown/dropdown.component';
     
     <section class="charactermix">
       <app-charactermix></app-charactermix>
+    </section>
+
+    <section class="itemmix">
+      <!-- <ul id="itemmix"> -->
+      <app-itemmix></app-itemmix>
+      <!-- </ul> -->
     </section>
     
     <!-- <section class="dropdown">
