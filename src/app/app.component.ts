@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CharacterStatsComponent } from './character-stats/character-stats.component';
 import { MenuComponent } from './menu/menu.component';
-import { CharacterComponent } from './character/character.component';
+
 import { CharactermixComponent } from './charactermix/charactermix.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
 
@@ -15,7 +15,6 @@ import { DropdownComponent } from './dropdown/dropdown.component';
     RouterOutlet,
     CharacterStatsComponent,
     MenuComponent,
-    CharacterComponent,
     CharactermixComponent,
     DropdownComponent
   ],
