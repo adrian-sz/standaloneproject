@@ -11,47 +11,47 @@ export class ItemsService {
   jobsList: Items[] = [
     {
       id: 100,
-      name: 'warrior',
-      slot: 'tank',
-      strength: 2000,
-      dexterity: 1000,
-      vitality: 2000,
-      intelligence: 300,
-      mind: 300,
-      piety: 300
+      name: 'Steel Dagger',
+      slot: 'weapon',
+      strength: 222,
+      dexterity: 444,
+      vitality: 0,
+      intelligence: 0,
+      mind: 0,
+      piety: 0
     },
     {
       id: 101,
-      name: 'whitemage',
-      slot: 'healer',
-      strength: 500,
-      dexterity: 1000,
-      vitality: 1000,
-      intelligence: 2000,
-      mind: 2000,
-      piety: 2000
+      name: 'Oak helmet',
+      slot: 'head',
+      strength: 0,
+      dexterity: 0,
+      vitality: 222,
+      intelligence: 0,
+      mind: 0,
+      piety: 0
     },
     {
       id: 102,
-      name: 'ninja',
-      slot: 'meleedps',
-      strength: 2000,
-      dexterity: 2000,
-      vitality: 1000,
-      intelligence: 500,
-      mind: 500,
-      piety: 500
+      name: 'Leather gloves',
+      slot: 'hand',
+      strength: 0,
+      dexterity: 50,
+      vitality: 100,
+      intelligence: 0,
+      mind: 0,
+      piety: 0
     },
     {
       id: 103,
-      name: 'dancer',
-      slot: 'rangeddps',
-      strength: 2000,
-      dexterity: 2000,
-      vitality: 1000,
-      intelligence: 500,
-      mind: 500,
-      piety: 500
+      name: 'Cotton robes',
+      slot: 'body',
+      strength: 0,
+      dexterity: 0,
+      vitality: 100,
+      intelligence: 100,
+      mind: 300,
+      piety: 300
     },
   ]
 

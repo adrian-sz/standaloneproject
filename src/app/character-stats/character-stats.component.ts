@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Jobs } from '../db/jobs';
+import { Items } from '../db/items';
+import { Observable } from 'rxjs/internal/Observable';
 
 @Component({
   selector: 'app-character-stats',
@@ -36,6 +39,8 @@ export class CharacterStatsComponent implements OnInit{
     mind: 85,
     piety: 95
   };
+
+  //jobs : Observable<Jobs[]>
 
   constructor() {}
 
