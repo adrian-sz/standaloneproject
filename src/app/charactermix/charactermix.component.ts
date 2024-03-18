@@ -41,6 +41,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     <ul>
     <li class="listingname" *ngIf="selectedJob.name!=''"><strong>Job:</strong> {{ selectedJob.name }}</li>
     <li class="listingname" *ngIf="selectedJob.role!=''"><strong>Role:</strong> {{ selectedJob.role }}</li>
+    <li class="listing" *ngIf="selectedJob.damage>0"><strong>Damage:</strong> {{ selectedJob.damage }}</li>
     <li class="listing" *ngIf="selectedJob.strength>0"><strong>Strength:</strong> {{ selectedJob.strength }}</li>
     <li class="listing" *ngIf="selectedJob.dexterity>0"><strong>Dexterity:</strong> {{ selectedJob.dexterity }}</li>
     <li class="listing" *ngIf="selectedJob.vitality>0"><strong>Vitality:</strong> {{ selectedJob.vitality }}</li>
@@ -67,6 +68,7 @@ export class CharactermixComponent {
     id: 0,
       name: '',
       role: '',
+      damage: 0,
       strength: 0,
       dexterity: 0,
       vitality: 0,
@@ -94,6 +96,7 @@ export class CharactermixComponent {
     this.selectedJob.id = value.id;
     this.selectedJob.name = value.name;
     this.selectedJob.role = value.role;
+    this.selectedJob.damage = value.damage;
     this.selectedJob.strength = value.strength;
     this.selectedJob.dexterity = value.dexterity;
     this.selectedJob.vitality = value.vitality;

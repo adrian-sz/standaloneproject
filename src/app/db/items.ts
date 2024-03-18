@@ -2,6 +2,7 @@ export interface Items {
     id: number;
     name: string;
     slot: string;
+    damage: number;
     strength: number;
     dexterity: number;
     vitality: number;

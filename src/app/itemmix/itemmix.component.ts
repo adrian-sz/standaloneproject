@@ -39,6 +39,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 <div class="statstext">
     <ul>
     <li class="listingname" *ngIf="selectedItem.name!=''"><strong>Weapon name:</strong> {{ selectedItem.name }}</li>
+    <li class="listing" *ngIf="selectedItem.damage>0"><strong>Damage: </strong>{{ selectedItem.damage }}</li>
     <li class="listing" *ngIf="selectedItem.strength>0"><strong>Strength: </strong>{{ selectedItem.strength }}</li>
     <li class="listing" *ngIf="selectedItem.dexterity>0"><strong>Dexterity:</strong> {{ selectedItem.dexterity }}</li>
     <li class="listing" *ngIf="selectedItem.vitality>0"><strong>Vitality:</strong> {{ selectedItem.vitality }}</li>
@@ -64,6 +65,7 @@ export class ItemmixComponent {
     id: 0,
       name: '',
       slot: '',
+      damage: 0,
       strength: 0,
       dexterity: 0,
       vitality: 0,
@@ -91,6 +93,7 @@ export class ItemmixComponent {
     this.selectedItem.id = value.id;
     this.selectedItem.name = value.name;
     this.selectedItem.slot = value.slot;
+    this.selectedItem.damage = value.damage;
     this.selectedItem.strength = value.strength;
     this.selectedItem.dexterity = value.dexterity;
     this.selectedItem.vitality = value.vitality;
