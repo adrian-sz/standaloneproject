@@ -76,3 +76,18 @@
       var(--gradient-1) border-box;
   }
 
+  .reset {
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    background-color: inherit;
+    /* display: flex ;
+    justify-content: right;
+    flex-direction: row;
+    float: right; */
+    /* padding-left: 15px; */
+    position: fixed;
+    top: 35px;
+    right: 10px;
+  }
+

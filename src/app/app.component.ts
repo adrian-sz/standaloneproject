@@ -67,6 +67,14 @@ import { RacesmixComponent } from './racesmix/racesmix.component';
     </section>
   </div>
 
+    <div class="reset">
+    <button class="reset">   
+          <a href="https://adrian-sz.github.io/standaloneproject">
+          <img src="https://cdn.discordapp.com/attachments/1079424004491845643/1219410555195101254/reset.png?ex=660b3393&is=65f8be93&hm=a12157ea48342bfdbbf3f94d5a6e92927d66799d6338f04a381e3aadfb30bc81&" width="25px" height="25px" alt="buttonpng"/> 
+          </a>
+    </button>
+    </div>
+
   </div>
   <div class="menu">
     <section class="menu">
