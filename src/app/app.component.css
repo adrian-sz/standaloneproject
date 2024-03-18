@@ -23,6 +23,17 @@
     flex-direction: row;
     float: left;}
  */
+
+ .racesmix {
+  width: 250px ;
+  display: flex ;
+  justify-content: left;
+  /* border: 1px solid black; */
+  flex-direction: row;
+  /* overflow: hidden; */
+  float: left;
+}
+
   .charactermix {
     width: 250px ;
     display: flex ;

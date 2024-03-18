@@ -1,0 +1,31 @@
+.choosetext {
+    text-align: center;
+  }
+
+  .statstext {
+    text-align: left;
+
+  }
+
+  .jobphoto {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .stat {
+    text-align: left;
+  }
+
+  .statnumber {
+    text-align: right;
+  }
+
+.listing {
+    display: grid;
+    grid-template-columns: 160px 50px;
+}
+
+.listingname {
+    display: grid;
+}
