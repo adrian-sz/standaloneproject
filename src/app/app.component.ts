@@ -7,6 +7,7 @@ import { CharactermixComponent } from './charactermix/charactermix.component';
 import { ItemmixComponent } from './itemmix/itemmix.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
 import { HeadmixComponent } from './headmix/headmix.component';
+import { BodymixComponent } from './bodymix/bodymix.component';
 
 
 
@@ -20,7 +21,8 @@ import { HeadmixComponent } from './headmix/headmix.component';
     CharactermixComponent,
     ItemmixComponent,
     DropdownComponent,
-    HeadmixComponent
+    HeadmixComponent,
+    BodymixComponent
   ],
   //templateUrl: './app.component.html',
   template: `
@@ -48,6 +50,12 @@ import { HeadmixComponent } from './headmix/headmix.component';
   <div class="headmix">
     <section class="headmix">
       <app-headmix></app-headmix>
+    </section>
+  </div>
+
+  <div class="bodymix">
+    <section class="bodymix">
+      <app-bodymix></app-bodymix>
     </section>
   </div>
 

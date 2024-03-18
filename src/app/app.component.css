@@ -44,7 +44,17 @@
   }
 
   .headmix {
-    width: 350px ;
+    width: 250px ;
+    display: flex ;
+    justify-content: left;
+    /* border: 1px solid black; */
+    flex-direction: row;
+    /* overflow: hidden; */
+    float: left;
+  }  
+
+  .bodymix {
+    width: 250px ;
     display: flex ;
     justify-content: left;
     /* border: 1px solid black; */
