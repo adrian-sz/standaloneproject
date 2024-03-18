@@ -70,7 +70,7 @@ export class ItemsService {
     piety: 0,
     skillspeed: 0,
     spellspeed: 0,
-    photo: 'https://ffxiv.consolegameswiki.com/mediawiki/images/7/7c/Augmented_diadochos_war_axe_icon1.png'
+    photo: 'https://ffxiv.gamerescape.com/w/images/f/f2/Augmented_Diadochos_War_Axe_Icon.png'
     },
     {
       id: 1003,
