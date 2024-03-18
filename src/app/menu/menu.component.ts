@@ -5,11 +5,9 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   template: `
-  <div> 
-  Menu
+  <div class="menu"> 
+  FFXIV Helper
   </div>
-  ----------------------
-
   `,
   styleUrl: './menu.component.css'
 })

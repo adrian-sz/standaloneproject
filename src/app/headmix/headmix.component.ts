@@ -30,26 +30,27 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     </mat-form-field>
   </div>
 
-  <img class="itemphoto" [src]="selectedItem.photo " width="100" height="100">
+  <div>
+<img *ngIf="selectedItem.photo!=''" class="itemphoto" [src]="selectedItem.photo" width="100" height="100">
+</div>
 
-  <div class="statstext">
+<div class="statstext">
     <ul>
-    <li><strong>Item name:</strong> {{ selectedItem.name }}</li>
-    <!-- <li><strong>Slot:</strong> {{ selectedItem.slot }}</li> -->
-    <li><strong>Strength:</strong> {{ selectedItem.strength }}</li>
-    <li><strong>Dexterity:</strong> {{ selectedItem.dexterity }}</li>
-    <li><strong>Vitality:</strong> {{ selectedItem.vitality }}</li>
-    <li><strong>Intelligence:</strong> {{ selectedItem.intelligence }}</li>
-    <li><strong>Mind:</strong> {{ selectedItem.mind }}</li>
-    <li><strong>Critical hit:</strong> {{ selectedItem.criticalhit }}</li>
-    <li><strong>Determination:</strong> {{ selectedItem.determination }}</li>
-    <li><strong>Direct hit:</strong> {{ selectedItem.directhit }}</li>
-    <li><strong>Defense:</strong> {{ selectedItem.defense }}</li>
-    <li><strong>Magic defense:</strong> {{ selectedItem.magicdefense }}</li>
-    <li><strong>Tenacity:</strong> {{ selectedItem.tenacity }}</li>
-    <li><strong>Piety:</strong> {{ selectedItem.piety }}</li>
-    <li><strong>Skill speed:</strong> {{ selectedItem.skillspeed }}</li>
-    <li><strong>Spell speed:</strong> {{ selectedItem.spellspeed }}</li>
+    <li class="listingname" *ngIf="selectedItem.name!=''"><strong>Item name:</strong> {{ selectedItem.name }}</li>
+    <li class="listing" *ngIf="selectedItem.strength>0"><strong>Strength: </strong>{{ selectedItem.strength }}</li>
+    <li class="listing" *ngIf="selectedItem.dexterity>0"><strong>Dexterity:</strong> {{ selectedItem.dexterity }}</li>
+    <li class="listing" *ngIf="selectedItem.vitality>0"><strong>Vitality:</strong> {{ selectedItem.vitality }}</li>
+    <li class="listing" *ngIf="selectedItem.intelligence>0"><strong>Intelligence:</strong> {{ selectedItem.intelligence }}</li>
+    <li class="listing" *ngIf="selectedItem.mind>0"><strong>Mind:</strong> {{ selectedItem.mind }}</li>
+    <li class="listing" *ngIf="selectedItem.criticalhit>0"><strong>Critical hit:</strong> {{ selectedItem.criticalhit }}</li>
+    <li class="listing" *ngIf="selectedItem.determination>0"><strong>Determination:</strong> {{ selectedItem.determination }}</li>
+    <li class="listing" *ngIf="selectedItem.directhit>0"><strong>Direct hit:</strong> {{ selectedItem.directhit }}</li>
+    <li class="listing" *ngIf="selectedItem.defense>0"><strong>Defense:</strong> {{ selectedItem.defense }}</li>
+    <li class="listing" *ngIf="selectedItem.magicdefense>0"><strong>Magic defense:</strong> {{ selectedItem.magicdefense }}</li>
+    <li class="listing" *ngIf="selectedItem.tenacity>0"><strong>Tenacity:</strong> {{ selectedItem.tenacity }}</li>
+    <li class="listing" *ngIf="selectedItem.piety>0"><strong>Piety:</strong> {{ selectedItem.piety }}</li>
+    <li class="listing" *ngIf="selectedItem.skillspeed>0"><strong>Skill speed:</strong> {{ selectedItem.skillspeed }}</li>
+    <li class="listing" *ngIf="selectedItem.spellspeed>0"><strong>Spell speed:</strong> {{ selectedItem.spellspeed }}</li>
     </ul>
 </div>
   `,
@@ -60,8 +61,8 @@ export class HeadmixComponent {
 
   selectedItem : Heads = {
     id: 0,
-      name: 'None',
-      slot: 'None',
+      name: '',
+      slot: '',
       strength: 0,
       dexterity: 0,
       vitality: 0,
@@ -76,7 +77,7 @@ export class HeadmixComponent {
       piety: 0,
       skillspeed: 0,
       spellspeed: 0,
-      photo: 'https://upload.wikimedia.org/wikipedia/commons/b/bd/Question-mark-grey.jpg'
+      photo: ''
 }
 
   Headlist: Heads[]

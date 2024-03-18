@@ -26,7 +26,7 @@ import { HeadmixComponent } from './headmix/headmix.component';
   template: `
   <main>
   <div class="main">
-    
+
   <div class="menu">
     <section class="menu">
       <app-menu></app-menu>
@@ -51,6 +51,11 @@ import { HeadmixComponent } from './headmix/headmix.component';
     </section>
   </div>
 
+  </div>
+  <div class="menu">
+    <section class="menu">
+      <app-menu></app-menu>
+    </section>
   </div>
   </main>
 `,

@@ -32,27 +32,29 @@ import {MatFormFieldModule} from '@angular/material/form-field';
         </mat-select>
     </mat-form-field>
   </div>
-  
-  <img class="jobphoto" [src]="selectedJob.photo " width="100" height="100">
+
+  <div>
+<img *ngIf="selectedJob.photo!=''" class="jobphoto" [src]="selectedJob.photo" width="100" height="100">
+</div>
 
   <div class="statstext">
     <ul>
-    <li><strong>Job:</strong> {{ selectedJob.name }}</li>
-    <li><strong>Role:</strong> {{ selectedJob.role }}</li>
-    <li><strong>Strength:</strong> {{ selectedJob.strength }}</li>
-    <li><strong>Dexterity:</strong> {{ selectedJob.dexterity }}</li>
-    <li><strong>Vitality:</strong> {{ selectedJob.vitality }}</li>
-    <li><strong>Intelligence:</strong> {{ selectedJob.intelligence }}</li>
-    <li><strong>Mind:</strong> {{ selectedJob.mind }}</li>
-    <li><strong>Critical hit:</strong> {{ selectedJob.criticalhit }}</li>
-    <li><strong>Determination:</strong> {{ selectedJob.determination }}</li>
-    <li><strong>Direct hit:</strong> {{ selectedJob.directhit }}</li>
-    <li><strong>Defense:</strong> {{ selectedJob.defense }}</li>
-    <li><strong>Magic defense:</strong> {{ selectedJob.magicdefense }}</li>
-    <li><strong>Tenacity:</strong> {{ selectedJob.tenacity }}</li>
-    <li><strong>Piety:</strong> {{ selectedJob.piety }}</li>
-    <li><strong>Skill speed:</strong> {{ selectedJob.skillspeed }}</li>
-    <li><strong>Spell speed:</strong> {{ selectedJob.spellspeed }}</li>
+    <li class="listingname" *ngIf="selectedJob.name!=''"><strong>Job:</strong> {{ selectedJob.name }}</li>
+    <li class="listingname" *ngIf="selectedJob.role!=''"><strong>Role:</strong> {{ selectedJob.role }}</li>
+    <li class="listing" *ngIf="selectedJob.strength>0"><strong>Strength:</strong> {{ selectedJob.strength }}</li>
+    <li class="listing" *ngIf="selectedJob.dexterity>0"><strong>Dexterity:</strong> {{ selectedJob.dexterity }}</li>
+    <li class="listing" *ngIf="selectedJob.vitality>0"><strong>Vitality:</strong> {{ selectedJob.vitality }}</li>
+    <li class="listing" *ngIf="selectedJob.intelligence>0"><strong>Intelligence:</strong> {{ selectedJob.intelligence }}</li>
+    <li class="listing" *ngIf="selectedJob.mind>0"><strong>Mind:</strong> {{ selectedJob.mind }}</li>
+    <li class="listing" *ngIf="selectedJob.criticalhit>0"><strong>Critical hit:</strong> {{ selectedJob.criticalhit }}</li>
+    <li class="listing" *ngIf="selectedJob.determination>0"><strong>Determination:</strong> {{ selectedJob.determination }}</li>
+    <li class="listing" *ngIf="selectedJob.directhit>0"><strong>Direct hit:</strong> {{ selectedJob.directhit }}</li>
+    <li class="listing" *ngIf="selectedJob.defense>0"><strong>Defense:</strong> {{ selectedJob.defense }}</li>
+    <li class="listing" *ngIf="selectedJob.magicdefense>0"><strong>Magic defense:</strong> {{ selectedJob.magicdefense }}</li>
+    <li class="listing" *ngIf="selectedJob.tenacity>0"><strong>Tenacity:</strong> {{ selectedJob.tenacity }}</li>
+    <li class="listing" *ngIf="selectedJob.piety>0"><strong>Piety:</strong> {{ selectedJob.piety }}</li>
+    <li class="listing" *ngIf="selectedJob.skillspeed>0"><strong>Skill speed:</strong> {{ selectedJob.skillspeed }}</li>
+    <li class="listing" *ngIf="selectedJob.spellspeed>0"><strong>Spell speed:</strong> {{ selectedJob.spellspeed }}</li>
     </ul>
 </div>
   `,
@@ -63,8 +65,8 @@ export class CharactermixComponent {
 
   selectedJob : Jobs = {
     id: 0,
-      name: 'None',
-      role: 'None',
+      name: '',
+      role: '',
       strength: 0,
       dexterity: 0,
       vitality: 0,
@@ -79,7 +81,7 @@ export class CharactermixComponent {
       piety: 0,
       skillspeed: 0,
       spellspeed: 0,
-      photo: 'https://upload.wikimedia.org/wikipedia/commons/b/bd/Question-mark-grey.jpg'
+      photo: ''
 }
 
   Joblist: Jobs[]

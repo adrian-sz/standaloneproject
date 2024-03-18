@@ -13,17 +13,16 @@
 
   .main {
     overflow: hidden;
+    background-image: linear-gradient(to bottom right, lightblue, pink);
   }
 
-  .menu {
+  /* .menu {
     width: 100% ;
     display: flex ;
     justify-content: left;
-    /* border: 1px red solid; */
     flex-direction: row;
-    float: left;
-  }
-
+    float: left;}
+ */
   .charactermix {
     width: 250px ;
     display: flex ;
@@ -54,33 +53,13 @@
     float: left;
   }  
 
-/*   section{
-    position: fixed;
-    left: 50px;
-    height: 100vh;
+  .menu {
+    inline-size: var(--size-content-1);
+    aspect-ratio: var(--ratio-widescreen);
+    border: solid var(--size-2) transparent;
+    border-radius: var(--radius-4);
+    background: 
+      linear-gradient(var(--surface-1), var(--surface-1)) padding-box, 
+      var(--gradient-1) border-box;
   }
-  
-  section #itemmix{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Raleway DOts', sans-serif;
-    height: 100%;
-  }
-  
-  section #itemmix li {
-    text-align: center;
-    display:block;
-    width: 80px;
-    list-style: none;
-    margin-bottom: 20px;
-  }
-  section #itemmix li div {
-    width: 80px;
-    height: 60px;
-    color: #74d4b3;
-    font-size: 3em;
-    background-color: #fff;
-    transition: all 0.5s ease;
-  } */
+
