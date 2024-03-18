@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
-import { Jobs } from '../db/jobs';
-import { Items } from '../db/items';
-import { JobsService } from '../db/jobs.service';
-import { ItemsService } from '../db/items.service';
+import { Heads } from '../db/heads';
+import { HeadsService } from '../db/heads.service';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {FormsModule} from '@angular/forms';
@@ -11,7 +9,7 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
 
 @Component({
-  selector: 'app-itemmix',
+  selector: 'app-headmix',
   standalone: true,
   imports: [
     CommonModule,
@@ -20,23 +18,23 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatInputModule,
     FormsModule
   ],
-  template: `
+  template:  `
   <div class="choosetext">
-    <h4>Choose your weapon slot item:</h4>
+    <h4>Choose your head slot item:</h4>
     <mat-form-field>
-        <mat-select [disableOptionCentering]="true" placeholder="None" (selectionChange)="changeItem($event.value)">
-            @for (item of Itemlist; track item) {
+        <mat-select [disableOptionCentering]="true" placeholder="None" (selectionChange)="changeHead($event.value)">
+            @for (item of Headlist; track item) {
                 <mat-option [value]="item">{{item.name}}</mat-option>
             }
         </mat-select>
     </mat-form-field>
-</div>
+  </div>
 
-<img class="itemphoto" [src]="selectedItem.photo " width="100" height="100">
+  <img class="itemphoto" [src]="selectedItem.photo " width="100" height="100">
 
-<div class="statstext">
+  <div class="statstext">
     <ul>
-    <li><strong>Weapon name:</strong> {{ selectedItem.name }}</li>
+    <li><strong>Item name:</strong> {{ selectedItem.name }}</li>
     <!-- <li><strong>Slot:</strong> {{ selectedItem.slot }}</li> -->
     <li><strong>Strength:</strong> {{ selectedItem.strength }}</li>
     <li><strong>Dexterity:</strong> {{ selectedItem.dexterity }}</li>
@@ -55,11 +53,12 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     </ul>
 </div>
   `,
-  styleUrl: './itemmix.component.css'
+  styleUrl: './headmix.component.css'
 })
-export class ItemmixComponent {
 
-  selectedItem : Items = {
+export class HeadmixComponent {
+
+  selectedItem : Heads = {
     id: 0,
       name: 'None',
       slot: 'None',
@@ -80,13 +79,13 @@ export class ItemmixComponent {
       photo: 'https://upload.wikimedia.org/wikipedia/commons/b/bd/Question-mark-grey.jpg'
 }
 
-  Itemlist: Items[]
+  Headlist: Heads[]
 
-  constructor(public ItemsPrint : ItemsService){
-    this.Itemlist=ItemsPrint.getItems()
+  constructor(public HeadsPrint : HeadsService){
+    this.Headlist=HeadsPrint.getHeads()
   }
 
-  changeItem(value : Items){
+  changeHead(value : Heads){
     this.selectedItem.id = value.id;
     this.selectedItem.name = value.name;
     this.selectedItem.slot = value.slot;
@@ -108,4 +107,3 @@ export class ItemmixComponent {
   }
 
 }
-

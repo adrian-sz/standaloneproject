@@ -10,7 +10,7 @@ export class ItemsService {
 
   itemsList: Items[] = [
     {
-      id: 100,
+      id: 1000,
     name: 'Augmented Diadochos War Axe',
     slot: 'Weapon',
     strength: 349,
@@ -30,7 +30,7 @@ export class ItemsService {
     photo: 'https://ffxiv.gamerescape.com/w/images/f/f2/Augmented_Diadochos_War_Axe_Icon.png'
     },
     {
-      id: 100,
+      id: 1001,
     name: 'Augmented Diadochos Greatsword',
     slot: 'Weapon',
     strength: 349,
@@ -50,7 +50,7 @@ export class ItemsService {
     photo: 'https://ffxiv.gamerescape.com/w/images/9/93/Augmented_Diadochos_Greatsword_Icon.png'
     },
     {
-      id: 100,
+      id: 1002,
     name: 'Augmented Diadochos War Axe',
     slot: 'Weapon',
     strength: 349,
@@ -70,7 +70,7 @@ export class ItemsService {
     photo: 'https://ffxiv.consolegameswiki.com/mediawiki/images/7/7c/Augmented_diadochos_war_axe_icon1.png'
     },
     {
-      id: 100,
+      id: 1003,
     name: 'Augmented Diadochos War Axe',
     slot: 'Weapon',
     strength: 349,
@@ -94,6 +94,4 @@ export class ItemsService {
   getItems() : Items[] {
     return this.itemsList
   }
-
-  //constructor() { }
 }

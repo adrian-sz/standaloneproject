@@ -22,7 +22,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     FormsModule
   ],
   template: `
-  <div>
+  <div class="choosetext">
     <h4>Choose Your Job:</h4>
     <mat-form-field>
         <mat-select [disableOptionCentering]="true" placeholder="None" (selectionChange)="changeJob($event.value)">
@@ -31,11 +31,12 @@ import {MatFormFieldModule} from '@angular/material/form-field';
             }
         </mat-select>
     </mat-form-field>
-</div>
+  </div>
+  
+  <img class="jobphoto" [src]="selectedJob.photo " width="100" height="100">
 
-<div>
+  <div class="statstext">
     <ul>
-    <img class="job-photo" [src]="selectedJob.photo " width="100" height="100">
     <li><strong>Job:</strong> {{ selectedJob.name }}</li>
     <li><strong>Role:</strong> {{ selectedJob.role }}</li>
     <li><strong>Strength:</strong> {{ selectedJob.strength }}</li>
