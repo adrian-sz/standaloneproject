@@ -60,7 +60,9 @@ import { CalculatorComponent } from '../calculator/calculator.component';
     </ul>
     </div>
 
-<app-calculator [jobName]="selectedJob.name"></app-calculator>
+          <div>
+            <app-calculator [jobName]="selectedJob.name" [jobStr]="selectedJob.strength" [jobDex]="selectedJob.dexterity"></app-calculator>
+          </div>
   `,
   styleUrl: './charactermix.component.css'
 })

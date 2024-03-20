@@ -1,4 +1,5 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { CharactermixComponent } from '../charactermix/charactermix.component';
 
 /* This is a child component */
 
@@ -8,14 +9,18 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
   imports: [],
   template: `
     <p>
-      Selected job: {{jobName}}
+      Current job: {{jobName}}<br>
+      Current str: {{jobStr}}<br>
+      Current dex: {{jobDex}}<br>
     </p>
   `,
   styleUrl: './calculator.component.css'
 })
 
 export class CalculatorComponent {
-  @Input() jobName = ''; 
+  @Input() jobName = '';
+  @Input() jobStr = 0;
+  @Input() jobDex = 0;
  /*  @Output() jobNameEvent = new EventEmitter<string>();
 
   addNewItem(value: string) {
