@@ -9,6 +9,7 @@ import { DropdownComponent } from './dropdown/dropdown.component';
 import { HeadmixComponent } from './headmix/headmix.component';
 import { BodymixComponent } from './bodymix/bodymix.component';
 import { RacesmixComponent } from './racesmix/racesmix.component';
+import { CalculatorComponent } from './calculator/calculator.component';
 
 
 
@@ -24,7 +25,8 @@ import { RacesmixComponent } from './racesmix/racesmix.component';
     DropdownComponent,
     HeadmixComponent,
     BodymixComponent,
-    RacesmixComponent
+    RacesmixComponent,
+    CalculatorComponent
   ],
   //templateUrl: './app.component.html',
   template: `
@@ -75,12 +77,19 @@ import { RacesmixComponent } from './racesmix/racesmix.component';
     </button>
     </div>
 
+    <div class="calculator">
+      <section class="calculator">
+        <app-calculator></app-calculator>
+      </section>
+    </div>
+
   </div>
   <div class="menu">
     <section class="menu">
       <app-menu></app-menu>
     </section>
   </div>
+
   </main>
 `,
   styleUrl: './app.component.css'

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output } from '@angular/core';
 import { Jobs } from '../db/jobs';
 import { Items } from '../db/items';
 import { JobsService } from '../db/jobs.service';
@@ -9,7 +9,7 @@ import {FormsModule} from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
-
+import { CalculatorComponent } from '../calculator/calculator.component';
 
 @Component({
   selector: 'app-charactermix',
@@ -19,7 +19,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatFormFieldModule,
     MatSelectModule,
     MatInputModule,
-    FormsModule
+    FormsModule,
+    CalculatorComponent
   ],
   template: `
   <div class="choosetext">
@@ -57,7 +58,9 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     <li class="listing" *ngIf="selectedJob.skillspeed>0"><strong>Skill speed:</strong> {{ selectedJob.skillspeed }}</li>
     <li class="listing" *ngIf="selectedJob.spellspeed>0"><strong>Spell speed:</strong> {{ selectedJob.spellspeed }}</li>
     </ul>
-</div>
+    </div>
+
+<app-calculator [jobName]="selectedJob.name"></app-calculator>
   `,
   styleUrl: './charactermix.component.css'
 })
