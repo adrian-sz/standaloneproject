@@ -6,6 +6,7 @@ import {FormsModule} from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { CalculatorComponent } from '../calculator/calculator.component';
 
 @Component({
   selector: 'app-racesmix',
@@ -15,7 +16,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatFormFieldModule,
     MatSelectModule,
     MatInputModule,
-    FormsModule
+    FormsModule,
+    CalculatorComponent
   ],
   template: `
   <div class="choosetext">
@@ -39,6 +41,10 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     <li class="listing" *ngIf="selectedRace.mind>0"><strong>Mind:</strong> {{ selectedRace.mind }}</li>
     </ul>
 </div>
+
+<div>
+            <app-calculator [raceName]="selectedRace.name" [raceStr]="selectedRace.strength" [raceDex]="selectedRace.dexterity"></app-calculator>
+          </div>
   `,
   styleUrl: './racesmix.component.css'
 })
