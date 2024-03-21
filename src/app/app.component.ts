@@ -9,6 +9,7 @@ import { RacesmixComponent } from './racesmix/racesmix.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { HandmixComponent } from './handmix/handmix.component';
 import { LegmixComponent } from './legmix/legmix.component';
+import { FootmixComponent } from './footmix/footmix.component';
 
 
 
@@ -25,6 +26,7 @@ import { LegmixComponent } from './legmix/legmix.component';
     RacesmixComponent,
     HandmixComponent,
     LegmixComponent,
+    FootmixComponent,
     CalculatorComponent
   ],
   templateUrl: './app.component.html',
