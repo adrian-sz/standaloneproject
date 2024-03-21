@@ -1,6 +1,8 @@
 .choosetext {
-    text-align: center;
-  }
+  display: grid;
+  text-align: center;
+  width: 250px;
+}
 
   .statstext {
     text-align: left;

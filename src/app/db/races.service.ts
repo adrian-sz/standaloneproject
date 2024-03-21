@@ -15,7 +15,7 @@ export class RacesService {
       vitality: 0,
       intelligence: 0,
       mind: 0,
-      photo: 'https://ffxiv.gamerescape.com/w/images/6/64/Main_Command_36_Icon.png'
+      photo: ''
     },
     {
       id: 0,

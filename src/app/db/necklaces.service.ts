@@ -1,14 +1,14 @@
 import { Injectable } from '@angular/core';
-import { Bodies } from './bodies';
+import { Necklaces } from './necklaces';
 
 @Injectable({
   providedIn: 'root'
 })
-export class BodiesService {
+export class NecklacesService {
 
-  bodiesList: Bodies[] = [
+  necklacesList: Necklaces[] = [
     { 
-      id: 3000,
+      id: 8000,
       name: '',
       slot: '',
       strength: 0,
@@ -28,28 +28,29 @@ export class BodiesService {
       photo: ''
       },
       { 
-        id: 3001,
-        name: 'Augmented Diadochos Coat of Healing ',
-        slot: 'Head',
-        strength: 0,
+        id: 8001,
+        name: 'Ascension Necklace of Fending',
+        slot: 'Necklace',
+        strength: 196,
         dexterity: 0,
-        vitality: 372,
+        vitality: 218,
         intelligence: 0,
-        mind: 374,
-        criticalhit: 200,
-        determination: 286,
+        mind: 0,
+        criticalhit: 145,
+        determination: 102,
         directhit: 0,
-        defense: 468,
-        magicdefense: 820,
-        tenacity: 0,
+        defense: 1,
+        magicdefense: 1,
+        tenacity: 102,
         piety: 0,
         skillspeed: 0,
         spellspeed: 0,
-        photo: 'https://ffxiv.gamerescape.com/w/images/2/2e/Augmented_Diadochos_Coat_of_Healing_Icon.png'
+        photo: 'https://ffxiv.gamerescape.com/w/images/0/0c/Ascension_Necklace_of_Fending_Icon.png'
         },
   ]
 
-    getBodies() : Bodies[] {
-      return this.bodiesList
-    }
+  getNecklaces() : Necklaces[] {
+    return this.necklacesList
+  }
+  
 }

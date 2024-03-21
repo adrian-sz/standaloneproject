@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Earrings } from '../db/earrings';
-import { EarringsService } from '../db/earrings.service';
+import { Necklaces } from '../db/necklaces';
+import { NecklacesService } from '../db/necklaces.service';
 import { CommonModule } from '@angular/common';
 import {FormsModule} from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
@@ -9,7 +9,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { CharacterStatsService } from '../db/characterStats.service';
 
 @Component({
-  selector: 'app-earringmix',
+  selector: 'app-necklacemix',
   standalone: true,
   imports: [
     CommonModule,
@@ -18,12 +18,13 @@ import { CharacterStatsService } from '../db/characterStats.service';
     MatInputModule,
     FormsModule
   ],
-  templateUrl: './earringmix.component.html',
-  styleUrl: './earringmix.component.css'
+  templateUrl: './necklacemix.component.html',
+  styleUrl: './necklacemix.component.css'
 })
-export class EarringmixComponent {
+export class NecklacemixComponent {
 
-  selectedItem : Earrings = {
+  
+  selectedItem : Necklaces = {
     id: 0,
       name: '',
       slot: '',
@@ -44,16 +45,16 @@ export class EarringmixComponent {
       photo: ''
 }
 
-Earringlist: Earrings[]
+Necklacelist: Necklaces[]
 
-constructor(public EarringsPrint : EarringsService, public characterStatsService : CharacterStatsService){
-  this.Earringlist=EarringsPrint.getEarrings()
+constructor(public NecklacesPrint : NecklacesService, public characterStatsService : CharacterStatsService){
+  this.Necklacelist=NecklacesPrint.getNecklaces()
 }
 
-changeEarring(value: Earrings){
+changeNecklace(value: Necklaces){
   this.selectedItem = value;
 
-  this.characterStatsService.earring = value;
+  this.characterStatsService.necklace = value;
   this.characterStatsService.calculateStats();
 }
 

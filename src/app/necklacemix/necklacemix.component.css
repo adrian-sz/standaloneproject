@@ -1,15 +1,14 @@
 .choosetext {
-  display: grid;
-  text-align: center;
-  width: 250px;
-}
+    display: grid;
+    text-align: center;
+    width: 250px;
+  }
 
   .statstext {
     text-align: left;
-
   }
 
-  .jobphoto {
+  .itemphoto {
     display: block;
     margin-left: auto;
     margin-right: auto;
