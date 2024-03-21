@@ -14,6 +14,7 @@ import { EarringmixComponent } from './earringmix/earringmix.component';
 import { NecklacemixComponent } from './necklacemix/necklacemix.component';
 import { BraceletmixComponent } from './braceletmix/braceletmix.component';
 import { LeftringmixComponent } from './leftringmix/leftringmix.component';
+import { RightringmixComponent } from './rightringmix/rightringmix.component';
 
 
 
@@ -35,6 +36,7 @@ import { LeftringmixComponent } from './leftringmix/leftringmix.component';
     NecklacemixComponent,
     BraceletmixComponent,
     LeftringmixComponent,
+    RightringmixComponent,
     CalculatorComponent
   ],
   templateUrl: './app.component.html',
