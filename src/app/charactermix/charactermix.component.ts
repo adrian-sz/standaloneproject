@@ -9,7 +9,9 @@ import {FormsModule} from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { AppComponent } from '../app.component';
 import { CalculatorComponent } from '../calculator/calculator.component';
+import { CharacterStatsService } from '../db/characterStats.service';
 
 @Component({
   selector: 'app-charactermix',
@@ -20,50 +22,10 @@ import { CalculatorComponent } from '../calculator/calculator.component';
     MatSelectModule,
     MatInputModule,
     FormsModule,
+    AppComponent,
     CalculatorComponent
   ],
-  template: `
-  <div class="choosetext">
-    <h4>Choose Your Job:</h4>
-    <mat-form-field>
-        <mat-select [disableOptionCentering]="true" placeholder="None" (selectionChange)="changeJob($event.value)">
-            @for (job of Joblist; track job) {
-                <mat-option [value]="job">{{job.name}}</mat-option>
-            }
-        </mat-select>
-    </mat-form-field>
-  </div>
-
-  <div>
-<img *ngIf="selectedJob.photo!=''" class="jobphoto" [src]="selectedJob.photo" width="100" height="100">
-</div>
-
-  <div class="statstext">
-    <ul>
-    <li class="listingname" *ngIf="selectedJob.name!=''"><strong>Job:</strong> {{ selectedJob.name }}</li>
-    <li class="listingname" *ngIf="selectedJob.role!=''"><strong>Role:</strong> {{ selectedJob.role }}</li>
-    <li class="listing" *ngIf="selectedJob.damage>0"><strong>Damage:</strong> {{ selectedJob.damage }}</li>
-    <li class="listing" *ngIf="selectedJob.strength>0"><strong>Strength:</strong> {{ selectedJob.strength }}</li>
-    <li class="listing" *ngIf="selectedJob.dexterity>0"><strong>Dexterity:</strong> {{ selectedJob.dexterity }}</li>
-    <li class="listing" *ngIf="selectedJob.vitality>0"><strong>Vitality:</strong> {{ selectedJob.vitality }}</li>
-    <li class="listing" *ngIf="selectedJob.intelligence>0"><strong>Intelligence:</strong> {{ selectedJob.intelligence }}</li>
-    <li class="listing" *ngIf="selectedJob.mind>0"><strong>Mind:</strong> {{ selectedJob.mind }}</li>
-    <li class="listing" *ngIf="selectedJob.criticalhit>0"><strong>Critical hit:</strong> {{ selectedJob.criticalhit }}</li>
-    <li class="listing" *ngIf="selectedJob.determination>0"><strong>Determination:</strong> {{ selectedJob.determination }}</li>
-    <li class="listing" *ngIf="selectedJob.directhit>0"><strong>Direct hit:</strong> {{ selectedJob.directhit }}</li>
-    <li class="listing" *ngIf="selectedJob.defense>0"><strong>Defense:</strong> {{ selectedJob.defense }}</li>
-    <li class="listing" *ngIf="selectedJob.magicdefense>0"><strong>Magic defense:</strong> {{ selectedJob.magicdefense }}</li>
-    <li class="listing" *ngIf="selectedJob.tenacity>0"><strong>Tenacity:</strong> {{ selectedJob.tenacity }}</li>
-    <li class="listing" *ngIf="selectedJob.piety>0"><strong>Piety:</strong> {{ selectedJob.piety }}</li>
-    <li class="listing" *ngIf="selectedJob.skillspeed>0"><strong>Skill speed:</strong> {{ selectedJob.skillspeed }}</li>
-    <li class="listing" *ngIf="selectedJob.spellspeed>0"><strong>Spell speed:</strong> {{ selectedJob.spellspeed }}</li>
-    </ul>
-    </div>
-
-          <div>
-            <app-calculator [jobName]="selectedJob.name" [jobStr]="selectedJob.strength" [jobDex]="selectedJob.dexterity"></app-calculator>
-          </div>
-  `,
+  templateUrl: './charactermix.component.html',
   styleUrl: './charactermix.component.css'
 })
 
@@ -93,12 +55,12 @@ export class CharactermixComponent {
 
   Joblist: Jobs[]
 
-  constructor(public JobsPrint : JobsService){
+  constructor(public JobsPrint : JobsService, public characterStatsService : CharacterStatsService){
     this.Joblist=JobsPrint.getJobs()
   }
 
   changeJob(value : Jobs){
-    this.selectedJob.id = value.id;
+    /* this.selectedJob.id = value.id;
     this.selectedJob.name = value.name;
     this.selectedJob.role = value.role;
     this.selectedJob.damage = value.damage;
@@ -116,7 +78,11 @@ export class CharactermixComponent {
     this.selectedJob.piety = value.piety;
     this.selectedJob.skillspeed = value.skillspeed;
     this.selectedJob.spellspeed = value.spellspeed;
-    this.selectedJob.photo = value.photo;
+    this.selectedJob.photo = value.photo; */
+    this.selectedJob = value;
+
+    this.characterStatsService.job = value;
+    this.characterStatsService.calculateStats();
   }
 
 }

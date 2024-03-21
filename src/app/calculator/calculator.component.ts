@@ -1,5 +1,6 @@
 import { Component, Input, Output, EventEmitter, input } from '@angular/core';
 import { CharactermixComponent } from '../charactermix/charactermix.component';
+import { CharacterStatsService } from '../db/characterStats.service';
 
 /* This is a child component */
 
@@ -9,12 +10,11 @@ import { CharactermixComponent } from '../charactermix/charactermix.component';
   imports: [],
   template: `
     <p>
-      Current job: {{jobName}}<br>
-      Current race: {{raceName}}<br>
-      Current job str: {{jobStr}}<br>
-      Current race dex: {{raceDex}}<br>
-      Current str: {{str}}<br>
-      Current dex: {{dex}}<br>
+      Current job: {{characterStatsService.job.name}}<br>
+      Current race: {{characterStatsService.race.name}}<br>
+      Current damage: {{characterStatsService.characterStats.damage}}
+      Current str: {{characterStatsService.characterStats.strength}}<br>
+      Current dex: {{characterStatsService.characterStats.dexterity}}<br>
     </p>
   `,
   styleUrl: './calculator.component.css'
@@ -28,18 +28,8 @@ export class CalculatorComponent {
   @Input() jobDex = 0;
   @Input() raceDex = 0;
 
-  @Input() str = this.jobStr /* + this.raceStr */;
-  @Input() dex = this.jobDex + this.raceDex;
-  
-  getTotalStr() {
-    {
-        return this.jobStr + this.raceStr;
-    }
-}
+  constructor (public characterStatsService: CharacterStatsService){
+    
+  }
 
- /*  @Output() jobNameEvent = new EventEmitter<string>();
-
-  addNewItem(value: string) {
-    this.newItemEvent.emit(value);
-  } */
 }

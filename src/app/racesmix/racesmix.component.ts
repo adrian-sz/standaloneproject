@@ -6,7 +6,9 @@ import {FormsModule} from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
-import { CalculatorComponent } from '../calculator/calculator.component';
+/* import { CalculatorComponent } from '../calculator/calculator.component'; */
+import { AppComponent } from '../app.component';
+import { CharacterStatsService } from '../db/characterStats.service';
 
 @Component({
   selector: 'app-racesmix',
@@ -17,7 +19,7 @@ import { CalculatorComponent } from '../calculator/calculator.component';
     MatSelectModule,
     MatInputModule,
     FormsModule,
-    CalculatorComponent
+    AppComponent
   ],
   template: `
   <div class="choosetext">
@@ -41,10 +43,14 @@ import { CalculatorComponent } from '../calculator/calculator.component';
     <li class="listing" *ngIf="selectedRace.mind>0"><strong>Mind:</strong> {{ selectedRace.mind }}</li>
     </ul>
 </div>
-
-<div>
+<!-- 
+          <div>
             <app-calculator [raceName]="selectedRace.name" [raceStr]="selectedRace.strength" [raceDex]="selectedRace.dexterity"></app-calculator>
-          </div>
+          </div> -->
+
+          <!-- <div>
+            <app-root [raceName]="selectedRace.name" [raceStr]="selectedRace.strength" [raceDex]="selectedRace.dexterity"></app-root>
+          </div> -->
   `,
   styleUrl: './racesmix.component.css'
 })
@@ -61,18 +67,22 @@ export class RacesmixComponent {
   }
       Racelist: Races[]
 
-  constructor(public RacesPrint : RacesService){
+  constructor(public RacesPrint : RacesService, public characterStatsService : CharacterStatsService){
     this.Racelist=RacesPrint.getRaces()
   }
 
   changeRace(value : Races){
-    this.selectedRace.id = value.id;
+/*     this.selectedRace.id = value.id;
     this.selectedRace.name = value.name;
     this.selectedRace.strength = value.strength;
     this.selectedRace.dexterity = value.dexterity;
     this.selectedRace.vitality = value.vitality;
     this.selectedRace.intelligence = value.intelligence;
-    this.selectedRace.mind = value.mind;
+    this.selectedRace.mind = value.mind; */
+    this.selectedRace = value;
+
+    this.characterStatsService.race = value;
+    this.characterStatsService.calculateStats();
   }
 }
 

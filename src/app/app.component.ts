@@ -1,8 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CharacterStatsComponent } from './character-stats/character-stats.component';
 import { MenuComponent } from './menu/menu.component';
-
 import { CharactermixComponent } from './charactermix/charactermix.component';
 import { ItemmixComponent } from './itemmix/itemmix.component';
 import { DropdownComponent } from './dropdown/dropdown.component';
@@ -76,14 +75,19 @@ import { CalculatorComponent } from './calculator/calculator.component';
           </a>
     </button>
     </div>
-
-    <div class="calculator">
+  </div>
+  
+  <div>
+  <div class="calculator">
       <section class="calculator">
         <app-calculator></app-calculator>
       </section>
     </div>
-
   </div>
+<!-- 
+      Current job: {{jobName}}<br> -->
+ 
+
   <div class="menu">
     <section class="menu">
       <app-menu></app-menu>
@@ -96,4 +100,11 @@ import { CalculatorComponent } from './calculator/calculator.component';
 })
 export class AppComponent {
   title = 'standaloneproject';
+
+/*   @Input() jobName = '';
+  @Input() raceName = '';
+  @Input() jobStr = 0;
+  @Input() raceStr = 0;
+  @Input() jobDex = 0;
+  @Input() raceDex = 0; */
 }

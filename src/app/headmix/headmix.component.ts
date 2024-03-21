@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Heads } from '../db/heads';
 import { HeadsService } from '../db/heads.service';
 import { NgModule } from '@angular/core';
