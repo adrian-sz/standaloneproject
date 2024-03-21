@@ -27,6 +27,31 @@
     grid-template-columns: 160px 50px;
 }
 
+.statprio {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 160px 50px;
+  padding-left: 15px;
+}
+
+.listinggreen {
+  display: grid;
+  grid-template-columns: 160px 50px;
+  color: limegreen;
+}
+
+.listingorange {
+  display: grid;
+  grid-template-columns: 160px 50px;
+  color: orange;
+}
+
+.listingred {
+  display: grid;
+  grid-template-columns: 160px 50px;
+  color: red;
+}
+
 .listingname {
     display: grid;
 }
