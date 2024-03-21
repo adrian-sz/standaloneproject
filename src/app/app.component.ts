@@ -10,6 +10,7 @@ import { CalculatorComponent } from './calculator/calculator.component';
 import { HandmixComponent } from './handmix/handmix.component';
 import { LegmixComponent } from './legmix/legmix.component';
 import { FootmixComponent } from './footmix/footmix.component';
+import { EarringmixComponent } from './earringmix/earringmix.component';
 
 
 
@@ -27,6 +28,7 @@ import { FootmixComponent } from './footmix/footmix.component';
     HandmixComponent,
     LegmixComponent,
     FootmixComponent,
+    EarringmixComponent,
     CalculatorComponent
   ],
   templateUrl: './app.component.html',
