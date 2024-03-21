@@ -1,9 +1,6 @@
-import { Component, Input, Output } from '@angular/core';
+import { Component } from '@angular/core';
 import { Jobs } from '../db/jobs';
-import { Items } from '../db/items';
 import { JobsService } from '../db/jobs.service';
-import { ItemsService } from '../db/items.service';
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {FormsModule} from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';

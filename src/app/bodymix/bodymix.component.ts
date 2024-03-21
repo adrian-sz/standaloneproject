@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { Bodies } from '../db/bodies';
 import { BodiesService } from '../db/bodies.service';
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {FormsModule} from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';

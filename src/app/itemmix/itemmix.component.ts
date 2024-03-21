@@ -1,9 +1,6 @@
 import { Component } from '@angular/core';
-import { Jobs } from '../db/jobs';
 import { Items } from '../db/items';
-import { JobsService } from '../db/jobs.service';
 import { ItemsService } from '../db/items.service';
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {FormsModule} from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
@@ -21,43 +18,7 @@ import { CharacterStatsService } from '../db/characterStats.service';
     MatInputModule,
     FormsModule
   ],
-  template: `
-  <div class="choosetext">
-    <h4>Choose your weapon slot item:</h4>
-    <mat-form-field>
-        <mat-select [disableOptionCentering]="true" placeholder="None" (selectionChange)="changeItem($event.value)">
-            @for (item of Itemlist; track item) {
-                <mat-option [value]="item">{{item.name}}</mat-option>
-            }
-        </mat-select>
-    </mat-form-field>
-</div>
-
-<div>
-<img *ngIf="selectedItem.photo!=''" class="itemphoto" [src]="selectedItem.photo" width="100" height="100">
-</div>
-
-<div class="statstext">
-    <ul>
-    <li class="listingname" *ngIf="selectedItem.name!=''"><strong>Weapon name:</strong> {{ selectedItem.name }}</li>
-    <li class="listing" *ngIf="selectedItem.damage>0"><strong>Damage: </strong>{{ selectedItem.damage }}</li>
-    <li class="listing" *ngIf="selectedItem.strength>0"><strong>Strength: </strong>{{ selectedItem.strength }}</li>
-    <li class="listing" *ngIf="selectedItem.dexterity>0"><strong>Dexterity:</strong> {{ selectedItem.dexterity }}</li>
-    <li class="listing" *ngIf="selectedItem.vitality>0"><strong>Vitality:</strong> {{ selectedItem.vitality }}</li>
-    <li class="listing" *ngIf="selectedItem.intelligence>0"><strong>Intelligence:</strong> {{ selectedItem.intelligence }}</li>
-    <li class="listing" *ngIf="selectedItem.mind>0"><strong>Mind:</strong> {{ selectedItem.mind }}</li>
-    <li class="listing" *ngIf="selectedItem.criticalhit>0"><strong>Critical hit:</strong> {{ selectedItem.criticalhit }}</li>
-    <li class="listing" *ngIf="selectedItem.determination>0"><strong>Determination:</strong> {{ selectedItem.determination }}</li>
-    <li class="listing" *ngIf="selectedItem.directhit>0"><strong>Direct hit:</strong> {{ selectedItem.directhit }}</li>
-    <li class="listing" *ngIf="selectedItem.defense>0"><strong>Defense:</strong> {{ selectedItem.defense }}</li>
-    <li class="listing" *ngIf="selectedItem.magicdefense>0"><strong>Magic defense:</strong> {{ selectedItem.magicdefense }}</li>
-    <li class="listing" *ngIf="selectedItem.tenacity>0"><strong>Tenacity:</strong> {{ selectedItem.tenacity }}</li>
-    <li class="listing" *ngIf="selectedItem.piety>0"><strong>Piety:</strong> {{ selectedItem.piety }}</li>
-    <li class="listing" *ngIf="selectedItem.skillspeed>0"><strong>Skill speed:</strong> {{ selectedItem.skillspeed }}</li>
-    <li class="listing" *ngIf="selectedItem.spellspeed>0"><strong>Spell speed:</strong> {{ selectedItem.spellspeed }}</li>
-    </ul>
-</div>
-  `,
+  templateUrl: `./itemmix.component.html`,
   styleUrl: './itemmix.component.css'
 })
 export class ItemmixComponent {
