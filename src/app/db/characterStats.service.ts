@@ -312,6 +312,7 @@ export class CharacterStatsService {
     this.characterStats.critchance = (this.characterStats.intelligence*(200*(this.characterStats.criticalhit - 400)/1900)+1400)/1000;
 
     let critstat : number = 0;
+    let critstrength : number = 0;
 
     switch(this.job.mainstat) { 
       case 'Strength': { 
@@ -333,7 +334,8 @@ export class CharacterStatsService {
 
     } 
 
-    this.characterStats.critchance = (critstat*(200*(this.characterStats.criticalhit - 400)/1900)+1400)/1000;
+    this.characterStats.critchance = (/* critstat* */(200*(this.characterStats.criticalhit - 400)/1900)+50)/10;
+    /* this.characterStats.critstrength = ((200*(this.characterStats.criticalhit - 400)/1900)+1400)/10; */
 
   }
 }

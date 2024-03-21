@@ -24,7 +24,7 @@
 
   @switch (characterStatsService.job.name) {
     @case ("Paladin") {
-      <div class="statstext">
+      <div class="statstext" step="0.01">
         <ul>
         <li class="listingname"><strong>Job:</strong> {{ characterStatsService.job.name }}</li>
         <li class="listing"><strong>Damage:</strong> <strong>{{ characterStatsService.characterStats.damage }}</strong></li>
@@ -42,7 +42,7 @@
         <li class="listing"><strong>Piety:</strong> {{ characterStatsService.characterStats.piety }}</li>
         <li class="listing"><strong>Skill speed:</strong> {{ characterStatsService.characterStats.skillspeed }}</li>
         <li class="listing"><strong>Spell speed:</strong> {{ characterStatsService.characterStats.spellspeed }}</li>
-        <li class="listing"><strong>Crit chance:</strong> {{ characterStatsService.characterStats.critchance }}</li>
+        <li class="listing"><strong>Crit chance:</strong> {{ characterStatsService.characterStats.critchance | number: '1.2-2'}}%</li>
         </ul>
         </div>
     }
