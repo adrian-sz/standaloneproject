@@ -9,6 +9,7 @@ import { HeadmixComponent } from './headmix/headmix.component';
 import { BodymixComponent } from './bodymix/bodymix.component';
 import { RacesmixComponent } from './racesmix/racesmix.component';
 import { CalculatorComponent } from './calculator/calculator.component';
+import { HandmixComponent } from './handmix/handmix.component';
 
 
 
@@ -25,6 +26,7 @@ import { CalculatorComponent } from './calculator/calculator.component';
     HeadmixComponent,
     BodymixComponent,
     RacesmixComponent,
+    HandmixComponent,
     CalculatorComponent
   ],
   //templateUrl: './app.component.html',
@@ -68,6 +70,12 @@ import { CalculatorComponent } from './calculator/calculator.component';
     </section>
   </div>
 
+  <div class="handmix">
+    <section class="handmix">
+      <app-handmix></app-handmix>
+    </section>
+  </div>
+
     <div class="reset">
     <button class="reset">   
           <a href="https://adrian-sz.github.io/standaloneproject">
@@ -77,6 +85,12 @@ import { CalculatorComponent } from './calculator/calculator.component';
     </div>
   </div>
   
+  <div class="menu">
+    <section class="menu">
+      <app-menu></app-menu>
+    </section>
+  </div>
+
   <div>
   <div class="calculator">
       <section class="calculator">
@@ -84,16 +98,6 @@ import { CalculatorComponent } from './calculator/calculator.component';
       </section>
     </div>
   </div>
-<!-- 
-      Current job: {{jobName}}<br> -->
- 
-
-  <div class="menu">
-    <section class="menu">
-      <app-menu></app-menu>
-    </section>
-  </div>
-
   </main>
 `,
   styleUrl: './app.component.css'

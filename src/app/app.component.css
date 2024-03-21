@@ -66,6 +66,16 @@
     /* padding-right: 15px; */
   }  
 
+  .handmix {
+    width: 250px ;
+    display: flex ;
+    justify-content: left;
+    flex-direction: row;
+    float: left;
+    padding-left: 15px;
+    /* padding-right: 15px; */
+  }  
+
   .menu {
     inline-size: var(--size-content-1);
     aspect-ratio: var(--ratio-widescreen);

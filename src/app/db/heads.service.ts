@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
 import { Heads } from './heads';
-import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 
 @Injectable({
   providedIn: 'root'
