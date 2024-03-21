@@ -12,6 +12,7 @@ import { LegmixComponent } from './legmix/legmix.component';
 import { FootmixComponent } from './footmix/footmix.component';
 import { EarringmixComponent } from './earringmix/earringmix.component';
 import { NecklacemixComponent } from './necklacemix/necklacemix.component';
+import { BraceletmixComponent } from './braceletmix/braceletmix.component';
 
 
 
@@ -31,6 +32,7 @@ import { NecklacemixComponent } from './necklacemix/necklacemix.component';
     FootmixComponent,
     EarringmixComponent,
     NecklacemixComponent,
+    BraceletmixComponent,
     CalculatorComponent
   ],
   templateUrl: './app.component.html',
