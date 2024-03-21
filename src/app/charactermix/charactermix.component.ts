@@ -47,6 +47,7 @@ export class CharactermixComponent {
       piety: 0,
       skillspeed: 0,
       spellspeed: 0,
+      mainstat: '',
       photo: ''
 }
 

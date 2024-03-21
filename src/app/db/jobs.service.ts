@@ -28,6 +28,7 @@ export class JobsService {
       piety: 0,
       skillspeed: 0,
       spellspeed: 0,
+      mainstat: '',
       photo: ''
     },
     {
@@ -49,6 +50,7 @@ export class JobsService {
       piety: 300,
       skillspeed: 400,
       spellspeed: 400,
+      mainstat: 'Strength',
       photo: 'https://static.wikia.nocookie.net/ffxiv_gamepedia/images/b/b2/Paladin.png'
     },
     {
@@ -70,6 +72,7 @@ export class JobsService {
       piety: 300,
       skillspeed: 10,
       spellspeed: 10,
+      mainstat: 'Strength',
       photo: 'https://static.wikia.nocookie.net/ffxiv_gamepedia/images/9/97/Warrior.png'
     },
     {
@@ -91,6 +94,7 @@ export class JobsService {
       piety: 300,
       skillspeed: 10,
       spellspeed: 10,
+      mainstat: 'Strength',
       photo: 'https://static.wikia.nocookie.net/ffxiv_gamepedia/images/6/69/Dark_Knight.png'
     },
     {
@@ -112,6 +116,7 @@ export class JobsService {
       piety: 300,
       skillspeed: 10,
       spellspeed: 10,
+      mainstat: 'Strength',
       photo: 'https://static.wikia.nocookie.net/ffxiv_gamepedia/images/3/31/Gunbreaker.png'
     },
     {
@@ -133,6 +138,7 @@ export class JobsService {
       piety: 390,
       skillspeed: 400,
       spellspeed: 400,
+      mainstat: 'Mind',
       photo: 'https://static.wikia.nocookie.net/ffxiv_gamepedia/images/e/e7/White_Mage.png'
     },
     {
@@ -154,6 +160,7 @@ export class JobsService {
       piety: 300,
       skillspeed: 10,
       spellspeed: 10,
+      mainstat: 'Mind',
       photo: 'https://static.wikia.nocookie.net/ffxiv_gamepedia/images/c/c5/Scholar.png'
     },
     {
@@ -175,6 +182,7 @@ export class JobsService {
       piety: 300,
       skillspeed: 10,
       spellspeed: 10,
+      mainstat: 'Mind',
       photo: 'https://static.wikia.nocookie.net/ffxiv_gamepedia/images/3/32/Astrologian.png'
     },
     {
@@ -196,6 +204,7 @@ export class JobsService {
       piety: 300,
       skillspeed: 10,
       spellspeed: 10,
+      mainstat: 'Mind',
       photo: 'https://www.gamespot.com/a/uploads/original/1599/15997278/3862299-sageff14.png'
     },
     {
@@ -217,6 +226,7 @@ export class JobsService {
       piety: 300,
       skillspeed: 10,
       spellspeed: 10,
+      mainstat: 'Strength',
       photo: 'https://static.wikia.nocookie.net/ffxiv_gamepedia/images/4/44/Monk.png'
     },
     {
@@ -238,6 +248,7 @@ export class JobsService {
       piety: 300,
       skillspeed: 10,
       spellspeed: 10,
+      mainstat: 'Strength',
       photo: 'https://static.wikia.nocookie.net/ffxiv_gamepedia/images/c/c7/Dragoon.png'
     },
     {
@@ -259,6 +270,7 @@ export class JobsService {
       piety: 300,
       skillspeed: 10,
       spellspeed: 10,
+      mainstat: 'Dexterity',
       photo: 'https://static.wikia.nocookie.net/ffxiv_gamepedia/images/2/21/Ninja.png'
     },
     {
@@ -280,6 +292,7 @@ export class JobsService {
       piety: 300,
       skillspeed: 10,
       spellspeed: 10,
+      mainstat: 'Strength',
       photo: 'https://static.wikia.nocookie.net/ffxiv_gamepedia/images/0/09/Samurai.png'
     },
     {
@@ -301,6 +314,7 @@ export class JobsService {
       piety: 300,
       skillspeed: 10,
       spellspeed: 10,
+      mainstat: 'Strength',
       photo: 'https://pbs.twimg.com/media/E6B4ptyWYAALJkC.png'
     },
     {
@@ -322,6 +336,7 @@ export class JobsService {
       piety: 300,
       skillspeed: 10,
       spellspeed: 10,
+      mainstat: 'Dexterity',
       photo: 'https://static.wikia.nocookie.net/ffxiv_gamepedia/images/8/82/Bard.png'
     },
     {
@@ -343,6 +358,7 @@ export class JobsService {
       piety: 300,
       skillspeed: 10,
       spellspeed: 10,
+      mainstat: 'Dexterity',
       photo: 'https://static.wikia.nocookie.net/ffxiv_gamepedia/images/e/e0/Machinist.png'
     },
     {
@@ -364,6 +380,7 @@ export class JobsService {
       piety: 300,
       skillspeed: 10,
       spellspeed: 10,
+      mainstat: 'Dexterity',
       photo: 'https://static.wikia.nocookie.net/ffxiv_gamepedia/images/4/41/Dancer.png'
     },
     {
@@ -385,6 +402,7 @@ export class JobsService {
       piety: 300,
       skillspeed: 10,
       spellspeed: 10,
+      mainstat: 'Intelligence',
       photo: 'https://static.wikia.nocookie.net/ffxiv_gamepedia/images/4/4e/Black_Mage.png'
     },
     {
@@ -406,6 +424,7 @@ export class JobsService {
       piety: 300,
       skillspeed: 10,
       spellspeed: 10,
+      mainstat: 'Intelligence',
       photo: 'https://static.wikia.nocookie.net/ffxiv_gamepedia/images/2/2f/Summoner.png'
     },
     {
@@ -427,6 +446,7 @@ export class JobsService {
       piety: 300,
       skillspeed: 10,
       spellspeed: 10,
+      mainstat: 'Intelligence',
       photo: 'https://static.wikia.nocookie.net/ffxiv_gamepedia/images/3/36/Red_Mage.png'
     },
     {
@@ -448,6 +468,7 @@ export class JobsService {
       piety: 300,
       skillspeed: 10,
       spellspeed: 10,
+      mainstat: 'Intelligence',
       photo: 'https://static.wikia.nocookie.net/ffxiv_gamepedia/images/d/d5/Blue_Mage.png'
     },
   ]

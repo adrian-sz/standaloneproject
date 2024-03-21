@@ -17,5 +17,6 @@ export interface Jobs {
     piety: number;
     skillspeed: number;
     spellspeed: number;
+    mainstat: string;
     photo: string;
 }

@@ -33,7 +33,8 @@ export class CharacterStatsService {
     tenacity: 0,
     piety: 0,
     skillspeed: 0,
-    spellspeed: 0
+    spellspeed: 0,
+    critchance: 0,
 
   };
   public job: Jobs = {
@@ -55,6 +56,7 @@ export class CharacterStatsService {
       piety: 0,
       skillspeed: 0,
       spellspeed: 0,
+      mainstat: '',
       photo: ''
     };
   public race: Races = {
@@ -307,6 +309,31 @@ export class CharacterStatsService {
     this.characterStats.piety = this.job.piety + this.weapon.piety + this.head.piety + this.body.piety + this.hand.piety + this.legs.piety + this.feet.piety + this.earring.piety + this.necklace.piety + this.bracelet.piety + this.leftring.piety + this.righttring.piety;
     this.characterStats.skillspeed = this.job.skillspeed + this.weapon.skillspeed + this.head.skillspeed + this.body.skillspeed + this.hand.skillspeed + this.legs.skillspeed + this.feet.skillspeed + this.earring.skillspeed + this.necklace.skillspeed + this.bracelet.skillspeed + this.leftring.skillspeed + this.righttring.skillspeed;
     this.characterStats.spellspeed = this.job.spellspeed + this.weapon.spellspeed + this.head.spellspeed + this.body.spellspeed + this.hand.spellspeed + this.legs.spellspeed + this.feet.spellspeed + this.earring.spellspeed + this.necklace.spellspeed + this.bracelet.spellspeed + this.leftring.spellspeed + this.righttring.spellspeed;
+    this.characterStats.critchance = (this.characterStats.intelligence*(200*(this.characterStats.criticalhit - 400)/1900)+1400)/1000;
+
+    let critstat : number = 0;
+
+    switch(this.job.mainstat) { 
+      case 'Strength': { 
+         critstat = this.characterStats.strength;
+         break; 
+      }
+      case 'Intelligence': { 
+        critstat = this.characterStats.intelligence;
+        break; 
+      } 
+      case 'Dexterity': { 
+        critstat = this.characterStats.dexterity; 
+        break; 
+      } 
+      case 'Mind': { 
+        critstat = this.characterStats.mind;
+        break; 
+      } 
+
+    } 
+
+    this.characterStats.critchance = (critstat*(200*(this.characterStats.criticalhit - 400)/1900)+1400)/1000;
+
   }
-  
 }

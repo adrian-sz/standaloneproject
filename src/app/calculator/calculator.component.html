@@ -1,11 +1,5 @@
-<!-- <p>
-    Current job: {{characterStatsService.job.name}}<br>
-    Current race: {{characterStatsService.race.name}}<br>
-    Current damage: {{characterStatsService.characterStats.damage}}<br>
-    Current str: {{characterStatsService.characterStats.strength}}<br>
-    Current dex: {{characterStatsService.characterStats.dexterity}}<br>
-</p>
- -->
+  
+ 
   <div class="statstext">
   <ul>
   <li class="listingname" *ngIf="characterStatsService.job.name!=''"><strong>Job:</strong> {{ characterStatsService.job.name }}</li>
@@ -24,5 +18,35 @@
   <li class="listing" *ngIf="characterStatsService.characterStats.piety>0"><strong>Piety:</strong> {{ characterStatsService.characterStats.piety }}</li>
   <li class="listing" *ngIf="characterStatsService.characterStats.skillspeed>0"><strong>Skill speed:</strong> {{ characterStatsService.characterStats.skillspeed }}</li>
   <li class="listing" *ngIf="characterStatsService.characterStats.spellspeed>0"><strong>Spell speed:</strong> {{ characterStatsService.characterStats.spellspeed }}</li>
+  <li class="listing"><strong>Crit chance:</strong> {{ characterStatsService.characterStats.critchance }}</li>
   </ul>
   </div>
+
+  @switch (characterStatsService.job.name) {
+    @case ("Paladin") {
+      <div class="statstext">
+        <ul>
+        <li class="listingname"><strong>Job:</strong> {{ characterStatsService.job.name }}</li>
+        <li class="listing"><strong>Damage:</strong> <strong>{{ characterStatsService.characterStats.damage }}</strong></li>
+        <li class="listing"><strong>Strength:</strong> {{ characterStatsService.characterStats.strength }}</li>
+        <li class="listing"><strong>Dexterity:</strong> {{ characterStatsService.characterStats.dexterity }}</li>
+        <li class="listing"><strong>Vitality:</strong> {{ characterStatsService.characterStats.vitality }}</li>
+        <li class="listing"><strong>Intelligence:</strong> {{ characterStatsService.characterStats.intelligence }}</li>
+        <li class="listing"><strong>Mind:</strong> {{ characterStatsService.characterStats.mind }}</li>
+        <li class="listing"><strong>Critical hit:</strong> {{ characterStatsService.characterStats.criticalhit }}</li>
+        <li class="listing"><strong>Determination:</strong> {{ characterStatsService.characterStats.determination }}</li>
+        <li class="listing"><strong>Direct hit:</strong> {{ characterStatsService.characterStats.directhit }}</li>
+        <li class="listing"><strong>Defense:</strong> {{ characterStatsService.characterStats.defense }}</li>
+        <li class="listing"><strong>Magic defense:</strong> {{ characterStatsService.characterStats.magicdefense }}</li>
+        <li class="listing"><strong>Tenacity:</strong> {{ characterStatsService.characterStats.tenacity }}</li>
+        <li class="listing"><strong>Piety:</strong> {{ characterStatsService.characterStats.piety }}</li>
+        <li class="listing"><strong>Skill speed:</strong> {{ characterStatsService.characterStats.skillspeed }}</li>
+        <li class="listing"><strong>Spell speed:</strong> {{ characterStatsService.characterStats.spellspeed }}</li>
+        <li class="listing"><strong>Crit chance:</strong> {{ characterStatsService.characterStats.critchance }}</li>
+        </ul>
+        </div>
+    }
+    @case ("blue") {
+        <div>Blue</div>
+    }
+}

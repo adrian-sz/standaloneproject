@@ -52,24 +52,6 @@ export class HeadmixComponent {
   }
 
   changeHead(value : Heads){
-    /* this.selectedItem.id = value.id;
-    this.selectedItem.name = value.name;
-    this.selectedItem.slot = value.slot;
-    this.selectedItem.strength = value.strength;
-    this.selectedItem.dexterity = value.dexterity;
-    this.selectedItem.vitality = value.vitality;
-    this.selectedItem.intelligence = value.intelligence;
-    this.selectedItem.mind = value.mind;
-    this.selectedItem.criticalhit = value.mind;
-    this.selectedItem.determination = value.determination;
-    this.selectedItem.directhit = value.directhit;
-    this.selectedItem.defense = value.defense;
-    this.selectedItem.magicdefense = value.magicdefense;
-    this.selectedItem.tenacity = value.tenacity;
-    this.selectedItem.piety = value.piety;
-    this.selectedItem.skillspeed = value.skillspeed;
-    this.selectedItem.spellspeed = value.spellspeed;
-    this.selectedItem.photo = value.photo; */
     this.selectedItem = value;
    
     this.characterStatsService.head = value;

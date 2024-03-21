@@ -55,6 +55,7 @@ export class BraceletmixComponent {
    
     this.characterStatsService.bracelet = value;
     this.characterStatsService.calculateStats();
+   
   }
 
 }

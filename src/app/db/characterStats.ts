@@ -14,4 +14,5 @@ export interface CharacterStats {
     piety: number;
     skillspeed: number;
     spellspeed: number;
+    critchance: number;
 }   
