@@ -7,6 +7,7 @@ import {FormsModule} from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { CharacterStatsService } from '../db/characterStats.service';
 
 @Component({
   selector: 'app-headmix',
@@ -82,12 +83,12 @@ export class HeadmixComponent {
 
   Headlist: Heads[]
 
-  constructor(public HeadsPrint : HeadsService){
+  constructor(public HeadsPrint : HeadsService, public characterStatsService : CharacterStatsService){
     this.Headlist=HeadsPrint.getHeads()
   }
 
   changeHead(value : Heads){
-    this.selectedItem.id = value.id;
+    /* this.selectedItem.id = value.id;
     this.selectedItem.name = value.name;
     this.selectedItem.slot = value.slot;
     this.selectedItem.strength = value.strength;
@@ -104,7 +105,11 @@ export class HeadmixComponent {
     this.selectedItem.piety = value.piety;
     this.selectedItem.skillspeed = value.skillspeed;
     this.selectedItem.spellspeed = value.spellspeed;
-    this.selectedItem.photo = value.photo;
+    this.selectedItem.photo = value.photo; */
+    this.selectedItem = value;
+   
+    this.characterStatsService.head = value;
+    this.characterStatsService.calculateStats();
   }
 
 }

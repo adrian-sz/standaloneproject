@@ -9,6 +9,7 @@ import {FormsModule} from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { CharacterStatsService } from '../db/characterStats.service';
 
 @Component({
   selector: 'app-itemmix',
@@ -85,12 +86,12 @@ export class ItemmixComponent {
 
   Itemlist: Items[]
 
-  constructor(public ItemsPrint : ItemsService){
+  constructor(public ItemsPrint : ItemsService, public characterStatsService : CharacterStatsService){
     this.Itemlist=ItemsPrint.getItems()
   }
 
   changeItem(value : Items){
-    this.selectedItem.id = value.id;
+    /* this.selectedItem.id = value.id;
     this.selectedItem.name = value.name;
     this.selectedItem.slot = value.slot;
     this.selectedItem.damage = value.damage;
@@ -108,7 +109,11 @@ export class ItemmixComponent {
     this.selectedItem.piety = value.piety;
     this.selectedItem.skillspeed = value.skillspeed;
     this.selectedItem.spellspeed = value.spellspeed;
-    this.selectedItem.photo = value.photo;
+    this.selectedItem.photo = value.photo; */
+    this.selectedItem = value;
+
+    this.characterStatsService.weapon = value;
+    this.characterStatsService.calculateStats();
   }
 
 }

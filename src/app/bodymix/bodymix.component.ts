@@ -7,6 +7,7 @@ import {FormsModule} from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { CharacterStatsService } from '../db/characterStats.service';
 
 @Component({
   selector: 'app-bodymix',
@@ -81,12 +82,12 @@ export class BodymixComponent {
 
   Bodylist: Bodies[]
 
-  constructor(public BodiesPrint : BodiesService){
+  constructor(public BodiesPrint : BodiesService, public characterStatsService : CharacterStatsService){
     this.Bodylist=BodiesPrint.getBodies()
   }
 
   changeHead(value : Bodies){
-    this.selectedItem.id = value.id;
+    /* this.selectedItem.id = value.id;
     this.selectedItem.name = value.name;
     this.selectedItem.slot = value.slot;
     this.selectedItem.strength = value.strength;
@@ -103,7 +104,10 @@ export class BodymixComponent {
     this.selectedItem.piety = value.piety;
     this.selectedItem.skillspeed = value.skillspeed;
     this.selectedItem.spellspeed = value.spellspeed;
-    this.selectedItem.photo = value.photo;
+    this.selectedItem.photo = value.photo; */
+    this.selectedItem = value;
+
+    this.characterStatsService.calculateStats();
   }
 
 }
