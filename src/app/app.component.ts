@@ -10,6 +10,7 @@ import { BodymixComponent } from './bodymix/bodymix.component';
 import { RacesmixComponent } from './racesmix/racesmix.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { HandmixComponent } from './handmix/handmix.component';
+import { LegmixComponent } from './legmix/legmix.component';
 
 
 
@@ -27,6 +28,7 @@ import { HandmixComponent } from './handmix/handmix.component';
     BodymixComponent,
     RacesmixComponent,
     HandmixComponent,
+    LegmixComponent,
     CalculatorComponent
   ],
   //templateUrl: './app.component.html',
@@ -73,6 +75,12 @@ import { HandmixComponent } from './handmix/handmix.component';
   <div class="handmix">
     <section class="handmix">
       <app-handmix></app-handmix>
+    </section>
+  </div>
+
+  <div class="legmix">
+    <section class="legmix">
+      <app-legmix></app-legmix>
     </section>
   </div>
 

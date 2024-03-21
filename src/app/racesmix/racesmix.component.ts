@@ -33,9 +33,13 @@ import { CharacterStatsService } from '../db/characterStats.service';
     </mat-form-field>
   </div>
 
+  <div>
+<img *ngIf="selectedRace.photo!=''" class="jobphoto" [src]="selectedRace.photo" width="100" height="100">
+</div>
+
   <div class="statstext">
     <ul>
-    <li class="listingname" *ngIf="selectedRace.name!=''"><strong>Job:</strong> {{ selectedRace.name }}</li>
+    <li class="listingname" *ngIf="selectedRace.name!=''"><strong>Race:</strong> {{ selectedRace.name }}</li>
     <li class="listing" *ngIf="selectedRace.strength>0"><strong>Strength:</strong> {{ selectedRace.strength }}</li>
     <li class="listing" *ngIf="selectedRace.dexterity>0"><strong>Dexterity:</strong> {{ selectedRace.dexterity }}</li>
     <li class="listing" *ngIf="selectedRace.vitality>0"><strong>Vitality:</strong> {{ selectedRace.vitality }}</li>
@@ -63,7 +67,8 @@ export class RacesmixComponent {
       dexterity: 0,
       vitality: 0,
       intelligence: 0,
-      mind: 0
+      mind: 0,
+      photo: ''
   }
       Racelist: Races[]
 

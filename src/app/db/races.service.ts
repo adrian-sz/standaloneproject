@@ -14,7 +14,8 @@ export class RacesService {
       dexterity: 0,
       vitality: 0,
       intelligence: 0,
-      mind: 0
+      mind: 0,
+      photo: 'https://ffxiv.gamerescape.com/w/images/6/64/Main_Command_36_Icon.png'
     },
     {
       id: 0,
@@ -23,7 +24,8 @@ export class RacesService {
       dexterity: 19,
       vitality: 20,
       intelligence: 23,
-      mind: 19
+      mind: 19,
+      photo: 'https://ffxiv.gamerescape.com/w/images/6/64/Main_Command_36_Icon.png'
     },
     {
       id: 1,
@@ -32,7 +34,8 @@ export class RacesService {
       dexterity: 20,
       vitality: 22,
       intelligence: 18,
-      mind: 20
+      mind: 20,
+      photo: 'https://ffxiv.gamerescape.com/w/images/6/64/Main_Command_36_Icon.png'
     },
   ]
 

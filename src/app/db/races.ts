@@ -6,4 +6,5 @@ export interface Races {
     vitality: number;
     intelligence: number;
     mind: number;
+    photo: string;
 }
