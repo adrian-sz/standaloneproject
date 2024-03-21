@@ -1,7 +1,7 @@
 <div class="choosetext">
     <h4>Choose your body slot item:</h4>
     <mat-form-field>
-        <mat-select [disableOptionCentering]="true" placeholder="None" (selectionChange)="changeHead($event.value)">
+        <mat-select [disableOptionCentering]="true" placeholder="None" (selectionChange)="changeBody($event.value)">
             @for (item of Bodylist; track item) {
                 <mat-option [value]="item">{{item.name}}</mat-option>
             }
