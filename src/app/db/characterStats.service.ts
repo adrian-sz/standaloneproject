@@ -35,7 +35,9 @@ export class CharacterStatsService {
     skillspeed: 0,
     spellspeed: 0,
     critchance: 0,
-
+    critstrength: 0,
+    physres: 0,
+    magres: 0
   };
   public job: Jobs = {
     id: 0,
@@ -313,6 +315,8 @@ export class CharacterStatsService {
 
     let critstat : number = 0;
     let critstrength : number = 0;
+    let physres : number = 0;
+    let magres : number = 0;
 
     switch(this.job.mainstat) { 
       case 'Strength': { 
@@ -335,7 +339,9 @@ export class CharacterStatsService {
     } 
 
     this.characterStats.critchance = (/* critstat* */(200*(this.characterStats.criticalhit - 400)/1900)+50)/10;
-    /* this.characterStats.critstrength = ((200*(this.characterStats.criticalhit - 400)/1900)+1400)/10; */
+    this.characterStats.critstrength = ((200*(this.characterStats.criticalhit - 400)/1900)+1400)/10;
+    this.characterStats.physres = 15*(this.characterStats.defense/1900);
+    this.characterStats.magres = 15*(this.characterStats.magicdefense/1900);
 
   }
 }

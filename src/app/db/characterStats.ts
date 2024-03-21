@@ -15,4 +15,7 @@ export interface CharacterStats {
     skillspeed: number;
     spellspeed: number;
     critchance: number;
+    critstrength: number;
+    physres : number;
+    magres : number;
 }   
