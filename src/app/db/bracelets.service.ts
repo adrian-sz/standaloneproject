@@ -308,7 +308,7 @@ export class BraceletsService {
       },
       { 
       id: 9010,
-      name: 'Augmented Credendum Bracelets of Fending',
+      name: 'Augmented Credendum Bracelets of Casting',
       slot: 'Bracelet',
       strength: 0,
       dexterity: 0,
