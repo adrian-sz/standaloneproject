@@ -5,7 +5,11 @@
 }
 
   .statstext {
-    text-align: left;
+    text-align: center;
+  }
+
+  .statspriotext {
+    text-align: center;
   }
 
   .itemphoto {
@@ -28,10 +32,16 @@
 }
 
 .statprio {
-  display: grid;
+  /* display: grid; */
   text-align: center;
   grid-template-columns: 160px 50px;
   padding-left: 15px;
+}
+
+ul {
+  display: table; 
+  margin: 0 auto;
+  text-align: left;
 }
 
 .listinggreen {
