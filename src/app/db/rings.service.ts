@@ -65,7 +65,7 @@ export class RingsService {
         piety: 0,
         skillspeed: 102,
         spellspeed: 0,
-        photo: 'https://ffxiv.gamerescape.com/w/images/1/18/Augmented_Credendum_Ring_of_Fending_Icon.png'
+        photo: 'https://ffxiv.gamerescape.com/w/images/6/65/Ascension_Ring_of_Fending_Icon.png'
         },
     { 
         id: 10002,
@@ -85,7 +85,7 @@ export class RingsService {
         piety: 0,
         skillspeed: 0,
         spellspeed: 0,
-        photo: 'https://ffxiv.gamerescape.com/w/images/6/65/Ascension_Ring_of_Fending_Icon.png'
+        photo: 'https://ffxiv.gamerescape.com/w/images/1/18/Augmented_Credendum_Ring_of_Fending_Icon.png'
         },
         { 
         id: 10011,
