@@ -48,9 +48,9 @@
         <li class="listing"><strong>Damage increase:</strong> <strong>{{ characterStatsService.characterStats.dmgincrease | number: '1.2-2'}}%</strong></li>
         <li class="listinggreen"><strong>Direct hit:</strong> <strong>{{ characterStatsService.characterStats.directhit }}</strong></li>
         <li class="listing"><strong>Direct hit chance:</strong> <strong>{{ characterStatsService.characterStats.direchitchance | number: '1.2-2'}}</strong></li>
-        <li class="listingorange"><strong>Defense:</strong> <strong>{{ characterStatsService.characterStats.defense }}</strong></li>
+        <li class="listingred"><strong>Defense:</strong> <strong>{{ characterStatsService.characterStats.defense }}</strong></li>
         <li class="listing"><strong>Physical resistance:</strong> <strong>{{ characterStatsService.characterStats.physres | number: '1.2-2'}}%</strong></li>
-        <li class="listingorange"><strong>Magic defense:</strong> <strong>{{ characterStatsService.characterStats.magicdefense }}</strong></li>
+        <li class="listingred"><strong>Magic defense:</strong> <strong>{{ characterStatsService.characterStats.magicdefense }}</strong></li>
         <li class="listing"><strong>Magic resistance:</strong> <strong>{{ characterStatsService.characterStats.magres | number: '1.2-2'}}%</strong></li>
         <li class="listingorange"><strong>Tenacity:</strong> <strong>{{ characterStatsService.characterStats.tenacity }}</strong></li>
         <li class="listing"><strong>Damage mitigation:</strong> <strong>{{ characterStatsService.characterStats.dmgmitigation | number: '1.2-2'}}%</strong></li>
@@ -68,7 +68,7 @@
         <strong class="statprio">Job:</strong><br>
         <strong class="statprio">{{ characterStatsService.job.name }}</strong><br>
         <strong class="statprio">Stat priority:</strong><br>
-        <strong class="statprio">CRT > DH >= DET > TEN</strong><br>
+        <strong class="statprio">CRT > 2.5 GCD > DH > DET > TEN</strong><br>
         <strong class="statprio">Target GCD:</strong><br>
         <strong class="statprio">2.50s:</strong><br>
       </div>
@@ -84,15 +84,15 @@
         <li class="listinggreen"><strong>Critical hit:</strong> <strong>{{ characterStatsService.characterStats.criticalhit }}</strong></li>
         <li class="listing"><strong>Crit chance:</strong> <strong>{{ characterStatsService.characterStats.critchance | number: '1.2-2'}}%</strong></li>
         <li class="listing"><strong>Crit strength:</strong> <strong>{{ characterStatsService.characterStats.critstrength | number: '1.2-2'}}%</strong></li>
-        <li class="listinggreen"><strong>Determination:</strong> <strong>{{ characterStatsService.characterStats.determination }}</strong></li>
+        <li class="listingorange"><strong>Determination:</strong> <strong>{{ characterStatsService.characterStats.determination }}</strong></li>
         <li class="listing"><strong>Damage increase:</strong> <strong>{{ characterStatsService.characterStats.dmgincrease | number: '1.2-2'}}%</strong></li>
         <li class="listinggreen"><strong>Direct hit:</strong> <strong>{{ characterStatsService.characterStats.directhit }}</strong></li>
         <li class="listing"><strong>Direct hit chance:</strong> <strong>{{ characterStatsService.characterStats.direchitchance | number: '1.2-2'}}</strong></li>
-        <li class="listingorange"><strong>Defense:</strong> <strong>{{ characterStatsService.characterStats.defense }}</strong></li>
+        <li class="listingred"><strong>Defense:</strong> <strong>{{ characterStatsService.characterStats.defense }}</strong></li>
         <li class="listing"><strong>Physical resistance:</strong> <strong>{{ characterStatsService.characterStats.physres | number: '1.2-2'}}%</strong></li>
-        <li class="listingorange"><strong>Magic defense:</strong> <strong>{{ characterStatsService.characterStats.magicdefense }}</strong></li>
+        <li class="listingred"><strong>Magic defense:</strong> <strong>{{ characterStatsService.characterStats.magicdefense }}</strong></li>
         <li class="listing"><strong>Magic resistance:</strong> <strong>{{ characterStatsService.characterStats.magres | number: '1.2-2'}}%</strong></li>
-        <li class="listinggreen"><strong>Tenacity:</strong> <strong>{{ characterStatsService.characterStats.tenacity }}</strong></li>
+        <li class="listingorange"><strong>Tenacity:</strong> <strong>{{ characterStatsService.characterStats.tenacity }}</strong></li>
         <li class="listing"><strong>Damage mitigation:</strong> <strong>{{ characterStatsService.characterStats.dmgmitigation | number: '1.2-2'}}%</strong></li>
         <li class="listingred" *ngIf="characterStatsService.characterStats.manapertick>200"><strong>Piety:</strong> <strong>{{ characterStatsService.characterStats.piety }}</strong></li>
         <li class="listing" *ngIf="characterStatsService.characterStats.manapertick>200"><strong>Mana regen per tick:</strong> <strong>{{ characterStatsService.characterStats.manapertick | number: '1.2-2'}}</strong></li>
@@ -109,7 +109,7 @@
         <strong class="statprio">Job:</strong><br>
         <strong class="statprio">{{ characterStatsService.job.name }}</strong><br>
         <strong class="statprio">Stat priority:</strong><br>
-        <strong class="statprio">STR > CRT > 2.5s GCD > DH = DET > TEN</strong><br>
+        <strong class="statprio">STR > CRT > 2.5s GCD > DH > DET </strong><br>
         <strong class="statprio">Target GCD:</strong><br>
         <strong class="statprio">2.50s:</strong><br>
       </div>
@@ -125,15 +125,15 @@
         <li class="listinggreen"><strong>Critical hit:</strong> <strong>{{ characterStatsService.characterStats.criticalhit }}</strong></li>
         <li class="listing"><strong>Crit chance:</strong> <strong>{{ characterStatsService.characterStats.critchance | number: '1.2-2'}}%</strong></li>
         <li class="listing"><strong>Crit strength:</strong> <strong>{{ characterStatsService.characterStats.critstrength | number: '1.2-2'}}%</strong></li>
-        <li class="listinggreen"><strong>Determination:</strong> <strong>{{ characterStatsService.characterStats.determination }}</strong></li>
+        <li class="listingorange"><strong>Determination:</strong> <strong>{{ characterStatsService.characterStats.determination }}</strong></li>
         <li class="listing"><strong>Damage increase:</strong> <strong>{{ characterStatsService.characterStats.dmgincrease | number: '1.2-2'}}%</strong></li>
         <li class="listinggreen"><strong>Direct hit:</strong> <strong>{{ characterStatsService.characterStats.directhit }}</strong></li>
         <li class="listing"><strong>Direct hit chance:</strong> <strong>{{ characterStatsService.characterStats.direchitchance | number: '1.2-2'}}</strong></li>
-        <li class="listingorange"><strong>Defense:</strong> <strong>{{ characterStatsService.characterStats.defense }}</strong></li>
+        <li class="listingred"><strong>Defense:</strong> <strong>{{ characterStatsService.characterStats.defense }}</strong></li>
         <li class="listing"><strong>Physical resistance:</strong> <strong>{{ characterStatsService.characterStats.physres | number: '1.2-2'}}%</strong></li>
-        <li class="listingorange"><strong>Magic defense:</strong> <strong>{{ characterStatsService.characterStats.magicdefense }}</strong></li>
+        <li class="listingred"><strong>Magic defense:</strong> <strong>{{ characterStatsService.characterStats.magicdefense }}</strong></li>
         <li class="listing"><strong>Magic resistance:</strong> <strong>{{ characterStatsService.characterStats.magres | number: '1.2-2'}}%</strong></li>
-        <li class="listinggreen"><strong>Tenacity:</strong> <strong>{{ characterStatsService.characterStats.tenacity }}</strong></li>
+        <li class="listingorange"><strong>Tenacity:</strong> <strong>{{ characterStatsService.characterStats.tenacity }}</strong></li>
         <li class="listing"><strong>Damage mitigation:</strong> <strong>{{ characterStatsService.characterStats.dmgmitigation | number: '1.2-2'}}%</strong></li>
         <li class="listingred" *ngIf="characterStatsService.characterStats.manapertick>200"><strong>Piety:</strong> <strong>{{ characterStatsService.characterStats.piety }}</strong></li>
         <li class="listing" *ngIf="characterStatsService.characterStats.manapertick>200"><strong>Mana regen per tick:</strong> <strong>{{ characterStatsService.characterStats.manapertick | number: '1.2-2'}}</strong></li>
@@ -149,9 +149,9 @@
         <strong class="statprio">Job:</strong><br>
         <strong class="statprio">{{ characterStatsService.job.name }}</strong><br>
         <strong class="statprio">Stat priority:</strong><br>
-        <strong class="statprio">STR > CRIT > DH > DET</strong><br>
+        <strong class="statprio">STR > CRIT > DH > DET > TEN > DESIRED SKS</strong><br>
         <strong class="statprio">Target GCD:</strong><br>
-        <strong class="statprio">2.50s:</strong><br>
+        <strong class="statprio">2.50s, 2.45s, 2.40s:</strong><br>
       </div>
 
         <div class="statstext" step="0.01">
@@ -169,15 +169,15 @@
         <li class="listing"><strong>Damage increase:</strong> <strong>{{ characterStatsService.characterStats.dmgincrease | number: '1.2-2'}}%</strong></li>
         <li class="listinggreen"><strong>Direct hit:</strong> <strong>{{ characterStatsService.characterStats.directhit }}</strong></li>
         <li class="listing"><strong>Direct hit chance:</strong> <strong>{{ characterStatsService.characterStats.direchitchance | number: '1.2-2'}}</strong></li>
-        <li class="listingorange"><strong>Defense:</strong> <strong>{{ characterStatsService.characterStats.defense }}</strong></li>
+        <li class="listingred"><strong>Defense:</strong> <strong>{{ characterStatsService.characterStats.defense }}</strong></li>
         <li class="listing"><strong>Physical resistance:</strong> <strong>{{ characterStatsService.characterStats.physres | number: '1.2-2'}}%</strong></li>
-        <li class="listingorange"><strong>Magic defense:</strong> <strong>{{ characterStatsService.characterStats.magicdefense }}</strong></li>
+        <li class="listingred"><strong>Magic defense:</strong> <strong>{{ characterStatsService.characterStats.magicdefense }}</strong></li>
         <li class="listing"><strong>Magic resistance:</strong> <strong>{{ characterStatsService.characterStats.magres | number: '1.2-2'}}%</strong></li>
         <li class="listingorange"><strong>Tenacity:</strong> <strong>{{ characterStatsService.characterStats.tenacity }}</strong></li>
         <li class="listing"><strong>Damage mitigation:</strong> <strong>{{ characterStatsService.characterStats.dmgmitigation | number: '1.2-2'}}%</strong></li>
         <li class="listingred" *ngIf="characterStatsService.characterStats.manapertick>200"><strong>Piety:</strong> <strong>{{ characterStatsService.characterStats.piety }}</strong></li>
         <li class="listing" *ngIf="characterStatsService.characterStats.manapertick>200"><strong>Mana regen per tick:</strong> <strong>{{ characterStatsService.characterStats.manapertick | number: '1.2-2'}}</strong></li>
-        <li class="listingred"><strong>Skill speed:</strong> <strong>{{ characterStatsService.characterStats.skillspeed }}</strong></li>
+        <li class="listingorange"><strong>Skill speed:</strong> <strong>{{ characterStatsService.characterStats.skillspeed }}</strong></li>
        <!--  <li class="listingred"><strong>Spell speed:</strong> <strong>{{ characterStatsService.characterStats.spellspeed }}</strong></li> -->
         <li class="listing"><strong>Global cooldown:</strong> <strong>{{ characterStatsService.characterStats.skillhaste | number: '1.2-2'}}s</strong></li>
        <!--  <li class="listing"><strong>Global cooldown:</strong> <strong>{{ characterStatsService.characterStats.spellhaste | number: '1.2-2'}}</strong></li> -->
@@ -189,36 +189,36 @@
         <strong class="statprio">Job:</strong><br>
         <strong class="statprio">{{ characterStatsService.job.name }}</strong><br>
         <strong class="statprio">Stat priority:</strong><br>
-        <strong class="statprio">STR > CRIT > DH > DET</strong><br>
+        <strong class="statprio">MND > CRIT > SPS > DH > DET</strong><br>
         <strong class="statprio">Target GCD:</strong><br>
-        <strong class="statprio">2.50s:</strong><br>
+        <strong class="statprio">2.38s:</strong><br>
       </div>
 
         <div class="statstext" step="0.01">
         <ul>
         <li class="listinggreen"><strong>Damage:</strong> <strong>{{ characterStatsService.characterStats.damage }}</strong></li>
-        <li class="listinggreen"><strong>Strength:</strong> <strong>{{ characterStatsService.characterStats.strength }}</strong></li>
+        <li class="listingred"><strong>Strength:</strong> <strong>{{ characterStatsService.characterStats.strength }}</strong></li>
         <li class="listingred"><strong>Dexterity:</strong> <strong>{{ characterStatsService.characterStats.dexterity }}</strong></li>
         <li class="listingred"><strong>Vitality:</strong> <strong>{{ characterStatsService.characterStats.vitality }}</strong></li>
         <li class="listingred"><strong>Intelligence:</strong> <strong>{{ characterStatsService.characterStats.intelligence }}</strong></li>
-        <li class="listingred"><strong>Mind:</strong> <strong>{{ characterStatsService.characterStats.mind }}</strong></li>
+        <li class="listinggreen"><strong>Mind:</strong> <strong>{{ characterStatsService.characterStats.mind }}</strong></li>
         <li class="listinggreen"><strong>Critical hit:</strong> <strong>{{ characterStatsService.characterStats.criticalhit }}</strong></li>
         <li class="listing"><strong>Crit chance:</strong> <strong>{{ characterStatsService.characterStats.critchance | number: '1.2-2'}}%</strong></li>
         <li class="listing"><strong>Crit strength:</strong> <strong>{{ characterStatsService.characterStats.critstrength | number: '1.2-2'}}%</strong></li>
-        <li class="listinggreen"><strong>Determination:</strong> <strong>{{ characterStatsService.characterStats.determination }}</strong></li>
+        <li class="listingorange"><strong>Determination:</strong> <strong>{{ characterStatsService.characterStats.determination }}</strong></li>
         <li class="listing"><strong>Damage increase:</strong> <strong>{{ characterStatsService.characterStats.dmgincrease | number: '1.2-2'}}%</strong></li>
         <li class="listinggreen"><strong>Direct hit:</strong> <strong>{{ characterStatsService.characterStats.directhit }}</strong></li>
         <li class="listing"><strong>Direct hit chance:</strong> <strong>{{ characterStatsService.characterStats.direchitchance | number: '1.2-2'}}</strong></li>
-        <li class="listingorange"><strong>Defense:</strong> <strong>{{ characterStatsService.characterStats.defense }}</strong></li>
+        <li class="listingred"><strong>Defense:</strong> <strong>{{ characterStatsService.characterStats.defense }}</strong></li>
         <li class="listing"><strong>Physical resistance:</strong> <strong>{{ characterStatsService.characterStats.physres | number: '1.2-2'}}%</strong></li>
-        <li class="listingorange"><strong>Magic defense:</strong> <strong>{{ characterStatsService.characterStats.magicdefense }}</strong></li>
+        <li class="listingred"><strong>Magic defense:</strong> <strong>{{ characterStatsService.characterStats.magicdefense }}</strong></li>
         <li class="listing"><strong>Magic resistance:</strong> <strong>{{ characterStatsService.characterStats.magres | number: '1.2-2'}}%</strong></li>
-        <li class="listingorange"><strong>Tenacity:</strong> <strong>{{ characterStatsService.characterStats.tenacity }}</strong></li>
+        <li class="listingred"><strong>Tenacity:</strong> <strong>{{ characterStatsService.characterStats.tenacity }}</strong></li>
         <li class="listing"><strong>Damage mitigation:</strong> <strong>{{ characterStatsService.characterStats.dmgmitigation | number: '1.2-2'}}%</strong></li>
-        <li class="listingred" *ngIf="characterStatsService.characterStats.manapertick>200"><strong>Piety:</strong> <strong>{{ characterStatsService.characterStats.piety }}</strong></li>
+        <li class="listingorange" *ngIf="characterStatsService.characterStats.manapertick>200"><strong>Piety:</strong> <strong>{{ characterStatsService.characterStats.piety }}</strong></li>
         <li class="listing" *ngIf="characterStatsService.characterStats.manapertick>200"><strong>Mana regen per tick:</strong> <strong>{{ characterStatsService.characterStats.manapertick | number: '1.2-2'}}</strong></li>
         <!-- <li class="listingred"><strong>Skill speed:</strong> <strong>{{ characterStatsService.characterStats.skillspeed }}</strong></li> -->
-        <li class="listingred"><strong>Spell speed:</strong> <strong>{{ characterStatsService.characterStats.spellspeed }}</strong></li>
+        <li class="listinggreen"><strong>Spell speed:</strong> <strong>{{ characterStatsService.characterStats.spellspeed }}</strong></li>
         <!-- <li class="listing"><strong>Global cooldown:</strong> <strong>{{ characterStatsService.characterStats.skillhaste | number: '1.2-2'}}</strong></li> -->
         <li class="listing"><strong>Global cooldown:</strong> <strong>{{ characterStatsService.characterStats.spellhaste | number: '1.2-2'}}s</strong></li>
         </ul>
@@ -229,36 +229,36 @@
         <strong class="statprio">Job:</strong><br>
         <strong class="statprio">{{ characterStatsService.job.name }}</strong><br>
         <strong class="statprio">Stat priority:</strong><br>
-        <strong class="statprio">STR > CRIT > DH > DET</strong><br>
+        <strong class="statprio">MND > CRIT > DH > DET</strong><br>
         <strong class="statprio">Target GCD:</strong><br>
-        <strong class="statprio">2.50s:</strong><br>
+        <strong class="statprio">2.40s:</strong><br>
       </div>
 
         <div class="statstext" step="0.01">
         <ul>
         <li class="listinggreen"><strong>Damage:</strong> <strong>{{ characterStatsService.characterStats.damage }}</strong></li>
-        <li class="listinggreen"><strong>Strength:</strong> <strong>{{ characterStatsService.characterStats.strength }}</strong></li>
+        <li class="listingred"><strong>Strength:</strong> <strong>{{ characterStatsService.characterStats.strength }}</strong></li>
         <li class="listingred"><strong>Dexterity:</strong> <strong>{{ characterStatsService.characterStats.dexterity }}</strong></li>
         <li class="listingred"><strong>Vitality:</strong> <strong>{{ characterStatsService.characterStats.vitality }}</strong></li>
         <li class="listingred"><strong>Intelligence:</strong> <strong>{{ characterStatsService.characterStats.intelligence }}</strong></li>
-        <li class="listingred"><strong>Mind:</strong> <strong>{{ characterStatsService.characterStats.mind }}</strong></li>
+        <li class="listinggreen"><strong>Mind:</strong> <strong>{{ characterStatsService.characterStats.mind }}</strong></li>
         <li class="listinggreen"><strong>Critical hit:</strong> <strong>{{ characterStatsService.characterStats.criticalhit }}</strong></li>
         <li class="listing"><strong>Crit chance:</strong> <strong>{{ characterStatsService.characterStats.critchance | number: '1.2-2'}}%</strong></li>
         <li class="listing"><strong>Crit strength:</strong> <strong>{{ characterStatsService.characterStats.critstrength | number: '1.2-2'}}%</strong></li>
-        <li class="listinggreen"><strong>Determination:</strong> <strong>{{ characterStatsService.characterStats.determination }}</strong></li>
+        <li class="listingorange"><strong>Determination:</strong> <strong>{{ characterStatsService.characterStats.determination }}</strong></li>
         <li class="listing"><strong>Damage increase:</strong> <strong>{{ characterStatsService.characterStats.dmgincrease | number: '1.2-2'}}%</strong></li>
         <li class="listinggreen"><strong>Direct hit:</strong> <strong>{{ characterStatsService.characterStats.directhit }}</strong></li>
         <li class="listing"><strong>Direct hit chance:</strong> <strong>{{ characterStatsService.characterStats.direchitchance | number: '1.2-2'}}</strong></li>
-        <li class="listingorange"><strong>Defense:</strong> <strong>{{ characterStatsService.characterStats.defense }}</strong></li>
+        <li class="listingred"><strong>Defense:</strong> <strong>{{ characterStatsService.characterStats.defense }}</strong></li>
         <li class="listing"><strong>Physical resistance:</strong> <strong>{{ characterStatsService.characterStats.physres | number: '1.2-2'}}%</strong></li>
-        <li class="listingorange"><strong>Magic defense:</strong> <strong>{{ characterStatsService.characterStats.magicdefense }}</strong></li>
+        <li class="listingred"><strong>Magic defense:</strong> <strong>{{ characterStatsService.characterStats.magicdefense }}</strong></li>
         <li class="listing"><strong>Magic resistance:</strong> <strong>{{ characterStatsService.characterStats.magres | number: '1.2-2'}}%</strong></li>
-        <li class="listingorange"><strong>Tenacity:</strong> <strong>{{ characterStatsService.characterStats.tenacity }}</strong></li>
+        <li class="listingred"><strong>Tenacity:</strong> <strong>{{ characterStatsService.characterStats.tenacity }}</strong></li>
         <li class="listing"><strong>Damage mitigation:</strong> <strong>{{ characterStatsService.characterStats.dmgmitigation | number: '1.2-2'}}%</strong></li>
         <li class="listingred" *ngIf="characterStatsService.characterStats.manapertick>200"><strong>Piety:</strong> <strong>{{ characterStatsService.characterStats.piety }}</strong></li>
         <li class="listing" *ngIf="characterStatsService.characterStats.manapertick>200"><strong>Mana regen per tick:</strong> <strong>{{ characterStatsService.characterStats.manapertick | number: '1.2-2'}}</strong></li>
         <!-- <li class="listingred"><strong>Skill speed:</strong> <strong>{{ characterStatsService.characterStats.skillspeed }}</strong></li> -->
-        <li class="listingred"><strong>Spell speed:</strong> <strong>{{ characterStatsService.characterStats.spellspeed }}</strong></li>
+        <li class="listingreen"><strong>Spell speed:</strong> <strong>{{ characterStatsService.characterStats.spellspeed }}</strong></li>
         <!-- <li class="listing"><strong>Global cooldown:</strong> <strong>{{ characterStatsService.characterStats.skillhaste | number: '1.2-2'}}</strong></li> -->
         <li class="listing"><strong>Global cooldown:</strong> <strong>{{ characterStatsService.characterStats.spellhaste | number: '1.2-2'}}s</strong></li>
         </ul>
@@ -269,36 +269,36 @@
         <strong class="statprio">Job:</strong><br>
         <strong class="statprio">{{ characterStatsService.job.name }}</strong><br>
         <strong class="statprio">Stat priority:</strong><br>
-        <strong class="statprio">STR > CRIT > DH > DET</strong><br>
+        <strong class="statprio">PIE > 2.34 GCD > CRIT > DH > DET > SPS</strong><br>
         <strong class="statprio">Target GCD:</strong><br>
-        <strong class="statprio">2.50s:</strong><br>
+        <strong class="statprio">2.34s:</strong><br>
       </div>
 
         <div class="statstext" step="0.01">
         <ul>
         <li class="listinggreen"><strong>Damage:</strong> <strong>{{ characterStatsService.characterStats.damage }}</strong></li>
-        <li class="listinggreen"><strong>Strength:</strong> <strong>{{ characterStatsService.characterStats.strength }}</strong></li>
+        <li class="listingred"><strong>Strength:</strong> <strong>{{ characterStatsService.characterStats.strength }}</strong></li>
         <li class="listingred"><strong>Dexterity:</strong> <strong>{{ characterStatsService.characterStats.dexterity }}</strong></li>
         <li class="listingred"><strong>Vitality:</strong> <strong>{{ characterStatsService.characterStats.vitality }}</strong></li>
         <li class="listingred"><strong>Intelligence:</strong> <strong>{{ characterStatsService.characterStats.intelligence }}</strong></li>
-        <li class="listingred"><strong>Mind:</strong> <strong>{{ characterStatsService.characterStats.mind }}</strong></li>
+        <li class="listingorange"><strong>Mind:</strong> <strong>{{ characterStatsService.characterStats.mind }}</strong></li>
         <li class="listinggreen"><strong>Critical hit:</strong> <strong>{{ characterStatsService.characterStats.criticalhit }}</strong></li>
         <li class="listing"><strong>Crit chance:</strong> <strong>{{ characterStatsService.characterStats.critchance | number: '1.2-2'}}%</strong></li>
         <li class="listing"><strong>Crit strength:</strong> <strong>{{ characterStatsService.characterStats.critstrength | number: '1.2-2'}}%</strong></li>
-        <li class="listinggreen"><strong>Determination:</strong> <strong>{{ characterStatsService.characterStats.determination }}</strong></li>
+        <li class="listingorange"><strong>Determination:</strong> <strong>{{ characterStatsService.characterStats.determination }}</strong></li>
         <li class="listing"><strong>Damage increase:</strong> <strong>{{ characterStatsService.characterStats.dmgincrease | number: '1.2-2'}}%</strong></li>
         <li class="listinggreen"><strong>Direct hit:</strong> <strong>{{ characterStatsService.characterStats.directhit }}</strong></li>
         <li class="listing"><strong>Direct hit chance:</strong> <strong>{{ characterStatsService.characterStats.direchitchance | number: '1.2-2'}}</strong></li>
-        <li class="listingorange"><strong>Defense:</strong> <strong>{{ characterStatsService.characterStats.defense }}</strong></li>
+        <li class="listingred"><strong>Defense:</strong> <strong>{{ characterStatsService.characterStats.defense }}</strong></li>
         <li class="listing"><strong>Physical resistance:</strong> <strong>{{ characterStatsService.characterStats.physres | number: '1.2-2'}}%</strong></li>
-        <li class="listingorange"><strong>Magic defense:</strong> <strong>{{ characterStatsService.characterStats.magicdefense }}</strong></li>
+        <li class="listingred"><strong>Magic defense:</strong> <strong>{{ characterStatsService.characterStats.magicdefense }}</strong></li>
         <li class="listing"><strong>Magic resistance:</strong> <strong>{{ characterStatsService.characterStats.magres | number: '1.2-2'}}%</strong></li>
-        <li class="listingorange"><strong>Tenacity:</strong> <strong>{{ characterStatsService.characterStats.tenacity }}</strong></li>
+        <li class="listingred"><strong>Tenacity:</strong> <strong>{{ characterStatsService.characterStats.tenacity }}</strong></li>
         <li class="listing"><strong>Damage mitigation:</strong> <strong>{{ characterStatsService.characterStats.dmgmitigation | number: '1.2-2'}}%</strong></li>
-        <li class="listingred" *ngIf="characterStatsService.characterStats.manapertick>200"><strong>Piety:</strong> <strong>{{ characterStatsService.characterStats.piety }}</strong></li>
+        <li class="listinggreen" *ngIf="characterStatsService.characterStats.manapertick>200"><strong>Piety:</strong> <strong>{{ characterStatsService.characterStats.piety }}</strong></li>
         <li class="listing" *ngIf="characterStatsService.characterStats.manapertick>200"><strong>Mana regen per tick:</strong> <strong>{{ characterStatsService.characterStats.manapertick | number: '1.2-2'}}</strong></li>
         <!-- <li class="listingred"><strong>Skill speed:</strong> <strong>{{ characterStatsService.characterStats.skillspeed }}</strong></li> -->
-        <li class="listingred"><strong>Spell speed:</strong> <strong>{{ characterStatsService.characterStats.spellspeed }}</strong></li>
+        <li class="listinggreen"><strong>Spell speed:</strong> <strong>{{ characterStatsService.characterStats.spellspeed }}</strong></li>
         <!-- <li class="listing"><strong>Global cooldown:</strong> <strong>{{ characterStatsService.characterStats.skillhaste | number: '1.2-2'}}</strong></li> -->
         <li class="listing"><strong>Global cooldown:</strong> <strong>{{ characterStatsService.characterStats.spellhaste | number: '1.2-2'}}s</strong></li>
         </ul>
@@ -309,36 +309,36 @@
         <strong class="statprio">Job:</strong><br>
         <strong class="statprio">{{ characterStatsService.job.name }}</strong><br>
         <strong class="statprio">Stat priority:</strong><br>
-        <strong class="statprio">STR > CRIT > DH > DET</strong><br>
+        <strong class="statprio">MND > CRIT > DH > DET</strong><br>
         <strong class="statprio">Target GCD:</strong><br>
-        <strong class="statprio">2.50s:</strong><br>
+        <strong class="statprio">2.43s:</strong><br>
       </div>
 
         <div class="statstext" step="0.01">
         <ul>
         <li class="listinggreen"><strong>Damage:</strong> <strong>{{ characterStatsService.characterStats.damage }}</strong></li>
-        <li class="listinggreen"><strong>Strength:</strong> <strong>{{ characterStatsService.characterStats.strength }}</strong></li>
+        <li class="listingred"><strong>Strength:</strong> <strong>{{ characterStatsService.characterStats.strength }}</strong></li>
         <li class="listingred"><strong>Dexterity:</strong> <strong>{{ characterStatsService.characterStats.dexterity }}</strong></li>
         <li class="listingred"><strong>Vitality:</strong> <strong>{{ characterStatsService.characterStats.vitality }}</strong></li>
         <li class="listingred"><strong>Intelligence:</strong> <strong>{{ characterStatsService.characterStats.intelligence }}</strong></li>
-        <li class="listingred"><strong>Mind:</strong> <strong>{{ characterStatsService.characterStats.mind }}</strong></li>
+        <li class="listinggreen"><strong>Mind:</strong> <strong>{{ characterStatsService.characterStats.mind }}</strong></li>
         <li class="listinggreen"><strong>Critical hit:</strong> <strong>{{ characterStatsService.characterStats.criticalhit }}</strong></li>
         <li class="listing"><strong>Crit chance:</strong> <strong>{{ characterStatsService.characterStats.critchance | number: '1.2-2'}}%</strong></li>
         <li class="listing"><strong>Crit strength:</strong> <strong>{{ characterStatsService.characterStats.critstrength | number: '1.2-2'}}%</strong></li>
-        <li class="listinggreen"><strong>Determination:</strong> <strong>{{ characterStatsService.characterStats.determination }}</strong></li>
+        <li class="listingorange"><strong>Determination:</strong> <strong>{{ characterStatsService.characterStats.determination }}</strong></li>
         <li class="listing"><strong>Damage increase:</strong> <strong>{{ characterStatsService.characterStats.dmgincrease | number: '1.2-2'}}%</strong></li>
         <li class="listinggreen"><strong>Direct hit:</strong> <strong>{{ characterStatsService.characterStats.directhit }}</strong></li>
         <li class="listing"><strong>Direct hit chance:</strong> <strong>{{ characterStatsService.characterStats.direchitchance | number: '1.2-2'}}</strong></li>
-        <li class="listingorange"><strong>Defense:</strong> <strong>{{ characterStatsService.characterStats.defense }}</strong></li>
+        <li class="listingred"><strong>Defense:</strong> <strong>{{ characterStatsService.characterStats.defense }}</strong></li>
         <li class="listing"><strong>Physical resistance:</strong> <strong>{{ characterStatsService.characterStats.physres | number: '1.2-2'}}%</strong></li>
-        <li class="listingorange"><strong>Magic defense:</strong> <strong>{{ characterStatsService.characterStats.magicdefense }}</strong></li>
+        <li class="listingred"><strong>Magic defense:</strong> <strong>{{ characterStatsService.characterStats.magicdefense }}</strong></li>
         <li class="listing"><strong>Magic resistance:</strong> <strong>{{ characterStatsService.characterStats.magres | number: '1.2-2'}}%</strong></li>
-        <li class="listingorange"><strong>Tenacity:</strong> <strong>{{ characterStatsService.characterStats.tenacity }}</strong></li>
+        <li class="listingred"><strong>Tenacity:</strong> <strong>{{ characterStatsService.characterStats.tenacity }}</strong></li>
         <li class="listing"><strong>Damage mitigation:</strong> <strong>{{ characterStatsService.characterStats.dmgmitigation | number: '1.2-2'}}%</strong></li>
-        <li class="listingred" *ngIf="characterStatsService.characterStats.manapertick>200"><strong>Piety:</strong> <strong>{{ characterStatsService.characterStats.piety }}</strong></li>
+        <li class="listingorange" *ngIf="characterStatsService.characterStats.manapertick>200"><strong>Piety:</strong> <strong>{{ characterStatsService.characterStats.piety }}</strong></li>
         <li class="listing" *ngIf="characterStatsService.characterStats.manapertick>200"><strong>Mana regen per tick:</strong> <strong>{{ characterStatsService.characterStats.manapertick | number: '1.2-2'}}</strong></li>
         <!-- <li class="listingred"><strong>Skill speed:</strong> <strong>{{ characterStatsService.characterStats.skillspeed }}</strong></li> -->
-        <li class="listingred"><strong>Spell speed:</strong> <strong>{{ characterStatsService.characterStats.spellspeed }}</strong></li>
+        <li class="listinggreen"><strong>Spell speed:</strong> <strong>{{ characterStatsService.characterStats.spellspeed }}</strong></li>
         <!-- <li class="listing"><strong>Global cooldown:</strong> <strong>{{ characterStatsService.characterStats.skillhaste | number: '1.2-2'}}</strong></li> -->
         <li class="listing"><strong>Global cooldown:</strong> <strong>{{ characterStatsService.characterStats.spellhaste | number: '1.2-2'}}s</strong></li>
         </ul>
@@ -349,9 +349,9 @@
         <strong class="statprio">Job:</strong><br>
         <strong class="statprio">{{ characterStatsService.job.name }}</strong><br>
         <strong class="statprio">Stat priority:</strong><br>
-        <strong class="statprio">STR > CRIT > DH > DET</strong><br>
+        <strong class="statprio">STR > 1.94 GCD > CRIT > DET > DH</strong><br>
         <strong class="statprio">Target GCD:</strong><br>
-        <strong class="statprio">2.50s:</strong><br>
+        <strong class="statprio">1.94s:</strong><br>
       </div>
 
         <div class="statstext" step="0.01">
@@ -367,17 +367,17 @@
         <li class="listing"><strong>Crit strength:</strong> <strong>{{ characterStatsService.characterStats.critstrength | number: '1.2-2'}}%</strong></li>
         <li class="listinggreen"><strong>Determination:</strong> <strong>{{ characterStatsService.characterStats.determination }}</strong></li>
         <li class="listing"><strong>Damage increase:</strong> <strong>{{ characterStatsService.characterStats.dmgincrease | number: '1.2-2'}}%</strong></li>
-        <li class="listinggreen"><strong>Direct hit:</strong> <strong>{{ characterStatsService.characterStats.directhit }}</strong></li>
+        <li class="listingorange"><strong>Direct hit:</strong> <strong>{{ characterStatsService.characterStats.directhit }}</strong></li>
         <li class="listing"><strong>Direct hit chance:</strong> <strong>{{ characterStatsService.characterStats.direchitchance | number: '1.2-2'}}</strong></li>
-        <li class="listingorange"><strong>Defense:</strong> <strong>{{ characterStatsService.characterStats.defense }}</strong></li>
+        <li class="listingred"><strong>Defense:</strong> <strong>{{ characterStatsService.characterStats.defense }}</strong></li>
         <li class="listing"><strong>Physical resistance:</strong> <strong>{{ characterStatsService.characterStats.physres | number: '1.2-2'}}%</strong></li>
-        <li class="listingorange"><strong>Magic defense:</strong> <strong>{{ characterStatsService.characterStats.magicdefense }}</strong></li>
+        <li class="listingred"><strong>Magic defense:</strong> <strong>{{ characterStatsService.characterStats.magicdefense }}</strong></li>
         <li class="listing"><strong>Magic resistance:</strong> <strong>{{ characterStatsService.characterStats.magres | number: '1.2-2'}}%</strong></li>
-        <li class="listingorange"><strong>Tenacity:</strong> <strong>{{ characterStatsService.characterStats.tenacity }}</strong></li>
+        <li class="listingred"><strong>Tenacity:</strong> <strong>{{ characterStatsService.characterStats.tenacity }}</strong></li>
         <li class="listing"><strong>Damage mitigation:</strong> <strong>{{ characterStatsService.characterStats.dmgmitigation | number: '1.2-2'}}%</strong></li>
         <li class="listingred" *ngIf="characterStatsService.characterStats.manapertick>200"><strong>Piety:</strong> <strong>{{ characterStatsService.characterStats.piety }}</strong></li>
         <li class="listing" *ngIf="characterStatsService.characterStats.manapertick>200"><strong>Mana regen per tick:</strong> <strong>{{ characterStatsService.characterStats.manapertick | number: '1.2-2'}}</strong></li>
-        <li class="listingred"><strong>Skill speed:</strong> <strong>{{ characterStatsService.characterStats.skillspeed }}</strong></li>
+        <li class="listinggreen"><strong>Skill speed:</strong> <strong>{{ characterStatsService.characterStats.skillspeed }}</strong></li>
        <!--  <li class="listingred"><strong>Spell speed:</strong> <strong>{{ characterStatsService.characterStats.spellspeed }}</strong></li> -->
         <li class="listing"><strong>Global cooldown:</strong> <strong>{{ characterStatsService.characterStats.skillhaste | number: '1.2-2'}}s</strong></li>
        <!--  <li class="listing"><strong>Global cooldown:</strong> <strong>{{ characterStatsService.characterStats.spellhaste | number: '1.2-2'}}</strong></li> -->
@@ -389,7 +389,7 @@
         <strong class="statprio">Job:</strong><br>
         <strong class="statprio">{{ characterStatsService.job.name }}</strong><br>
         <strong class="statprio">Stat priority:</strong><br>
-        <strong class="statprio">STR > CRIT > DH > DET</strong><br>
+        <strong class="statprio">STR > CRIT > DET > DH > SKS</strong><br>
         <strong class="statprio">Target GCD:</strong><br>
         <strong class="statprio">2.50s:</strong><br>
       </div>
@@ -407,17 +407,17 @@
         <li class="listing"><strong>Crit strength:</strong> <strong>{{ characterStatsService.characterStats.critstrength | number: '1.2-2'}}%</strong></li>
         <li class="listinggreen"><strong>Determination:</strong> <strong>{{ characterStatsService.characterStats.determination }}</strong></li>
         <li class="listing"><strong>Damage increase:</strong> <strong>{{ characterStatsService.characterStats.dmgincrease | number: '1.2-2'}}%</strong></li>
-        <li class="listinggreen"><strong>Direct hit:</strong> <strong>{{ characterStatsService.characterStats.directhit }}</strong></li>
+        <li class="listingorange"><strong>Direct hit:</strong> <strong>{{ characterStatsService.characterStats.directhit }}</strong></li>
         <li class="listing"><strong>Direct hit chance:</strong> <strong>{{ characterStatsService.characterStats.direchitchance | number: '1.2-2'}}</strong></li>
-        <li class="listingorange"><strong>Defense:</strong> <strong>{{ characterStatsService.characterStats.defense }}</strong></li>
+        <li class="listingred"><strong>Defense:</strong> <strong>{{ characterStatsService.characterStats.defense }}</strong></li>
         <li class="listing"><strong>Physical resistance:</strong> <strong>{{ characterStatsService.characterStats.physres | number: '1.2-2'}}%</strong></li>
-        <li class="listingorange"><strong>Magic defense:</strong> <strong>{{ characterStatsService.characterStats.magicdefense }}</strong></li>
+        <li class="listingred"><strong>Magic defense:</strong> <strong>{{ characterStatsService.characterStats.magicdefense }}</strong></li>
         <li class="listing"><strong>Magic resistance:</strong> <strong>{{ characterStatsService.characterStats.magres | number: '1.2-2'}}%</strong></li>
-        <li class="listingorange"><strong>Tenacity:</strong> <strong>{{ characterStatsService.characterStats.tenacity }}</strong></li>
+        <li class="listingred"><strong>Tenacity:</strong> <strong>{{ characterStatsService.characterStats.tenacity }}</strong></li>
         <li class="listing"><strong>Damage mitigation:</strong> <strong>{{ characterStatsService.characterStats.dmgmitigation | number: '1.2-2'}}%</strong></li>
         <li class="listingred" *ngIf="characterStatsService.characterStats.manapertick>200"><strong>Piety:</strong> <strong>{{ characterStatsService.characterStats.piety }}</strong></li>
         <li class="listing" *ngIf="characterStatsService.characterStats.manapertick>200"><strong>Mana regen per tick:</strong> <strong>{{ characterStatsService.characterStats.manapertick | number: '1.2-2'}}</strong></li>
-        <li class="listingred"><strong>Skill speed:</strong> <strong>{{ characterStatsService.characterStats.skillspeed }}</strong></li>
+        <li class="listingorange"><strong>Skill speed:</strong> <strong>{{ characterStatsService.characterStats.skillspeed }}</strong></li>
        <!--  <li class="listingred"><strong>Spell speed:</strong> <strong>{{ characterStatsService.characterStats.spellspeed }}</strong></li> -->
         <li class="listing"><strong>Global cooldown:</strong> <strong>{{ characterStatsService.characterStats.skillhaste | number: '1.2-2'}}s</strong></li>
        <!--  <li class="listing"><strong>Global cooldown:</strong> <strong>{{ characterStatsService.characterStats.spellhaste | number: '1.2-2'}}</strong></li> -->
@@ -429,7 +429,7 @@
         <strong class="statprio">Job:</strong><br>
         <strong class="statprio">{{ characterStatsService.job.name }}</strong><br>
         <strong class="statprio">Stat priority:</strong><br>
-        <strong class="statprio">STR > CRIT > DH > DET</strong><br>
+        <strong class="statprio">DEX > CRIT > DET > DH >>> SKS</strong><br>
         <strong class="statprio">Target GCD:</strong><br>
         <strong class="statprio">2.50s:</strong><br>
       </div>
@@ -437,8 +437,8 @@
         <div class="statstext" step="0.01">
         <ul>
         <li class="listinggreen"><strong>Damage:</strong> <strong>{{ characterStatsService.characterStats.damage }}</strong></li>
-        <li class="listinggreen"><strong>Strength:</strong> <strong>{{ characterStatsService.characterStats.strength }}</strong></li>
-        <li class="listingred"><strong>Dexterity:</strong> <strong>{{ characterStatsService.characterStats.dexterity }}</strong></li>
+        <li class="listingred"><strong>Strength:</strong> <strong>{{ characterStatsService.characterStats.strength }}</strong></li>
+        <li class="listinggreen"><strong>Dexterity:</strong> <strong>{{ characterStatsService.characterStats.dexterity }}</strong></li>
         <li class="listingred"><strong>Vitality:</strong> <strong>{{ characterStatsService.characterStats.vitality }}</strong></li>
         <li class="listingred"><strong>Intelligence:</strong> <strong>{{ characterStatsService.characterStats.intelligence }}</strong></li>
         <li class="listingred"><strong>Mind:</strong> <strong>{{ characterStatsService.characterStats.mind }}</strong></li>
@@ -449,11 +449,11 @@
         <li class="listing"><strong>Damage increase:</strong> <strong>{{ characterStatsService.characterStats.dmgincrease | number: '1.2-2'}}%</strong></li>
         <li class="listinggreen"><strong>Direct hit:</strong> <strong>{{ characterStatsService.characterStats.directhit }}</strong></li>
         <li class="listing"><strong>Direct hit chance:</strong> <strong>{{ characterStatsService.characterStats.direchitchance | number: '1.2-2'}}</strong></li>
-        <li class="listingorange"><strong>Defense:</strong> <strong>{{ characterStatsService.characterStats.defense }}</strong></li>
+        <li class="listingred"><strong>Defense:</strong> <strong>{{ characterStatsService.characterStats.defense }}</strong></li>
         <li class="listing"><strong>Physical resistance:</strong> <strong>{{ characterStatsService.characterStats.physres | number: '1.2-2'}}%</strong></li>
-        <li class="listingorange"><strong>Magic defense:</strong> <strong>{{ characterStatsService.characterStats.magicdefense }}</strong></li>
+        <li class="listingred"><strong>Magic defense:</strong> <strong>{{ characterStatsService.characterStats.magicdefense }}</strong></li>
         <li class="listing"><strong>Magic resistance:</strong> <strong>{{ characterStatsService.characterStats.magres | number: '1.2-2'}}%</strong></li>
-        <li class="listingorange"><strong>Tenacity:</strong> <strong>{{ characterStatsService.characterStats.tenacity }}</strong></li>
+        <li class="listingred"><strong>Tenacity:</strong> <strong>{{ characterStatsService.characterStats.tenacity }}</strong></li>
         <li class="listing"><strong>Damage mitigation:</strong> <strong>{{ characterStatsService.characterStats.dmgmitigation | number: '1.2-2'}}%</strong></li>
         <li class="listingred" *ngIf="characterStatsService.characterStats.manapertick>200"><strong>Piety:</strong> <strong>{{ characterStatsService.characterStats.piety }}</strong></li>
         <li class="listing" *ngIf="characterStatsService.characterStats.manapertick>200"><strong>Mana regen per tick:</strong> <strong>{{ characterStatsService.characterStats.manapertick | number: '1.2-2'}}</strong></li>
@@ -469,9 +469,9 @@
         <strong class="statprio">Job:</strong><br>
         <strong class="statprio">{{ characterStatsService.job.name }}</strong><br>
         <strong class="statprio">Stat priority:</strong><br>
-        <strong class="statprio">STR > CRIT > DH > DET</strong><br>
+        <strong class="statprio">STR > 2.15GCD > CRIT > DET > DH</strong><br>
         <strong class="statprio">Target GCD:</strong><br>
-        <strong class="statprio">2.50s:</strong><br>
+        <strong class="statprio">2.15s:</strong><br>
       </div>
 
         <div class="statstext" step="0.01">
@@ -487,17 +487,17 @@
         <li class="listing"><strong>Crit strength:</strong> <strong>{{ characterStatsService.characterStats.critstrength | number: '1.2-2'}}%</strong></li>
         <li class="listinggreen"><strong>Determination:</strong> <strong>{{ characterStatsService.characterStats.determination }}</strong></li>
         <li class="listing"><strong>Damage increase:</strong> <strong>{{ characterStatsService.characterStats.dmgincrease | number: '1.2-2'}}%</strong></li>
-        <li class="listinggreen"><strong>Direct hit:</strong> <strong>{{ characterStatsService.characterStats.directhit }}</strong></li>
+        <li class="listingorange"><strong>Direct hit:</strong> <strong>{{ characterStatsService.characterStats.directhit }}</strong></li>
         <li class="listing"><strong>Direct hit chance:</strong> <strong>{{ characterStatsService.characterStats.direchitchance | number: '1.2-2'}}</strong></li>
-        <li class="listingorange"><strong>Defense:</strong> <strong>{{ characterStatsService.characterStats.defense }}</strong></li>
+        <li class="listingred"><strong>Defense:</strong> <strong>{{ characterStatsService.characterStats.defense }}</strong></li>
         <li class="listing"><strong>Physical resistance:</strong> <strong>{{ characterStatsService.characterStats.physres | number: '1.2-2'}}%</strong></li>
-        <li class="listingorange"><strong>Magic defense:</strong> <strong>{{ characterStatsService.characterStats.magicdefense }}</strong></li>
+        <li class="listingred"><strong>Magic defense:</strong> <strong>{{ characterStatsService.characterStats.magicdefense }}</strong></li>
         <li class="listing"><strong>Magic resistance:</strong> <strong>{{ characterStatsService.characterStats.magres | number: '1.2-2'}}%</strong></li>
-        <li class="listingorange"><strong>Tenacity:</strong> <strong>{{ characterStatsService.characterStats.tenacity }}</strong></li>
+        <li class="listingred"><strong>Tenacity:</strong> <strong>{{ characterStatsService.characterStats.tenacity }}</strong></li>
         <li class="listing"><strong>Damage mitigation:</strong> <strong>{{ characterStatsService.characterStats.dmgmitigation | number: '1.2-2'}}%</strong></li>
         <li class="listingred" *ngIf="characterStatsService.characterStats.manapertick>200"><strong>Piety:</strong> <strong>{{ characterStatsService.characterStats.piety }}</strong></li>
         <li class="listing" *ngIf="characterStatsService.characterStats.manapertick>200"><strong>Mana regen per tick:</strong> <strong>{{ characterStatsService.characterStats.manapertick | number: '1.2-2'}}</strong></li>
-        <li class="listingred"><strong>Skill speed:</strong> <strong>{{ characterStatsService.characterStats.skillspeed }}</strong></li>
+        <li class="listinggreen"><strong>Skill speed:</strong> <strong>{{ characterStatsService.characterStats.skillspeed }}</strong></li>
        <!--  <li class="listingred"><strong>Spell speed:</strong> <strong>{{ characterStatsService.characterStats.spellspeed }}</strong></li> -->
         <li class="listing"><strong>Global cooldown:</strong> <strong>{{ characterStatsService.characterStats.skillhaste | number: '1.2-2'}}s</strong></li>
        <!--  <li class="listing"><strong>Global cooldown:</strong> <strong>{{ characterStatsService.characterStats.spellhaste | number: '1.2-2'}}</strong></li> -->
@@ -509,9 +509,9 @@
         <strong class="statprio">Job:</strong><br>
         <strong class="statprio">{{ characterStatsService.job.name }}</strong><br>
         <strong class="statprio">Stat priority:</strong><br>
-        <strong class="statprio">STR > CRIT > DH > DET</strong><br>
+        <strong class="statprio">STR > CRIT > 2.49 GCD > DET > DH</strong><br>
         <strong class="statprio">Target GCD:</strong><br>
-        <strong class="statprio">2.50s:</strong><br>
+        <strong class="statprio">2.49s:</strong><br>
       </div>
 
         <div class="statstext" step="0.01">
@@ -527,17 +527,17 @@
         <li class="listing"><strong>Crit strength:</strong> <strong>{{ characterStatsService.characterStats.critstrength | number: '1.2-2'}}%</strong></li>
         <li class="listinggreen"><strong>Determination:</strong> <strong>{{ characterStatsService.characterStats.determination }}</strong></li>
         <li class="listing"><strong>Damage increase:</strong> <strong>{{ characterStatsService.characterStats.dmgincrease | number: '1.2-2'}}%</strong></li>
-        <li class="listinggreen"><strong>Direct hit:</strong> <strong>{{ characterStatsService.characterStats.directhit }}</strong></li>
+        <li class="listingorange"><strong>Direct hit:</strong> <strong>{{ characterStatsService.characterStats.directhit }}</strong></li>
         <li class="listing"><strong>Direct hit chance:</strong> <strong>{{ characterStatsService.characterStats.direchitchance | number: '1.2-2'}}</strong></li>
-        <li class="listingorange"><strong>Defense:</strong> <strong>{{ characterStatsService.characterStats.defense }}</strong></li>
+        <li class="listingred"><strong>Defense:</strong> <strong>{{ characterStatsService.characterStats.defense }}</strong></li>
         <li class="listing"><strong>Physical resistance:</strong> <strong>{{ characterStatsService.characterStats.physres | number: '1.2-2'}}%</strong></li>
-        <li class="listingorange"><strong>Magic defense:</strong> <strong>{{ characterStatsService.characterStats.magicdefense }}</strong></li>
+        <li class="listingred"><strong>Magic defense:</strong> <strong>{{ characterStatsService.characterStats.magicdefense }}</strong></li>
         <li class="listing"><strong>Magic resistance:</strong> <strong>{{ characterStatsService.characterStats.magres | number: '1.2-2'}}%</strong></li>
-        <li class="listingorange"><strong>Tenacity:</strong> <strong>{{ characterStatsService.characterStats.tenacity }}</strong></li>
+        <li class="listingred"><strong>Tenacity:</strong> <strong>{{ characterStatsService.characterStats.tenacity }}</strong></li>
         <li class="listing"><strong>Damage mitigation:</strong> <strong>{{ characterStatsService.characterStats.dmgmitigation | number: '1.2-2'}}%</strong></li>
         <li class="listingred" *ngIf="characterStatsService.characterStats.manapertick>200"><strong>Piety:</strong> <strong>{{ characterStatsService.characterStats.piety }}</strong></li>
         <li class="listing" *ngIf="characterStatsService.characterStats.manapertick>200"><strong>Mana regen per tick:</strong> <strong>{{ characterStatsService.characterStats.manapertick | number: '1.2-2'}}</strong></li>
-        <li class="listingred"><strong>Skill speed:</strong> <strong>{{ characterStatsService.characterStats.skillspeed }}</strong></li>
+        <li class="listingorange"><strong>Skill speed:</strong> <strong>{{ characterStatsService.characterStats.skillspeed }}</strong></li>
        <!--  <li class="listingred"><strong>Spell speed:</strong> <strong>{{ characterStatsService.characterStats.spellspeed }}</strong></li> -->
         <li class="listing"><strong>Global cooldown:</strong> <strong>{{ characterStatsService.characterStats.skillhaste | number: '1.2-2'}}s</strong></li>
        <!--  <li class="listing"><strong>Global cooldown:</strong> <strong>{{ characterStatsService.characterStats.spellhaste | number: '1.2-2'}}</strong></li> -->
@@ -549,16 +549,16 @@
         <strong class="statprio">Job:</strong><br>
         <strong class="statprio">{{ characterStatsService.job.name }}</strong><br>
         <strong class="statprio">Stat priority:</strong><br>
-        <strong class="statprio">STR > CRIT > DH > DET</strong><br>
+        <strong class="statprio">DEX >>> CRIT > DET > DH > SKS</strong><br>
         <strong class="statprio">Target GCD:</strong><br>
-        <strong class="statprio">2.50s:</strong><br>
+        <strong class="statprio">2.48s:</strong><br>
       </div>
 
         <div class="statstext" step="0.01">
         <ul>
         <li class="listinggreen"><strong>Damage:</strong> <strong>{{ characterStatsService.characterStats.damage }}</strong></li>
-        <li class="listinggreen"><strong>Strength:</strong> <strong>{{ characterStatsService.characterStats.strength }}</strong></li>
-        <li class="listingred"><strong>Dexterity:</strong> <strong>{{ characterStatsService.characterStats.dexterity }}</strong></li>
+        <li class="listingred"><strong>Strength:</strong> <strong>{{ characterStatsService.characterStats.strength }}</strong></li>
+        <li class="listinggreen"><strong>Dexterity:</strong> <strong>{{ characterStatsService.characterStats.dexterity }}</strong></li>
         <li class="listingred"><strong>Vitality:</strong> <strong>{{ characterStatsService.characterStats.vitality }}</strong></li>
         <li class="listingred"><strong>Intelligence:</strong> <strong>{{ characterStatsService.characterStats.intelligence }}</strong></li>
         <li class="listingred"><strong>Mind:</strong> <strong>{{ characterStatsService.characterStats.mind }}</strong></li>
@@ -567,17 +567,17 @@
         <li class="listing"><strong>Crit strength:</strong> <strong>{{ characterStatsService.characterStats.critstrength | number: '1.2-2'}}%</strong></li>
         <li class="listinggreen"><strong>Determination:</strong> <strong>{{ characterStatsService.characterStats.determination }}</strong></li>
         <li class="listing"><strong>Damage increase:</strong> <strong>{{ characterStatsService.characterStats.dmgincrease | number: '1.2-2'}}%</strong></li>
-        <li class="listinggreen"><strong>Direct hit:</strong> <strong>{{ characterStatsService.characterStats.directhit }}</strong></li>
+        <li class="listingorange"><strong>Direct hit:</strong> <strong>{{ characterStatsService.characterStats.directhit }}</strong></li>
         <li class="listing"><strong>Direct hit chance:</strong> <strong>{{ characterStatsService.characterStats.direchitchance | number: '1.2-2'}}</strong></li>
-        <li class="listingorange"><strong>Defense:</strong> <strong>{{ characterStatsService.characterStats.defense }}</strong></li>
+        <li class="listingred"><strong>Defense:</strong> <strong>{{ characterStatsService.characterStats.defense }}</strong></li>
         <li class="listing"><strong>Physical resistance:</strong> <strong>{{ characterStatsService.characterStats.physres | number: '1.2-2'}}%</strong></li>
-        <li class="listingorange"><strong>Magic defense:</strong> <strong>{{ characterStatsService.characterStats.magicdefense }}</strong></li>
+        <li class="listingred"><strong>Magic defense:</strong> <strong>{{ characterStatsService.characterStats.magicdefense }}</strong></li>
         <li class="listing"><strong>Magic resistance:</strong> <strong>{{ characterStatsService.characterStats.magres | number: '1.2-2'}}%</strong></li>
-        <li class="listingorange"><strong>Tenacity:</strong> <strong>{{ characterStatsService.characterStats.tenacity }}</strong></li>
+        <li class="listingred"><strong>Tenacity:</strong> <strong>{{ characterStatsService.characterStats.tenacity }}</strong></li>
         <li class="listing"><strong>Damage mitigation:</strong> <strong>{{ characterStatsService.characterStats.dmgmitigation | number: '1.2-2'}}%</strong></li>
         <li class="listingred" *ngIf="characterStatsService.characterStats.manapertick>200"><strong>Piety:</strong> <strong>{{ characterStatsService.characterStats.piety }}</strong></li>
         <li class="listing" *ngIf="characterStatsService.characterStats.manapertick>200"><strong>Mana regen per tick:</strong> <strong>{{ characterStatsService.characterStats.manapertick | number: '1.2-2'}}</strong></li>
-        <li class="listingred"><strong>Skill speed:</strong> <strong>{{ characterStatsService.characterStats.skillspeed }}</strong></li>
+        <li class="listingorange"><strong>Skill speed:</strong> <strong>{{ characterStatsService.characterStats.skillspeed }}</strong></li>
        <!--  <li class="listingred"><strong>Spell speed:</strong> <strong>{{ characterStatsService.characterStats.spellspeed }}</strong></li> -->
         <li class="listing"><strong>Global cooldown:</strong> <strong>{{ characterStatsService.characterStats.skillhaste | number: '1.2-2'}}s</strong></li>
        <!--  <li class="listing"><strong>Global cooldown:</strong> <strong>{{ characterStatsService.characterStats.spellhaste | number: '1.2-2'}}</strong></li> -->
@@ -589,7 +589,7 @@
         <strong class="statprio">Job:</strong><br>
         <strong class="statprio">{{ characterStatsService.job.name }}</strong><br>
         <strong class="statprio">Stat priority:</strong><br>
-        <strong class="statprio">STR > CRIT > DH > DET</strong><br>
+        <strong class="statprio">DEX > CRIT > DET > DH > SKS</strong><br>
         <strong class="statprio">Target GCD:</strong><br>
         <strong class="statprio">2.50s:</strong><br>
       </div>
@@ -597,8 +597,8 @@
         <div class="statstext" step="0.01">
         <ul>
         <li class="listinggreen"><strong>Damage:</strong> <strong>{{ characterStatsService.characterStats.damage }}</strong></li>
-        <li class="listinggreen"><strong>Strength:</strong> <strong>{{ characterStatsService.characterStats.strength }}</strong></li>
-        <li class="listingred"><strong>Dexterity:</strong> <strong>{{ characterStatsService.characterStats.dexterity }}</strong></li>
+        <li class="listingred"><strong>Strength:</strong> <strong>{{ characterStatsService.characterStats.strength }}</strong></li>
+        <li class="listinggreen"><strong>Dexterity:</strong> <strong>{{ characterStatsService.characterStats.dexterity }}</strong></li>
         <li class="listingred"><strong>Vitality:</strong> <strong>{{ characterStatsService.characterStats.vitality }}</strong></li>
         <li class="listingred"><strong>Intelligence:</strong> <strong>{{ characterStatsService.characterStats.intelligence }}</strong></li>
         <li class="listingred"><strong>Mind:</strong> <strong>{{ characterStatsService.characterStats.mind }}</strong></li>
@@ -607,17 +607,17 @@
         <li class="listing"><strong>Crit strength:</strong> <strong>{{ characterStatsService.characterStats.critstrength | number: '1.2-2'}}%</strong></li>
         <li class="listinggreen"><strong>Determination:</strong> <strong>{{ characterStatsService.characterStats.determination }}</strong></li>
         <li class="listing"><strong>Damage increase:</strong> <strong>{{ characterStatsService.characterStats.dmgincrease | number: '1.2-2'}}%</strong></li>
-        <li class="listinggreen"><strong>Direct hit:</strong> <strong>{{ characterStatsService.characterStats.directhit }}</strong></li>
+        <li class="listingorange"><strong>Direct hit:</strong> <strong>{{ characterStatsService.characterStats.directhit }}</strong></li>
         <li class="listing"><strong>Direct hit chance:</strong> <strong>{{ characterStatsService.characterStats.direchitchance | number: '1.2-2'}}</strong></li>
-        <li class="listingorange"><strong>Defense:</strong> <strong>{{ characterStatsService.characterStats.defense }}</strong></li>
+        <li class="listingred"><strong>Defense:</strong> <strong>{{ characterStatsService.characterStats.defense }}</strong></li>
         <li class="listing"><strong>Physical resistance:</strong> <strong>{{ characterStatsService.characterStats.physres | number: '1.2-2'}}%</strong></li>
-        <li class="listingorange"><strong>Magic defense:</strong> <strong>{{ characterStatsService.characterStats.magicdefense }}</strong></li>
+        <li class="listingred"><strong>Magic defense:</strong> <strong>{{ characterStatsService.characterStats.magicdefense }}</strong></li>
         <li class="listing"><strong>Magic resistance:</strong> <strong>{{ characterStatsService.characterStats.magres | number: '1.2-2'}}%</strong></li>
-        <li class="listingorange"><strong>Tenacity:</strong> <strong>{{ characterStatsService.characterStats.tenacity }}</strong></li>
+        <li class="listingred"><strong>Tenacity:</strong> <strong>{{ characterStatsService.characterStats.tenacity }}</strong></li>
         <li class="listing"><strong>Damage mitigation:</strong> <strong>{{ characterStatsService.characterStats.dmgmitigation | number: '1.2-2'}}%</strong></li>
         <li class="listingred" *ngIf="characterStatsService.characterStats.manapertick>200"><strong>Piety:</strong> <strong>{{ characterStatsService.characterStats.piety }}</strong></li>
         <li class="listing" *ngIf="characterStatsService.characterStats.manapertick>200"><strong>Mana regen per tick:</strong> <strong>{{ characterStatsService.characterStats.manapertick | number: '1.2-2'}}</strong></li>
-        <li class="listingred"><strong>Skill speed:</strong> <strong>{{ characterStatsService.characterStats.skillspeed }}</strong></li>
+        <li class="listingorange"><strong>Skill speed:</strong> <strong>{{ characterStatsService.characterStats.skillspeed }}</strong></li>
        <!--  <li class="listingred"><strong>Spell speed:</strong> <strong>{{ characterStatsService.characterStats.spellspeed }}</strong></li> -->
         <li class="listing"><strong>Global cooldown:</strong> <strong>{{ characterStatsService.characterStats.skillhaste | number: '1.2-2'}}s</strong></li>
        <!--  <li class="listing"><strong>Global cooldown:</strong> <strong>{{ characterStatsService.characterStats.spellhaste | number: '1.2-2'}}</strong></li> -->
@@ -629,16 +629,16 @@
         <strong class="statprio">Job:</strong><br>
         <strong class="statprio">{{ characterStatsService.job.name }}</strong><br>
         <strong class="statprio">Stat priority:</strong><br>
-        <strong class="statprio">STR > CRIT > DH > DET</strong><br>
+        <strong class="statprio">DEX > CRIT > DET > DH</strong><br>
         <strong class="statprio">Target GCD:</strong><br>
-        <strong class="statprio">2.50s:</strong><br>
+        <strong class="statprio">2.49s:</strong><br>
       </div>
 
         <div class="statstext" step="0.01">
         <ul>
         <li class="listinggreen"><strong>Damage:</strong> <strong>{{ characterStatsService.characterStats.damage }}</strong></li>
-        <li class="listinggreen"><strong>Strength:</strong> <strong>{{ characterStatsService.characterStats.strength }}</strong></li>
-        <li class="listingred"><strong>Dexterity:</strong> <strong>{{ characterStatsService.characterStats.dexterity }}</strong></li>
+        <li class="listingred"><strong>Strength:</strong> <strong>{{ characterStatsService.characterStats.strength }}</strong></li>
+        <li class="listinggreen"><strong>Dexterity:</strong> <strong>{{ characterStatsService.characterStats.dexterity }}</strong></li>
         <li class="listingred"><strong>Vitality:</strong> <strong>{{ characterStatsService.characterStats.vitality }}</strong></li>
         <li class="listingred"><strong>Intelligence:</strong> <strong>{{ characterStatsService.characterStats.intelligence }}</strong></li>
         <li class="listingred"><strong>Mind:</strong> <strong>{{ characterStatsService.characterStats.mind }}</strong></li>
@@ -649,15 +649,15 @@
         <li class="listing"><strong>Damage increase:</strong> <strong>{{ characterStatsService.characterStats.dmgincrease | number: '1.2-2'}}%</strong></li>
         <li class="listinggreen"><strong>Direct hit:</strong> <strong>{{ characterStatsService.characterStats.directhit }}</strong></li>
         <li class="listing"><strong>Direct hit chance:</strong> <strong>{{ characterStatsService.characterStats.direchitchance | number: '1.2-2'}}</strong></li>
-        <li class="listingorange"><strong>Defense:</strong> <strong>{{ characterStatsService.characterStats.defense }}</strong></li>
+        <li class="listingred"><strong>Defense:</strong> <strong>{{ characterStatsService.characterStats.defense }}</strong></li>
         <li class="listing"><strong>Physical resistance:</strong> <strong>{{ characterStatsService.characterStats.physres | number: '1.2-2'}}%</strong></li>
-        <li class="listingorange"><strong>Magic defense:</strong> <strong>{{ characterStatsService.characterStats.magicdefense }}</strong></li>
+        <li class="listingred"><strong>Magic defense:</strong> <strong>{{ characterStatsService.characterStats.magicdefense }}</strong></li>
         <li class="listing"><strong>Magic resistance:</strong> <strong>{{ characterStatsService.characterStats.magres | number: '1.2-2'}}%</strong></li>
-        <li class="listingorange"><strong>Tenacity:</strong> <strong>{{ characterStatsService.characterStats.tenacity }}</strong></li>
+        <li class="listingred"><strong>Tenacity:</strong> <strong>{{ characterStatsService.characterStats.tenacity }}</strong></li>
         <li class="listing"><strong>Damage mitigation:</strong> <strong>{{ characterStatsService.characterStats.dmgmitigation | number: '1.2-2'}}%</strong></li>
         <li class="listingred" *ngIf="characterStatsService.characterStats.manapertick>200"><strong>Piety:</strong> <strong>{{ characterStatsService.characterStats.piety }}</strong></li>
         <li class="listing" *ngIf="characterStatsService.characterStats.manapertick>200"><strong>Mana regen per tick:</strong> <strong>{{ characterStatsService.characterStats.manapertick | number: '1.2-2'}}</strong></li>
-        <li class="listingred"><strong>Skill speed:</strong> <strong>{{ characterStatsService.characterStats.skillspeed }}</strong></li>
+        <li class="listingorange"><strong>Skill speed:</strong> <strong>{{ characterStatsService.characterStats.skillspeed }}</strong></li>
        <!--  <li class="listingred"><strong>Spell speed:</strong> <strong>{{ characterStatsService.characterStats.spellspeed }}</strong></li> -->
         <li class="listing"><strong>Global cooldown:</strong> <strong>{{ characterStatsService.characterStats.skillhaste | number: '1.2-2'}}s</strong></li>
        <!--  <li class="listing"><strong>Global cooldown:</strong> <strong>{{ characterStatsService.characterStats.spellhaste | number: '1.2-2'}}</strong></li> -->
@@ -669,36 +669,36 @@
         <strong class="statprio">Job:</strong><br>
         <strong class="statprio">{{ characterStatsService.job.name }}</strong><br>
         <strong class="statprio">Stat priority:</strong><br>
-        <strong class="statprio">STR > CRIT > DH > DET</strong><br>
+        <strong class="statprio">INT > 2.34 GCD > CRIT > DET > DH</strong><br>
         <strong class="statprio">Target GCD:</strong><br>
-        <strong class="statprio">2.50s:</strong><br>
+        <strong class="statprio">2.34s:</strong><br>
       </div>
 
         <div class="statstext" step="0.01">
         <ul>
         <li class="listinggreen"><strong>Damage:</strong> <strong>{{ characterStatsService.characterStats.damage }}</strong></li>
-        <li class="listinggreen"><strong>Strength:</strong> <strong>{{ characterStatsService.characterStats.strength }}</strong></li>
+        <li class="listingred"><strong>Strength:</strong> <strong>{{ characterStatsService.characterStats.strength }}</strong></li>
         <li class="listingred"><strong>Dexterity:</strong> <strong>{{ characterStatsService.characterStats.dexterity }}</strong></li>
         <li class="listingred"><strong>Vitality:</strong> <strong>{{ characterStatsService.characterStats.vitality }}</strong></li>
-        <li class="listingred"><strong>Intelligence:</strong> <strong>{{ characterStatsService.characterStats.intelligence }}</strong></li>
+        <li class="listinggreen"><strong>Intelligence:</strong> <strong>{{ characterStatsService.characterStats.intelligence }}</strong></li>
         <li class="listingred"><strong>Mind:</strong> <strong>{{ characterStatsService.characterStats.mind }}</strong></li>
         <li class="listinggreen"><strong>Critical hit:</strong> <strong>{{ characterStatsService.characterStats.criticalhit }}</strong></li>
         <li class="listing"><strong>Crit chance:</strong> <strong>{{ characterStatsService.characterStats.critchance | number: '1.2-2'}}%</strong></li>
         <li class="listing"><strong>Crit strength:</strong> <strong>{{ characterStatsService.characterStats.critstrength | number: '1.2-2'}}%</strong></li>
         <li class="listinggreen"><strong>Determination:</strong> <strong>{{ characterStatsService.characterStats.determination }}</strong></li>
         <li class="listing"><strong>Damage increase:</strong> <strong>{{ characterStatsService.characterStats.dmgincrease | number: '1.2-2'}}%</strong></li>
-        <li class="listinggreen"><strong>Direct hit:</strong> <strong>{{ characterStatsService.characterStats.directhit }}</strong></li>
+        <li class="listingorange"><strong>Direct hit:</strong> <strong>{{ characterStatsService.characterStats.directhit }}</strong></li>
         <li class="listing"><strong>Direct hit chance:</strong> <strong>{{ characterStatsService.characterStats.direchitchance | number: '1.2-2'}}</strong></li>
-        <li class="listingorange"><strong>Defense:</strong> <strong>{{ characterStatsService.characterStats.defense }}</strong></li>
+        <li class="listingred"><strong>Defense:</strong> <strong>{{ characterStatsService.characterStats.defense }}</strong></li>
         <li class="listing"><strong>Physical resistance:</strong> <strong>{{ characterStatsService.characterStats.physres | number: '1.2-2'}}%</strong></li>
-        <li class="listingorange"><strong>Magic defense:</strong> <strong>{{ characterStatsService.characterStats.magicdefense }}</strong></li>
+        <li class="listingred"><strong>Magic defense:</strong> <strong>{{ characterStatsService.characterStats.magicdefense }}</strong></li>
         <li class="listing"><strong>Magic resistance:</strong> <strong>{{ characterStatsService.characterStats.magres | number: '1.2-2'}}%</strong></li>
-        <li class="listingorange"><strong>Tenacity:</strong> <strong>{{ characterStatsService.characterStats.tenacity }}</strong></li>
+        <li class="listingred"><strong>Tenacity:</strong> <strong>{{ characterStatsService.characterStats.tenacity }}</strong></li>
         <li class="listing"><strong>Damage mitigation:</strong> <strong>{{ characterStatsService.characterStats.dmgmitigation | number: '1.2-2'}}%</strong></li>
         <li class="listingred" *ngIf="characterStatsService.characterStats.manapertick>200"><strong>Piety:</strong> <strong>{{ characterStatsService.characterStats.piety }}</strong></li>
         <li class="listing" *ngIf="characterStatsService.characterStats.manapertick>200"><strong>Mana regen per tick:</strong> <strong>{{ characterStatsService.characterStats.manapertick | number: '1.2-2'}}</strong></li>
         <!-- <li class="listingred"><strong>Skill speed:</strong> <strong>{{ characterStatsService.characterStats.skillspeed }}</strong></li> -->
-        <li class="listingred"><strong>Spell speed:</strong> <strong>{{ characterStatsService.characterStats.spellspeed }}</strong></li>
+        <li class="listinggreen"><strong>Spell speed:</strong> <strong>{{ characterStatsService.characterStats.spellspeed }}</strong></li>
         <!-- <li class="listing"><strong>Global cooldown:</strong> <strong>{{ characterStatsService.characterStats.skillhaste | number: '1.2-2'}}</strong></li> -->
         <li class="listing"><strong>Global cooldown:</strong> <strong>{{ characterStatsService.characterStats.spellhaste | number: '1.2-2'}}s</strong></li>
         </ul>
@@ -709,18 +709,18 @@
         <strong class="statprio">Job:</strong><br>
         <strong class="statprio">{{ characterStatsService.job.name }}</strong><br>
         <strong class="statprio">Stat priority:</strong><br>
-        <strong class="statprio">STR > CRIT > DH > DET</strong><br>
+        <strong class="statprio">INT > 2.48 GCD > CRIT > DET > DH > SPS</strong><br>
         <strong class="statprio">Target GCD:</strong><br>
-        <strong class="statprio">2.50s:</strong><br>
+        <strong class="statprio">2.48s:</strong><br>
       </div>
 
         <div class="statstext" step="0.01">
         <ul>
         <li class="listinggreen"><strong>Damage:</strong> <strong>{{ characterStatsService.characterStats.damage }}</strong></li>
-        <li class="listinggreen"><strong>Strength:</strong> <strong>{{ characterStatsService.characterStats.strength }}</strong></li>
+        <li class="listingred"><strong>Strength:</strong> <strong>{{ characterStatsService.characterStats.strength }}</strong></li>
         <li class="listingred"><strong>Dexterity:</strong> <strong>{{ characterStatsService.characterStats.dexterity }}</strong></li>
         <li class="listingred"><strong>Vitality:</strong> <strong>{{ characterStatsService.characterStats.vitality }}</strong></li>
-        <li class="listingred"><strong>Intelligence:</strong> <strong>{{ characterStatsService.characterStats.intelligence }}</strong></li>
+        <li class="listinggreen"><strong>Intelligence:</strong> <strong>{{ characterStatsService.characterStats.intelligence }}</strong></li>
         <li class="listingred"><strong>Mind:</strong> <strong>{{ characterStatsService.characterStats.mind }}</strong></li>
         <li class="listinggreen"><strong>Critical hit:</strong> <strong>{{ characterStatsService.characterStats.criticalhit }}</strong></li>
         <li class="listing"><strong>Crit chance:</strong> <strong>{{ characterStatsService.characterStats.critchance | number: '1.2-2'}}%</strong></li>
@@ -729,16 +729,16 @@
         <li class="listing"><strong>Damage increase:</strong> <strong>{{ characterStatsService.characterStats.dmgincrease | number: '1.2-2'}}%</strong></li>
         <li class="listinggreen"><strong>Direct hit:</strong> <strong>{{ characterStatsService.characterStats.directhit }}</strong></li>
         <li class="listing"><strong>Direct hit chance:</strong> <strong>{{ characterStatsService.characterStats.direchitchance | number: '1.2-2'}}</strong></li>
-        <li class="listingorange"><strong>Defense:</strong> <strong>{{ characterStatsService.characterStats.defense }}</strong></li>
+        <li class="listingred"><strong>Defense:</strong> <strong>{{ characterStatsService.characterStats.defense }}</strong></li>
         <li class="listing"><strong>Physical resistance:</strong> <strong>{{ characterStatsService.characterStats.physres | number: '1.2-2'}}%</strong></li>
-        <li class="listingorange"><strong>Magic defense:</strong> <strong>{{ characterStatsService.characterStats.magicdefense }}</strong></li>
+        <li class="listingred"><strong>Magic defense:</strong> <strong>{{ characterStatsService.characterStats.magicdefense }}</strong></li>
         <li class="listing"><strong>Magic resistance:</strong> <strong>{{ characterStatsService.characterStats.magres | number: '1.2-2'}}%</strong></li>
-        <li class="listingorange"><strong>Tenacity:</strong> <strong>{{ characterStatsService.characterStats.tenacity }}</strong></li>
+        <li class="listingred"><strong>Tenacity:</strong> <strong>{{ characterStatsService.characterStats.tenacity }}</strong></li>
         <li class="listing"><strong>Damage mitigation:</strong> <strong>{{ characterStatsService.characterStats.dmgmitigation | number: '1.2-2'}}%</strong></li>
         <li class="listingred" *ngIf="characterStatsService.characterStats.manapertick>200"><strong>Piety:</strong> <strong>{{ characterStatsService.characterStats.piety }}</strong></li>
         <li class="listing" *ngIf="characterStatsService.characterStats.manapertick>200"><strong>Mana regen per tick:</strong> <strong>{{ characterStatsService.characterStats.manapertick | number: '1.2-2'}}</strong></li>
         <!-- <li class="listingred"><strong>Skill speed:</strong> <strong>{{ characterStatsService.characterStats.skillspeed }}</strong></li> -->
-        <li class="listingred"><strong>Spell speed:</strong> <strong>{{ characterStatsService.characterStats.spellspeed }}</strong></li>
+        <li class="listingorange"><strong>Spell speed:</strong> <strong>{{ characterStatsService.characterStats.spellspeed }}</strong></li>
         <!-- <li class="listing"><strong>Global cooldown:</strong> <strong>{{ characterStatsService.characterStats.skillhaste | number: '1.2-2'}}</strong></li> -->
         <li class="listing"><strong>Global cooldown:</strong> <strong>{{ characterStatsService.characterStats.spellhaste | number: '1.2-2'}}s</strong></li>
         </ul>
@@ -749,18 +749,18 @@
         <strong class="statprio">Job:</strong><br>
         <strong class="statprio">{{ characterStatsService.job.name }}</strong><br>
         <strong class="statprio">Stat priority:</strong><br>
-        <strong class="statprio">STR > CRIT > DH > DET</strong><br>
+        <strong class="statprio">INT > CRIT > DET > DH</strong><br>
         <strong class="statprio">Target GCD:</strong><br>
-        <strong class="statprio">2.50s:</strong><br>
+        <strong class="statprio">2.48s:</strong><br>
       </div>
 
         <div class="statstext" step="0.01">
         <ul>
         <li class="listinggreen"><strong>Damage:</strong> <strong>{{ characterStatsService.characterStats.damage }}</strong></li>
-        <li class="listinggreen"><strong>Strength:</strong> <strong>{{ characterStatsService.characterStats.strength }}</strong></li>
+        <li class="listingred"><strong>Strength:</strong> <strong>{{ characterStatsService.characterStats.strength }}</strong></li>
         <li class="listingred"><strong>Dexterity:</strong> <strong>{{ characterStatsService.characterStats.dexterity }}</strong></li>
         <li class="listingred"><strong>Vitality:</strong> <strong>{{ characterStatsService.characterStats.vitality }}</strong></li>
-        <li class="listingred"><strong>Intelligence:</strong> <strong>{{ characterStatsService.characterStats.intelligence }}</strong></li>
+        <li class="listinggreen"><strong>Intelligence:</strong> <strong>{{ characterStatsService.characterStats.intelligence }}</strong></li>
         <li class="listingred"><strong>Mind:</strong> <strong>{{ characterStatsService.characterStats.mind }}</strong></li>
         <li class="listinggreen"><strong>Critical hit:</strong> <strong>{{ characterStatsService.characterStats.criticalhit }}</strong></li>
         <li class="listing"><strong>Crit chance:</strong> <strong>{{ characterStatsService.characterStats.critchance | number: '1.2-2'}}%</strong></li>
@@ -769,16 +769,16 @@
         <li class="listing"><strong>Damage increase:</strong> <strong>{{ characterStatsService.characterStats.dmgincrease | number: '1.2-2'}}%</strong></li>
         <li class="listinggreen"><strong>Direct hit:</strong> <strong>{{ characterStatsService.characterStats.directhit }}</strong></li>
         <li class="listing"><strong>Direct hit chance:</strong> <strong>{{ characterStatsService.characterStats.direchitchance | number: '1.2-2'}}</strong></li>
-        <li class="listingorange"><strong>Defense:</strong> <strong>{{ characterStatsService.characterStats.defense }}</strong></li>
+        <li class="listingred"><strong>Defense:</strong> <strong>{{ characterStatsService.characterStats.defense }}</strong></li>
         <li class="listing"><strong>Physical resistance:</strong> <strong>{{ characterStatsService.characterStats.physres | number: '1.2-2'}}%</strong></li>
-        <li class="listingorange"><strong>Magic defense:</strong> <strong>{{ characterStatsService.characterStats.magicdefense }}</strong></li>
+        <li class="listingred"><strong>Magic defense:</strong> <strong>{{ characterStatsService.characterStats.magicdefense }}</strong></li>
         <li class="listing"><strong>Magic resistance:</strong> <strong>{{ characterStatsService.characterStats.magres | number: '1.2-2'}}%</strong></li>
-        <li class="listingorange"><strong>Tenacity:</strong> <strong>{{ characterStatsService.characterStats.tenacity }}</strong></li>
+        <li class="listingred"><strong>Tenacity:</strong> <strong>{{ characterStatsService.characterStats.tenacity }}</strong></li>
         <li class="listing"><strong>Damage mitigation:</strong> <strong>{{ characterStatsService.characterStats.dmgmitigation | number: '1.2-2'}}%</strong></li>
         <li class="listingred" *ngIf="characterStatsService.characterStats.manapertick>200"><strong>Piety:</strong> <strong>{{ characterStatsService.characterStats.piety }}</strong></li>
         <li class="listing" *ngIf="characterStatsService.characterStats.manapertick>200"><strong>Mana regen per tick:</strong> <strong>{{ characterStatsService.characterStats.manapertick | number: '1.2-2'}}</strong></li>
         <!-- <li class="listingred"><strong>Skill speed:</strong> <strong>{{ characterStatsService.characterStats.skillspeed }}</strong></li> -->
-        <li class="listingred"><strong>Spell speed:</strong> <strong>{{ characterStatsService.characterStats.spellspeed }}</strong></li>
+        <li class="listingorange"><strong>Spell speed:</strong> <strong>{{ characterStatsService.characterStats.spellspeed }}</strong></li>
         <!-- <li class="listing"><strong>Global cooldown:</strong> <strong>{{ characterStatsService.characterStats.skillhaste | number: '1.2-2'}}</strong></li> -->
         <li class="listing"><strong>Global cooldown:</strong> <strong>{{ characterStatsService.characterStats.spellhaste | number: '1.2-2'}}s</strong></li>
         </ul>

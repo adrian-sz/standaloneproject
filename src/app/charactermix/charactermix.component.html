@@ -13,7 +13,7 @@
 <img *ngIf="selectedJob.photo!=''" class="jobphoto" [src]="selectedJob.photo" width="100" height="100">
 </div>
 
-  <div class="statstext">
+  <div class="statstext" *ngIf="selectedJob.id>=0">
     <ul>
     <li class="listingname" *ngIf="selectedJob.name!=''"><strong>Job:</strong> {{ selectedJob.name }}</li>
     <li class="listingname" *ngIf="selectedJob.role!=''"><strong>Role:</strong> {{ selectedJob.role }}</li>
