@@ -449,28 +449,6 @@ export class JobsService {
       mainstat: 'Intelligence',
       photo: 'https://static.wikia.nocookie.net/ffxiv_gamepedia/images/3/36/Red_Mage.png'
     },
-    {
-      id: 19,
-      name: 'Blue Mage',
-      role: 'Limited job',
-      damage: 0,
-      strength: 2000,
-      dexterity: 1000,
-      vitality: 2000,
-      intelligence: 300,
-      mind: 300,
-      criticalhit: 1000,
-      determination: 1000,
-      directhit: 300,
-      defense: 100,
-      magicdefense: 100,
-      tenacity: 10,
-      piety: 300,
-      skillspeed: 10,
-      spellspeed: 10,
-      mainstat: 'Intelligence',
-      photo: 'https://static.wikia.nocookie.net/ffxiv_gamepedia/images/d/d5/Blue_Mage.png'
-    },
   ]
 
   getJobs() : Jobs[] {
