@@ -18,4 +18,10 @@ export interface CharacterStats {
     critstrength: number;
     physres : number;
     magres : number;
+    manapertick : number;
+    dmgincrease : number;
+    skillhaste: number;
+    spellhaste: number;
+    direchitchance : number;
+    dmgmitigation : number;
 }   

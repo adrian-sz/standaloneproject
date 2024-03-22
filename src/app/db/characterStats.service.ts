@@ -37,7 +37,15 @@ export class CharacterStatsService {
     critchance: 0,
     critstrength: 0,
     physres: 0,
-    magres: 0
+    magres: 0,
+    manapertick: 0,
+    dmgincrease: 0,
+    skillhaste: 0,
+    spellhaste: 0,
+    direchitchance: 0,
+    dmgmitigation: 0
+
+
   };
   public job: Jobs = {
     id: 0,
@@ -311,12 +319,17 @@ export class CharacterStatsService {
     this.characterStats.piety = this.job.piety + this.weapon.piety + this.head.piety + this.body.piety + this.hand.piety + this.legs.piety + this.feet.piety + this.earring.piety + this.necklace.piety + this.bracelet.piety + this.leftring.piety + this.righttring.piety;
     this.characterStats.skillspeed = this.job.skillspeed + this.weapon.skillspeed + this.head.skillspeed + this.body.skillspeed + this.hand.skillspeed + this.legs.skillspeed + this.feet.skillspeed + this.earring.skillspeed + this.necklace.skillspeed + this.bracelet.skillspeed + this.leftring.skillspeed + this.righttring.skillspeed;
     this.characterStats.spellspeed = this.job.spellspeed + this.weapon.spellspeed + this.head.spellspeed + this.body.spellspeed + this.hand.spellspeed + this.legs.spellspeed + this.feet.spellspeed + this.earring.spellspeed + this.necklace.spellspeed + this.bracelet.spellspeed + this.leftring.spellspeed + this.righttring.spellspeed;
-    this.characterStats.critchance = (this.characterStats.intelligence*(200*(this.characterStats.criticalhit - 400)/1900)+1400)/1000;
 
     let critstat : number = 0;
     let critstrength : number = 0;
     let physres : number = 0;
     let magres : number = 0;
+    let manapertick : number = 0;
+    let dmgincrease : number = 0;
+    let skillhaste : number = 0;
+    let spellhaste : number = 0;
+    let direchitchance : number = 0;
+    let dmgmitigation : number = 0;
 
     switch(this.job.mainstat) { 
       case 'Strength': { 
@@ -342,6 +355,12 @@ export class CharacterStatsService {
     this.characterStats.critstrength = ((200*(this.characterStats.criticalhit - 400)/1900)+1400)/10;
     this.characterStats.physres = 15*(this.characterStats.defense/1900);
     this.characterStats.magres = 15*(this.characterStats.magicdefense/1900);
+    this.characterStats.manapertick = ((150*(this.characterStats.piety-390)/1900)+200);
+    this.characterStats.dmgincrease = (((1000+(140*(this.characterStats.determination-390)/1900)))/10)-100
+    this.characterStats.skillhaste = (2500*(1000+(130*(400-this.characterStats.skillspeed)/1900))/10000)/100
+    this.characterStats.spellhaste = (2500*(1000+(130*(400-this.characterStats.spellspeed)/1900))/10000)/100
+    this.characterStats.direchitchance = (550*(this.characterStats.directhit-400)/1900)/10
+    this.characterStats.dmgmitigation = (1000 - (1000-(100*(this.characterStats.tenacity-400)/1900)))/10
 
   }
 }
