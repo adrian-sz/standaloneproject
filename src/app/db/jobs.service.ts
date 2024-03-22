@@ -33,7 +33,7 @@ export class JobsService {
     },
     {
       id: -1,
-      name: '===TANK===',
+      name: '=Tank=',
       role: 'Tank',
       damage: 0,
       strength: 0,
@@ -143,7 +143,7 @@ export class JobsService {
     },
     {
       id: -1,
-      name: '===HEALER===',
+      name: '=Healer=',
       role: '',
       damage: 0,
       strength: 0,
@@ -253,7 +253,7 @@ export class JobsService {
     },
     {
       id: -1,
-      name: '===MELEE DPS===',
+      name: '=Melee dps=',
       role: '',
       damage: 0,
       strength: 0,
@@ -385,7 +385,7 @@ export class JobsService {
     },
     {
       id: -1,
-      name: '===PHYSICAL RANGED DPS===',
+      name: '=Physical ranged dps=',
       role: '',
       damage: 0,
       strength: 0,
@@ -473,7 +473,7 @@ export class JobsService {
     },
     {
       id: -1,
-      name: '===MAGICAL RANGED DPS===',
+      name: '=Magical ranged dps=',
       role: '',
       damage: 0,
       strength: 0,
