@@ -88,7 +88,7 @@ export class RingsService {
         photo: 'https://ffxiv.gamerescape.com/w/images/1/18/Augmented_Credendum_Ring_of_Fending_Icon.png'
         },
         { 
-        id: 10011,
+        id: 10003,
         name: 'Augmented Diadochos Ring of Fending',
         slot: 'Ring',
         strength: 186,
@@ -106,6 +106,26 @@ export class RingsService {
         skillspeed: 0,
         spellspeed: 0,
         photo: 'https://ffxiv.gamerescape.com/w/images/6/6b/Augmented_Diadochos_Ring_of_Fending_Icon.png'
+        },
+        { 
+        id: 10004,
+        name: 'Credendum Ring of Fending',
+        slot: 'Ring',
+        strength: 186,
+        dexterity: 0,
+        vitality: 205,
+        intelligence: 0,
+        mind: 0,
+        criticalhit: 99,
+        determination: 142,
+        directhit: 0,
+        defense: 1,
+        magicdefense: 1,
+        tenacity: 0,
+        piety: 0,
+        skillspeed: 0,
+        spellspeed: 0,
+        photo: 'https://ffxiv.gamerescape.com/w/images/f/f1/Credendum_Ring_of_Fending_Icon.png'
         },
 
         { 
@@ -129,7 +149,7 @@ export class RingsService {
           photo: ''
           },
           { 
-          id: 10003,
+          id: 10005,
           name: 'Ascension Ring of Healing',
           slot: 'Ring',
           strength: 0,
@@ -149,7 +169,7 @@ export class RingsService {
           photo: 'https://ffxiv.gamerescape.com/w/images/c/c2/Ascension_Ring_of_Healing_Icon.png'
           },
           { 
-          id: 10004,
+          id: 10006,
           name: 'Augmented Credendum Ring of Healing',
           slot: 'Ring',
           strength: 0,
@@ -169,7 +189,7 @@ export class RingsService {
           photo: 'https://ffxiv.gamerescape.com/w/images/f/f9/Augmented_Credendum_Ring_of_Healing_Icon.png'
           },
           { 
-          id: 10012,
+          id: 10007,
           name: 'Augmented Diadochos Ring of Healing',
           slot: 'Ring',
           strength: 0,
@@ -187,6 +207,26 @@ export class RingsService {
           skillspeed: 0,
           spellspeed: 0,
           photo: 'https://ffxiv.gamerescape.com/w/images/e/ef/Augmented_Diadochos_Ring_of_Healing_Icon.png'
+          },
+          { 
+          id: 10008,
+          name: 'Credendum Ring of Healing',
+          slot: 'Ring',
+          strength: 0,
+          dexterity: 0,
+          vitality: 185,
+          intelligence: 0,
+          mind: 186,
+          criticalhit: 142,
+          determination: 99,
+          directhit: 0,
+          defense: 1,
+          magicdefense: 1,
+          tenacity: 0,
+          piety: 0,
+          skillspeed: 0,
+          spellspeed: 0,
+          photo: 'https://ffxiv.gamerescape.com/w/images/6/66/Credendum_Ring_of_Healing_Icon.png'
           },
           { 
           id: -1,
@@ -209,7 +249,7 @@ export class RingsService {
           photo: ''
           },
           { 
-          id: 10005,
+          id: 10009,
           name: 'Ascension Ring of Slaying',
           slot: 'Ring',
           strength: 196,
@@ -229,7 +269,7 @@ export class RingsService {
           photo: 'https://ffxiv.gamerescape.com/w/images/a/a0/Ascension_Ring_of_Slaying_Icon.png'
           },
           { 
-          id: 10006,
+          id: 10010,
           name: 'Augmented Credendum Ring of Slaying',
           slot: 'Ring',
           strength: 196,
@@ -249,7 +289,7 @@ export class RingsService {
           photo: 'https://ffxiv.gamerescape.com/w/images/9/93/Augmented_Credendum_Ring_of_Slaying_Icon.png'
           },
           { 
-          id: 10013,
+          id: 10011,
           name: 'Augmented Diadochos Ring of Slaying',
           slot: 'Ring',
           strength: 186,
@@ -267,6 +307,26 @@ export class RingsService {
           skillspeed: 0,
           spellspeed: 0,
           photo: 'https://ffxiv.gamerescape.com/w/images/4/40/Augmented_Diadochos_Ring_of_Slaying_Icon.png'
+          },
+          { 
+          id: 10012,
+          name: 'Credendum Ring of Slaying',
+          slot: 'Ring',
+          strength: 186,
+          dexterity: 0,
+          vitality: 205,
+          intelligence: 0,
+          mind: 0,
+          criticalhit: 142,
+          determination: 0,
+          directhit: 99,
+          defense: 1,
+          magicdefense: 1,
+          tenacity: 0,
+          piety: 0,
+          skillspeed: 0,
+          spellspeed: 0,
+          photo: 'https://ffxiv.gamerescape.com/w/images/3/38/Credendum_Ring_of_Slaying_Icon.png'
           },
           { 
           id: -1,
@@ -289,7 +349,7 @@ export class RingsService {
           photo: ''
           },
           { 
-          id: 10007,
+          id: 10013,
           name: 'Ascension Ring of Aiming',
           slot: 'Ring',
           strength: 0,
@@ -309,7 +369,7 @@ export class RingsService {
           photo: 'https://ffxiv.gamerescape.com/w/images/a/a0/Ascension_Ring_of_Slaying_Icon.png'
           },
           { 
-          id: 10008,
+          id: 10014,
           name: 'Augmented Credendum Ring of Aiming',
           slot: 'Ring',
           strength: 0,
@@ -329,7 +389,7 @@ export class RingsService {
           photo: 'https://ffxiv.gamerescape.com/w/images/9/93/Augmented_Credendum_Ring_of_Slaying_Icon.png'
           },
           { 
-            id: 10009,
+            id: 10015,
             name: 'Augmented Diadochos Ring of Aiming',
             slot: 'Ring',
             strength: 0,
@@ -347,6 +407,26 @@ export class RingsService {
             skillspeed: 0,
             spellspeed: 0,
             photo: 'https://ffxiv.gamerescape.com/w/images/1/10/Augmented_Diadochos_Ring_of_Aiming_Icon.png'
+            },
+          { 
+            id: 10016,
+            name: 'Credendum Ring of Aiming',
+            slot: 'Ring',
+            strength: 0,
+            dexterity: 186,
+            vitality: 205,
+            intelligence: 0,
+            mind: 0,
+            criticalhit:142,
+            determination: 99,
+            directhit: 0,
+            defense: 1,
+            magicdefense: 1,
+            tenacity: 0,
+            piety: 0,
+            skillspeed: 0,
+            spellspeed: 0,
+            photo: 'https://ffxiv.gamerescape.com/w/images/3/3a/Credendum_Ring_of_Aiming_Icon.png'
             },
           { 
           id: -1,
@@ -369,7 +449,7 @@ export class RingsService {
           photo: ''
           },
           { 
-          id: 10007,
+          id: 10017,
           name: 'Ascension Ring of Casting',
           slot: 'Ring',
           strength: 0,
@@ -389,7 +469,7 @@ export class RingsService {
           photo: 'https://ffxiv.gamerescape.com/w/images/a/a0/Ascension_Ring_of_Slaying_Icon.png'
           },
           { 
-          id: 10008,
+          id: 10018,
           name: 'Augmented Credendum Ring of Casting',
           slot: 'Ring',
           strength: 0,
@@ -409,7 +489,7 @@ export class RingsService {
           photo: 'https://ffxiv.gamerescape.com/w/images/9/93/Augmented_Credendum_Ring_of_Slaying_Icon.png'
           },
           { 
-          id: 10010,
+          id: 10019,
           name: 'Augmented Diadochos Ring of Casting',
           slot: 'Ring',
           strength: 0,
@@ -427,6 +507,26 @@ export class RingsService {
           skillspeed: 0,
           spellspeed: 99,
           photo: 'https://ffxiv.gamerescape.com/w/images/4/46/Augmented_Diadochos_Ring_of_Casting_Icon.png'
+          },
+          { 
+          id: 10020,
+          name: 'Credendum Ring of Casting',
+          slot: 'Ring',
+          strength: 0,
+          dexterity: 0,
+          vitality: 185,
+          intelligence: 186,
+          mind: 0,
+          criticalhit: 0,
+          determination: 0,
+          directhit: 142,
+          defense: 1,
+          magicdefense: 1,
+          tenacity: 0,
+          piety: 0,
+          skillspeed: 0,
+          spellspeed: 99,
+          photo: 'https://ffxiv.gamerescape.com/w/images/3/31/Credendum_Ring_of_Casting_Icon.png'
           },
   ]
 
