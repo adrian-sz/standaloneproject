@@ -8,7 +8,7 @@ export class EarringsService {
 
   earringsList: Earrings[] = [
     { 
-      id: 7000,
+      id: -1,
       name: '',
       slot: '',
       strength: 0,
@@ -88,6 +88,26 @@ export class EarringsService {
       photo: 'https://ffxiv.gamerescape.com/w/images/5/55/Augmented_Credendum_Earrings_of_Fending_Icon.png'
       },
       { 
+      id: 7011,
+      name: 'Augmented Diadochos Earring of Fending',
+      slot: 'Earring',
+      strength: 186,
+      dexterity: 0,
+      vitality: 205,
+      intelligence: 0,
+      mind: 0,
+      criticalhit: 0,
+      determination: 99,
+      directhit: 0,
+      defense: 1,
+      magicdefense: 1,
+      tenacity: 142,
+      piety: 0,
+      skillspeed: 0,
+      spellspeed: 0,
+      photo: 'https://ffxiv.gamerescape.com/w/images/c/c1/Augmented_Diadochos_Earring_of_Fending_Icon.png'
+      },
+      { 
       id: -1,
       name: '=Healing=',
       slot: '',
@@ -148,6 +168,26 @@ export class EarringsService {
       photo: 'https://ffxiv.gamerescape.com/w/images/5/55/Augmented_Credendum_Earrings_of_Fending_Icon.png'
       },
       { 
+      id: 7012,
+      name: 'Augmented Diadochos Earring of Healing',
+      slot: 'Earring',
+      strength: 0,
+      dexterity: 0,
+      vitality: 185,
+      intelligence: 0,
+      mind: 186,
+      criticalhit: 0,
+      determination: 142,
+      directhit: 0,
+      defense: 1,
+      magicdefense: 1,
+      tenacity: 0,
+      piety: 99,
+      skillspeed: 0,
+      spellspeed: 0,
+      photo: 'https://ffxiv.gamerescape.com/w/images/c/c1/Augmented_Diadochos_Earring_of_Fending_Icon.png'
+      },
+      { 
         id: -1,
         name: '=Maiming, Striking=',
         slot: '',
@@ -206,6 +246,26 @@ export class EarringsService {
         skillspeed: 145,
         spellspeed: 0,
         photo: 'https://ffxiv.gamerescape.com/w/images/5/55/Augmented_Credendum_Earrings_of_Fending_Icon.png'
+      },
+      { 
+      id: 7013,
+      name: 'Augmented Diadochos Earring of Slaying',
+      slot: 'Earring',
+      strength: 186,
+      dexterity: 0,
+      vitality: 205,
+      intelligence: 0,
+      mind: 0,
+      criticalhit: 99,
+      determination: 0,
+      directhit: 0,
+      defense: 1,
+      magicdefense: 1,
+      tenacity: 0,
+      piety: 0,
+      skillspeed: 142,
+      spellspeed: 0,
+      photo: 'https://ffxiv.gamerescape.com/w/images/c/c1/Augmented_Diadochos_Earring_of_Fending_Icon.png'
       },
         { 
       id: -1,
@@ -268,6 +328,26 @@ export class EarringsService {
       photo: 'https://ffxiv.gamerescape.com/w/images/5/55/Augmented_Credendum_Earrings_of_Fending_Icon.png'
       },
       { 
+      id: 7014,
+      name: 'Augmented Diadochos Earring of Aiming',
+      slot: 'Earring',
+      strength: 0,
+      dexterity: 186,
+      vitality: 205,
+      intelligence: 0,
+      mind: 0,
+      criticalhit: 142,
+      determination: 0,
+      directhit: 99,
+      defense: 1,
+      magicdefense: 1,
+      tenacity: 0,
+      piety: 0,
+      skillspeed: 0,
+      spellspeed: 0,
+      photo: 'https://ffxiv.gamerescape.com/w/images/c/c1/Augmented_Diadochos_Earring_of_Fending_Icon.png'
+      },
+      { 
       id: -1,
       name: '=Casting=',
       slot: '',
@@ -326,6 +406,26 @@ export class EarringsService {
       skillspeed: 0,
       spellspeed: 145,
       photo: 'https://ffxiv.gamerescape.com/w/images/5/55/Augmented_Credendum_Earrings_of_Fending_Icon.png'
+      },
+      { 
+      id: 7015,
+      name: 'Augmented Diadochos Earring of Casting',
+      slot: 'Earring',
+      strength: 0,
+      dexterity: 0,
+      vitality: 185,
+      intelligence: 186,
+      mind: 0,
+      criticalhit: 0,
+      determination: 142,
+      directhit: 99,
+      defense: 1,
+      magicdefense: 1,
+      tenacity: 0,
+      piety: 0,
+      skillspeed: 0,
+      spellspeed: 0,
+      photo: 'https://ffxiv.gamerescape.com/w/images/c/c1/Augmented_Diadochos_Earring_of_Fending_Icon.png'
       },
   ]
 

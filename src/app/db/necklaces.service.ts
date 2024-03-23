@@ -88,6 +88,26 @@ export class NecklacesService {
       photo: 'https://ffxiv.gamerescape.com/w/images/d/db/Augmented_Credendum_Necklace_of_Fending_Icon.png'
       },
       { 
+      id: 8011,
+      name: 'Augmented Diadochos Choker of Fending',
+      slot: 'Necklace',
+      strength: 186,
+      dexterity: 0,
+      vitality: 205,
+      intelligence: 0,
+      mind: 0,
+      criticalhit: 142,
+      determination: 99,
+      directhit: 0,
+      defense: 1,
+      magicdefense: 1,
+      tenacity: 0,
+      piety: 0,
+      skillspeed: 0,
+      spellspeed: 0,
+      photo: 'https://ffxiv.gamerescape.com/w/images/4/47/Augmented_Diadochos_Choker_of_Fending_Icon.png'
+      },
+      { 
       id: -1,
       name: '=Healing=',
       slot: '',
@@ -147,6 +167,26 @@ export class NecklacesService {
       photo: 'https://ffxiv.gamerescape.com/w/images/d/db/Augmented_Credendum_Necklace_of_Fending_Icon.png'
       },
       { 
+      id: 8012,
+      name: 'Augmented Diadochos Choker of Healing',
+      slot: 'Necklace',
+      strength: 186,
+      dexterity: 0,
+      vitality: 185,
+      intelligence: 0,
+      mind: 0,
+      criticalhit: 142,
+      determination: 99,
+      directhit: 0,
+      defense: 1,
+      magicdefense: 1,
+      tenacity: 0,
+      piety: 0,
+      skillspeed: 0,
+      spellspeed: 0,
+      photo: 'https://ffxiv.gamerescape.com/w/images/8/86/Augmented_Diadochos_Choker_of_Healing_Icon.png'
+      },
+      { 
         id: -1,
         name: '=Maiming, Striking=',
         slot: '',
@@ -204,6 +244,26 @@ export class NecklacesService {
         skillspeed: 0,
         spellspeed: 0,
         photo: 'https://ffxiv.gamerescape.com/w/images/d/db/Augmented_Credendum_Necklace_of_Fending_Icon.png'
+      },
+      { 
+      id: 8013,
+      name: 'Augmented Diadochos Choker of Slaying',
+      slot: 'Necklace',
+      strength: 186,
+      dexterity: 0,
+      vitality: 205,
+      intelligence: 0,
+      mind: 0,
+      criticalhit: 99,
+      determination: 0,
+      directhit: 142,
+      defense: 1,
+      magicdefense: 1,
+      tenacity: 0,
+      piety: 0,
+      skillspeed: 0,
+      spellspeed: 0,
+      photo: 'https://ffxiv.gamerescape.com/w/images/a/a2/Augmented_Diadochos_Choker_of_Slaying_Icon.png'
       },
         { 
       id: -1,
@@ -265,6 +325,26 @@ export class NecklacesService {
       photo: 'https://ffxiv.gamerescape.com/w/images/d/db/Augmented_Credendum_Necklace_of_Fending_Icon.png'
       },
       { 
+      id: 8014,
+      name: 'Augmented Diadochos Choker of Aiming',
+      slot: 'Necklace',
+      strength: 0,
+      dexterity: 186,
+      vitality: 205,
+      intelligence: 0,
+      mind: 0,
+      criticalhit: 99,
+      determination: 0,
+      directhit: 0,
+      defense: 1,
+      magicdefense: 1,
+      tenacity: 0,
+      piety: 0,
+      skillspeed: 142,
+      spellspeed: 0,
+      photo: 'https://ffxiv.gamerescape.com/w/images/9/90/Augmented_Diadochos_Choker_of_Aiming_Icon.png'
+      },
+      { 
       id: -1,
       name: '=Casting=',
       slot: '',
@@ -305,7 +385,7 @@ export class NecklacesService {
       photo: 'https://ffxiv.gamerescape.com/w/images/0/0c/Ascension_Necklace_of_Fending_Icon.png'      },
       { 
       id: 8010,
-      name: 'Augmented Credendum Necklace of Fending',
+      name: 'Augmented Credendum Necklace of Casting',
       slot: 'Necklace',
       strength: 0,
       dexterity: 0,
@@ -321,7 +401,27 @@ export class NecklacesService {
       piety: 0,
       skillspeed: 0,
       spellspeed: 0,
-      photo: 'https://ffxiv.gamerescape.com/w/images/d/db/Augmented_Credendum_Necklace_of_Fending_Icon.png'
+      photo: 'https://ffxiv.gamerescape.com/w/images/2/28/Augmented_Credendum_Necklace_of_Casting_Icon.png'
+      },
+      { 
+      id: 8015,
+      name: 'Augmented Diadochos Choker of Casting',
+      slot: 'Necklace',
+      strength: 0,
+      dexterity: 0,
+      vitality: 185,
+      intelligence: 186,
+      mind: 0,
+      criticalhit: 142,
+      determination: 99,
+      directhit: 0,
+      defense: 1,
+      magicdefense: 1,
+      tenacity: 0,
+      piety: 0,
+      skillspeed: 0,
+      spellspeed: 0,
+      photo: 'https://ffxiv.gamerescape.com/w/images/7/70/Augmented_Diadochos_Choker_of_Casting_Icon.png'
       },
   ]
 
