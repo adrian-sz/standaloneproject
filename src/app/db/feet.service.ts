@@ -8,7 +8,7 @@ export class FeetService {
 
   feetList: Feet[] = [
     { 
-      id: 6000,
+      id: -1,
       name: '',
       slot: '',
       strength: 0,
@@ -88,6 +88,26 @@ export class FeetService {
       photo: 'https://ffxiv.gamerescape.com/w/images/0/05/Augmented_Credendum_Sollerets_of_Fending_Icon.png'
       },
       { 
+      id: 6015,
+      name: 'Augmented Diadochos Boots of Fending',
+      slot: 'Feet',
+      strength: 235,
+      dexterity: 0,
+      vitality: 260,
+      intelligence: 0,
+      mind: 0,
+      criticalhit: 126,
+      determination: 0,
+      directhit: 0,
+      defense: 873,
+      magicdefense: 873,
+      tenacity: 0,
+      piety: 0,
+      skillspeed: 180,
+      spellspeed: 0,
+      photo: 'https://ffxiv.gamerescape.com/w/images/4/4e/Augmented_Diadochos_Boots_of_Fending_Icon.png'
+      },
+      { 
       id: -1,
       name: '=Healing=',
       slot: '',
@@ -130,7 +150,7 @@ export class FeetService {
       { 
       id: 6004,
       name: 'Augmented Credendum Earring of Healing',
-      slot: 'Earring',
+      slot: 'Feet',
       strength: 0,
       dexterity: 0,
       vitality: 249,
@@ -146,6 +166,26 @@ export class FeetService {
       skillspeed: 0,
       spellspeed: 184,
       photo: 'https://ffxiv.gamerescape.com/w/images/a/a0/Augmented_Credendum_Sollerets_of_Healing_Icon.png'
+      },
+      { 
+      id: 6016,
+      name: 'Augmented Diadochos Boots of Healing',
+      slot: 'Feet',
+      strength: 0,
+      dexterity: 0,
+      vitality: 234,
+      intelligence: 0,
+      mind: 235,
+      criticalhit: 126,
+      determination: 0,
+      directhit: 0,
+      defense: 349,
+      magicdefense: 611,
+      tenacity: 0,
+      piety: 180,
+      skillspeed: 0,
+      spellspeed: 0,
+      photo: 'https://ffxiv.gamerescape.com/w/images/d/d7/Augmented_Diadochos_Boots_of_Healing_Icon.png'
       },
       { 
         id: -1,
@@ -208,6 +248,26 @@ export class FeetService {
         photo: 'https://ffxiv.gamerescape.com/w/images/9/9b/Augmented_Credendum_Longboots_of_Striking_Icon.png'
       },
       { 
+      id: 6017,
+      name: 'Augmented Diadochos Shoes of Striking',
+      slot: 'Feet',
+      strength: 235,
+      dexterity: 0,
+      vitality: 260,
+      intelligence: 0,
+      mind: 0,
+      criticalhit: 0,
+      determination: 180,
+      directhit: 126,
+      defense: 480,
+      magicdefense: 480,
+      tenacity: 0,
+      piety: 0,
+      skillspeed: 0,
+      spellspeed: 0,
+      photo: 'https://ffxiv.gamerescape.com/w/images/6/69/Augmented_Diadochos_Shoes_of_Striking_Icon.png'
+    },
+      { 
         id: -1,
         name: '=Maiming=',
         slot: '',
@@ -268,6 +328,26 @@ export class FeetService {
         photo: 'https://ffxiv.gamerescape.com/w/images/5/51/Augmented_Credendum_Sollerets_of_Maiming_Icon.png'
       },
       { 
+      id: 6018,
+      name: 'Augmented Diadochos Boots of Maiming',
+      slot: 'Feet',
+      strength: 235,
+      dexterity: 0,
+      vitality: 260,
+      intelligence: 0,
+      mind: 0,
+      criticalhit: 180,
+      determination: 126,
+      directhit: 0,
+      defense: 611,
+      magicdefense: 480,
+      tenacity: 0,
+      piety: 0,
+      skillspeed: 0,
+      spellspeed: 0,
+      photo: 'https://ffxiv.gamerescape.com/w/images/6/6f/Augmented_Diadochos_Boots_of_Maiming_Icon.png'
+    },
+      { 
     id: -1,
     name: '=Scouting=',
     slot: '',
@@ -326,6 +406,26 @@ export class FeetService {
     skillspeed: 129,
     spellspeed: 0,
     photo: 'https://ffxiv.gamerescape.com/w/images/9/94/Augmented_Credendum_Longboots_of_Scouting_Icon.png'
+    },      
+  { 
+    id: 6019,
+    name: 'Augmented Diadochos Shoes of Scouting',
+    slot: 'Feet',
+    strength: 0,
+    dexterity: 235,
+    vitality: 260,
+    intelligence: 0,
+    mind: 0,
+    criticalhit: 180,
+    determination: 126,
+    directhit: 0,
+    defense: 491,
+    magicdefense: 491,
+    tenacity: 0,
+    piety: 0,
+    skillspeed: 0,
+    spellspeed: 0,
+    photo: 'https://ffxiv.gamerescape.com/w/images/c/c0/Augmented_Diadochos_Shoes_of_Scouting_Icon.png'
     },
         { 
       id: -1,
@@ -386,6 +486,26 @@ export class FeetService {
       skillspeed: 0,
       spellspeed: 0,
       photo: 'https://ffxiv.gamerescape.com/w/images/d/d4/Augmented_Credendum_Shoes_of_Aiming_Icon.png'
+      },      
+    { 
+      id: 6020,
+      name: 'Augmented Diadochos Boots of Aiming',
+      slot: 'Feet',
+      strength: 0,
+      dexterity: 235,
+      vitality: 260,
+      intelligence: 0,
+      mind: 0,
+      criticalhit: 126,
+      determination: 0,
+      directhit: 0,
+      defense: 480,
+      magicdefense: 480,
+      tenacity: 0,
+      piety: 0,
+      skillspeed: 180,
+      spellspeed: 0,
+      photo: 'https://ffxiv.gamerescape.com/w/images/9/96/Augmented_Diadochos_Boots_of_Aiming_Icon.png'
       },
       { 
       id: -1,
@@ -446,6 +566,26 @@ export class FeetService {
       skillspeed: 0,
       spellspeed: 0,
       photo: 'https://ffxiv.gamerescape.com/w/images/9/90/Augmented_Credendum_Sollerets_of_Casting_Icon.png'
+      },      
+      { 
+      id: 6021,
+      name: 'Augmented Diadochos Boots of Casting',
+      slot: 'Feet',
+      strength: 0,
+      dexterity: 0,
+      vitality: 234,
+      intelligence: 235,
+      mind: 0,
+      criticalhit: 180,
+      determination: 0,
+      directhit: 0,
+      defense: 349,
+      magicdefense: 611,
+      tenacity: 0,
+      piety: 0,
+      skillspeed: 0,
+      spellspeed: 126,
+      photo: 'https://ffxiv.gamerescape.com/w/images/7/7c/Augmented_Diadochos_Boots_of_Casting_Icon.png'
       },
   ]
 

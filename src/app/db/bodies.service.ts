@@ -8,7 +8,7 @@ export class BodiesService {
 
   bodiesList: Bodies[] = [
     { 
-      id: 3000,
+      id: -1,
       name: '',
       slot: '',
       strength: 0,
@@ -88,6 +88,26 @@ export class BodiesService {
       photo: 'https://ffxiv.gamerescape.com/w/images/a/a2/Augmented_Credendum_Cuirass_of_Fending_Icon.png'
       },
       { 
+      id: 3015,
+      name: 'Augmented Diadochos Jacket of Fending',
+      slot: 'Body',
+      strength: 374,
+      dexterity: 0,
+      vitality: 413,
+      intelligence: 0,
+      mind: 0,
+      criticalhit: 200,
+      determination: 286,
+      directhit: 0,
+      defense: 1171,
+      magicdefense: 1171,
+      tenacity: 0,
+      piety: 0,
+      skillspeed: 0,
+      spellspeed: 0,
+      photo: 'https://ffxiv.gamerescape.com/w/images/7/71/Augmented_Diadochos_Jacket_of_Fending_Icon.png'
+      },
+      { 
       id: -1,
       name: '=Healing=',
       slot: '',
@@ -146,6 +166,26 @@ export class BodiesService {
       skillspeed: 0,
       spellspeed: 0,
       photo: 'https://ffxiv.gamerescape.com/w/images/4/46/Augmented_Credendum_Surcoat_of_Healing_Icon.png'
+      },
+      { 
+      id: 3015,
+      name: 'Augmented Diadochos Coat of Healing',
+      slot: 'Body',
+      strength: 374,
+      dexterity: 0,
+      vitality: 372,
+      intelligence: 0,
+      mind: 0,
+      criticalhit: 200,
+      determination: 286,
+      directhit: 0,
+      defense: 468,
+      magicdefense: 820,
+      tenacity: 0,
+      piety: 0,
+      skillspeed: 0,
+      spellspeed: 0,
+      photo: 'https://ffxiv.gamerescape.com/w/images/2/2e/Augmented_Diadochos_Coat_of_Healing_Icon.png'
       },
       { 
         id: -1,
@@ -208,6 +248,26 @@ export class BodiesService {
         photo: 'https://ffxiv.gamerescape.com/w/images/1/14/Augmented_Credendum_Corselet_of_Striking_Icon.png'
       },
       { 
+      id: 3016,
+      name: 'Augmented Diadochos Jacket of Striking',
+      slot: 'Body',
+      strength: 374,
+      dexterity: 0,
+      vitality: 413,
+      intelligence: 0,
+      mind: 0,
+      criticalhit: 200,
+      determination: 0,
+      directhit: 286,
+      defense: 644,
+      magicdefense: 644,
+      tenacity: 0,
+      piety: 0,
+      skillspeed: 0,
+      spellspeed: 0,
+      photo: 'https://ffxiv.gamerescape.com/w/images/e/e6/Augmented_Diadochos_Jacket_of_Striking_Icon.png'
+      },
+      { 
         id: -1,
         name: '=Maiming=',
         slot: '',
@@ -268,6 +328,26 @@ export class BodiesService {
         photo: 'https://ffxiv.gamerescape.com/w/images/2/23/Augmented_Credendum_Cuirass_of_Maiming_Icon.png'
       },
       { 
+      id: 3017,
+      name: 'Augmented Diadochos Jacket of Maiming',
+      slot: 'Body',
+      strength: 374,
+      dexterity: 0,
+      vitality: 413,
+      intelligence: 0,
+      mind: 0,
+      criticalhit: 286,
+      determination: 200,
+      directhit: 0,
+      defense: 820,
+      magicdefense: 644,
+      tenacity: 0,
+      piety: 0,
+      skillspeed: 0,
+      spellspeed: 0,
+      photo: 'https://ffxiv.gamerescape.com/w/images/2/2c/Augmented_Diadochos_Jacket_of_Maiming_Icon.png'
+      },
+      { 
     id: -1,
     name: '=Scouting=',
     slot: '',
@@ -326,6 +406,26 @@ export class BodiesService {
     skillspeed: 0,
     spellspeed: 0,
     photo: 'https://ffxiv.gamerescape.com/w/images/c/c4/Augmented_Credendum_Corselet_of_Scouting_Icon.png'
+    },
+    { 
+    id: 3018,
+    name: 'Augmented Diadochos Jacket of Scouting',
+    slot: 'Body',
+    strength: 0,
+    dexterity: 374,
+    vitality: 413,
+    intelligence: 0,
+    mind: 0,
+    criticalhit: 200,
+    determination: 286,
+    directhit: 0,
+    defense: 644,
+    magicdefense: 644,
+    tenacity: 0,
+    piety: 0,
+    skillspeed: 0,
+    spellspeed: 0,
+    photo: 'https://ffxiv.gamerescape.com/w/images/7/71/Augmented_Diadochos_Jacket_of_Scouting_Icon.png'
     },
         { 
       id: -1,
@@ -388,6 +488,26 @@ export class BodiesService {
       photo: 'https://ffxiv.gamerescape.com/w/images/c/c3/Augmented_Credendum_Mail_of_Aiming_Icon.png'
       },
       { 
+      id: 3019,
+      name: 'Augmented Diadochos Jacket of Aiming',
+      slot: 'Body',
+      strength: 0,
+      dexterity: 374,
+      vitality: 413,
+      intelligence: 0,
+      mind: 0,
+      criticalhit: 200,
+      determination: 286,
+      directhit: 0,
+      defense: 644,
+      magicdefense: 644,
+      tenacity: 0,
+      piety: 0,
+      skillspeed: 0,
+      spellspeed: 0,
+      photo: 'https://ffxiv.gamerescape.com/w/images/1/14/Augmented_Diadochos_Jacket_of_Aiming_Icon.png'
+      },
+      { 
       id: -1,
       name: '=Casting=',
       slot: '',
@@ -408,7 +528,7 @@ export class BodiesService {
       photo: ''
       },
     { 
-      id: 2013,
+      id: 3013,
       name: 'Ascension Robe of Casting',
       slot: 'Body',
       strength: 0,
@@ -428,7 +548,7 @@ export class BodiesService {
       photo: 'https://ffxiv.gamerescape.com/w/images/b/b0/Ascension_Robe_of_Casting_Icon.png'
       },      
       { 
-      id: 2014,
+      id: 3014,
       name: 'Augmented Credendum Surcoat of Casting',
       slot: 'Body',
       strength: 0,
@@ -446,6 +566,26 @@ export class BodiesService {
       skillspeed: 0,
       spellspeed: 0,
       photo: 'https://ffxiv.gamerescape.com/w/images/5/50/Augmented_Credendum_Surcoat_of_Casting_Icon.png'
+      },
+      { 
+      id: 3020,
+      name: 'Augmented Diadochos Coat of Casting',
+      slot: 'Body',
+      strength: 0,
+      dexterity: 0,
+      vitality: 372,
+      intelligence: 374,
+      mind: 0,
+      criticalhit: 286,
+      determination: 200,
+      directhit: 0,
+      defense: 468,
+      magicdefense: 820,
+      tenacity: 0,
+      piety: 0,
+      skillspeed: 0,
+      spellspeed: 0,
+      photo: 'https://ffxiv.gamerescape.com/w/images/6/6d/Augmented_Diadochos_Coat_of_Casting_Icon.png'
       },
   ]
 

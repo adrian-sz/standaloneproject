@@ -89,6 +89,26 @@ export class HeadsService {
       photo: 'https://ffxiv.gamerescape.com/w/images/3/38/Augmented_Credendum_Circlet_of_Fending_Icon.png'
       },
       { 
+      id: 2015,
+      name: 'Augmented Diadochos Headband of Fending',
+      slot: 'Head',
+      strength: 235,
+      dexterity: 0,
+      vitality: 260,
+      intelligence: 0,
+      mind: 0,
+      criticalhit: 180,
+      determination: 0,
+      directhit: 0,
+      defense: 873,
+      magicdefense: 873,
+      tenacity: 126,
+      piety: 0,
+      skillspeed: 0,
+      spellspeed: 0,
+      photo: 'https://ffxiv.gamerescape.com/w/images/c/c0/Augmented_Diadochos_Headband_of_Fending_Icon.png'
+      },
+      { 
       id: -1,
       name: '=Healing=',
       slot: '',
@@ -147,6 +167,26 @@ export class HeadsService {
       skillspeed: 0,
       spellspeed: 0,
       photo: 'https://ffxiv.gamerescape.com/w/images/7/7c/Augmented_Credendum_Circlet_of_Healing_Icon.png'
+      },
+      { 
+      id: 2016,
+      name: 'Augmented Diadochos Beret of Healing',
+      slot: 'Head',
+      strength: 0,
+      dexterity: 0,
+      vitality: 234,
+      intelligence: 0,
+      mind: 235,
+      criticalhit: 126,
+      determination: 0,
+      directhit: 0,
+      defense: 349,
+      magicdefense: 611,
+      tenacity: 0,
+      piety: 180,
+      skillspeed: 0,
+      spellspeed: 0,
+      photo: 'https://ffxiv.gamerescape.com/w/images/c/c1/Augmented_Diadochos_Beret_of_Healing_Icon.png'
       },
       { 
         id: -1,
@@ -209,6 +249,26 @@ export class HeadsService {
         photo: 'https://ffxiv.gamerescape.com/w/images/8/81/Augmented_Credendum_Blinder_of_Striking_Icon.png'
       },
       { 
+      id: 2017,
+      name: 'Augmented Diadochos Headband of Striking',
+      slot: 'Head',
+      strength: 235,
+      dexterity: 0,
+      vitality: 260,
+      intelligence: 0,
+      mind: 0,
+      criticalhit: 180,
+      determination: 0,
+      directhit: 0,
+      defense: 480,
+      magicdefense: 480,
+      tenacity: 0,
+      piety: 0,
+      skillspeed: 0,
+      spellspeed: 0,
+      photo: 'https://ffxiv.gamerescape.com/w/images/5/58/Augmented_Diadochos_Headband_of_Striking_Icon.png'
+      },
+      { 
         id: -1,
         name: '=Maiming=',
         slot: '',
@@ -267,6 +327,26 @@ export class HeadsService {
         skillspeed: 0,
         spellspeed: 0,
         photo: 'https://ffxiv.gamerescape.com/w/images/c/ce/Augmented_Credendum_Circlet_of_Maiming_Icon.png'
+      },
+      { 
+      id: 2018,
+      name: 'Augmented Diadochos Headband of Maiming',
+      slot: 'Head',
+      strength: 235,
+      dexterity: 0,
+      vitality: 260,
+      intelligence: 0,
+      mind: 0,
+      criticalhit: 126,
+      determination: 0,
+      directhit: 180,
+      defense: 480,
+      magicdefense: 480,
+      tenacity: 0,
+      piety: 0,
+      skillspeed: 0,
+      spellspeed: 0,
+      photo: 'https://ffxiv.gamerescape.com/w/images/1/1f/Augmented_Diadochos_Headband_of_Maiming_Icon.png'
       },
       { 
     id: -1,
@@ -328,6 +408,26 @@ export class HeadsService {
     spellspeed: 0,
     photo: 'https://ffxiv.gamerescape.com/w/images/1/11/Augmented_Credendum_Blinder_of_Scouting_Icon.png'
     },
+    { 
+    id: 2019,
+    name: 'Augmented Diadochos Headband of Scouting',
+    slot: 'Head',
+    strength: 0,
+    dexterity:235,
+    vitality: 260,
+    intelligence: 0,
+    mind: 0,
+    criticalhit: 180,
+    determination: 0,
+    directhit: 126,
+    defense: 480,
+    magicdefense: 480,
+    tenacity: 0,
+    piety: 0,
+    skillspeed: 0,
+    spellspeed: 0,
+    photo: 'https://ffxiv.gamerescape.com/w/images/5/51/Augmented_Diadochos_Headband_of_Scouting_Icon.png'
+    },
         { 
       id: -1,
       name: '=Aiming=',
@@ -349,7 +449,7 @@ export class HeadsService {
       photo: ''
       },
     { 
-      id: 6011,
+      id: 2011,
       name: 'Ascension Hat of Aiming',
       slot: 'Head',
       strength: 0,
@@ -369,7 +469,7 @@ export class HeadsService {
       photo: 'https://ffxiv.gamerescape.com/w/images/7/70/Ascension_Hat_of_Aiming_Icon.png'
     },      
     { 
-      id: 6012,
+      id: 2012,
       name: 'Augmented Credendum Hat of Aiming',
       slot: 'Head',
       strength: 0,
@@ -387,6 +487,26 @@ export class HeadsService {
       skillspeed: 184,
       spellspeed: 0,
       photo: 'https://ffxiv.gamerescape.com/w/images/d/db/Augmented_Credendum_Hat_of_Aiming_Icon.png'
+      },
+      { 
+      id: 2020,
+      name: 'Augmented Diadochos Headband of Aiming',
+      slot: 'Head',
+      strength: 0,
+      dexterity:235,
+      vitality: 260,
+      intelligence: 0,
+      mind: 0,
+      criticalhit: 180,
+      determination: 0,
+      directhit: 126,
+      defense: 480,
+      magicdefense: 480,
+      tenacity: 0,
+      piety: 0,
+      skillspeed: 0,
+      spellspeed: 0,
+      photo: 'https://ffxiv.gamerescape.com/w/images/0/01/Augmented_Diadochos_Headband_of_Aiming_Icon.png'
       },
       { 
       id: -1,
@@ -447,6 +567,26 @@ export class HeadsService {
       skillspeed: 0,
       spellspeed: 0,
       photo: 'https://ffxiv.gamerescape.com/w/images/2/28/Augmented_Credendum_Circlet_of_Casting_Icon.png'
+      },
+      { 
+      id: 2021,
+      name: 'Augmented Diadochos Beret of Casting',
+      slot: 'Head',
+      strength: 0,
+      dexterity: 0,
+      vitality: 234,
+      intelligence: 235,
+      mind: 0,
+      criticalhit: 0,
+      determination: 126,
+      directhit: 126,
+      defense: 480,
+      magicdefense: 480,
+      tenacity: 0,
+      piety: 0,
+      skillspeed: 0,
+      spellspeed: 180,
+      photo: 'https://ffxiv.gamerescape.com/w/images/4/4d/Augmented_Diadochos_Beret_of_Casting_Icon.png'
       },
   ]
 
