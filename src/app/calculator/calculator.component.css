@@ -1,10 +1,14 @@
 .calculatorapp {
   border: 3px solid plum;
   width: 300px;
-  background-color: aliceblue;
+  /* background-color: aliceblue; */
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  text-align: left;
+  border-radius: 25px;
+  /* border: 2px solid plum; */
+  background-color: rgb(240, 248, 255, 0.8);
 }
 
 .choosetext {

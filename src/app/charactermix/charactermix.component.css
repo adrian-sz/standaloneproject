@@ -10,10 +10,12 @@
   width: 250px;
 }
 
-  .statstext {
-    text-align: left;
-
-  }
+.statstext {
+  text-align: left;
+  border-radius: 25px;
+  border: 2px solid plum;
+  background-color: rgb(240, 248, 255, 0.8);
+}
 
   .jobphoto {
     display: block;

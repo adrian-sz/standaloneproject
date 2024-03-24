@@ -54,7 +54,7 @@ export class JobsService {
       photo: ''
     },
     {
-      id: 0,
+      id: 19,
       name: 'Paladin',
       role: 'Tank',
       damage: 0,

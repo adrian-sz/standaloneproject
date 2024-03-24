@@ -1,4 +1,4 @@
-<div class="calculatorapp">
+<div class="calculatorapp"  *ngIf="characterStatsService.job.id>0">
 
 
 
@@ -13,7 +13,7 @@
         <strong class="statprio">2.50s:</strong><br>
       </div>
 
-        <div class="statstext" step="0.01">
+        <div class="statstext"  step="0.01">
         <ul>
         <li class="listinggreen"><strong>Damage:</strong> <strong>{{ characterStatsService.characterStats.damage  | number: '0.0-0'  }}</strong></li>
         <li class="listinggreen"><strong>Strength:</strong> <strong>{{ characterStatsService.characterStats.strength  | number: '0.0-0'}}</strong></li>

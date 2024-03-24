@@ -14,7 +14,7 @@
 <img *ngIf="selectedRace.photo!=''" class="jobphoto" [src]="selectedRace.photo" width="100" height="100">
 </div>
 
-<div class="statstext" *ngIf="selectedRace.id>=0">
+<div class="statstext" *ngIf="selectedRace.id>0">
     <ul>
     <li class="listingname" *ngIf="selectedRace.name!=''"><strong>Race:</strong> {{ selectedRace.name }}</li>
     <li class="listing" *ngIf="selectedRace.strength>0"><strong>Strength:</strong> {{ selectedRace.strength }}</li>

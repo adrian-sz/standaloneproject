@@ -18,7 +18,7 @@ export class RacesService {
       photo: ''
     },
     {
-      id: 0,
+      id: 16,
       name: 'Midlander',
       strength: 22,
       dexterity: 19,
