@@ -61,7 +61,7 @@ export class LegsService {
       directhit: 0,
       defense: 1196,
       magicdefense: 1196,
-      tenacity: 129,
+      tenacity: 0,
       piety: 0,
       skillspeed: 0,
       spellspeed: 0,
