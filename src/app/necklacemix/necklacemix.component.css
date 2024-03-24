@@ -1,5 +1,7 @@
-.necklacemix {
-  height: 420;
+.necklaceapp {
+  display: grid;
+  text-align: center;
+  width: 250px;
 }
 
 .choosetext {

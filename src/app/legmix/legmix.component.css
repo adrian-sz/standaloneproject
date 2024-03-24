@@ -1,3 +1,9 @@
+.legapp {
+  display: grid;
+  text-align: center;
+  width: 250px;
+}
+
 .choosetext {
   display: grid;
   text-align: center;
