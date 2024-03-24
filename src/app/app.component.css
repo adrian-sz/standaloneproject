@@ -14,6 +14,7 @@
   .main {
     padding-top: 7px;
     padding-bottom: 7px;
+    padding-left: 30px;
     overflow: hidden;
     background-image: linear-gradient(to bottom right, lightblue, pink);
     text-align: center;
@@ -40,7 +41,7 @@
   .charactermix {
     width: 250px;
     height: 945px;
-    padding-left: 30px;
+    padding-left: 15px;
     padding-bottom: 15px;
     float: left;
     display: flex;
@@ -196,7 +197,16 @@
     right: 10px;
   }
 
+  .maincalculator {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom right, lightblue, pink);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .calculator {
-  text-align: center;
-  
-  }  
+    text-align: left;
+  }
