@@ -16,6 +16,9 @@
     padding-bottom: 7px;
     overflow: hidden;
     background-image: linear-gradient(to bottom right, lightblue, pink);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .character {
@@ -23,6 +26,10 @@
     padding-bottom: 7px;
     overflow: hidden;
     background-image: linear-gradient(to bottom right, lightblue, pink);
+  }
+
+  .center{
+    text-align: center;
   }
 
   .main2 {
@@ -37,6 +44,9 @@
     padding-bottom: 15px;
     float: left;
     display: flex;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .racesmix {
