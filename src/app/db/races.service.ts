@@ -79,7 +79,7 @@ export class RacesService {
     },
     {
       id: 6,
-      name: 'Seekers of the Sun',
+      name: 'Seeker of the Sun',
       strength: 22,
       dexterity: 23,
       vitality: 20,
@@ -89,7 +89,7 @@ export class RacesService {
     },
     {
       id: 7,
-      name: 'Keepers of the Moon',
+      name: 'Keeper of the Moon',
       strength: 19,
       dexterity: 22,
       vitality: 18,
@@ -99,7 +99,7 @@ export class RacesService {
     },
     {
       id: 8,
-      name: 'Sea Wolves',
+      name: 'Sea Wolf',
       strength: 22,
       dexterity: 19,
       vitality: 23,
@@ -139,7 +139,7 @@ export class RacesService {
     },
     {
       id: 12,
-      name: 'Helions',
+      name: 'Helion',
       strength: 23,
       dexterity: 17,
       vitality: 23,
