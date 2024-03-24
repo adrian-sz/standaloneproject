@@ -2,7 +2,7 @@
 
 
 <div class="choosetext">
-    <h4>Choose Your Job:</h4>
+    <h4>Choose your job:</h4>
     <mat-form-field>
         <mat-select [disableOptionCentering]="true" placeholder="None" (selectionChange)="changeJob($event.value)">
             @for (job of Joblist; track job) {

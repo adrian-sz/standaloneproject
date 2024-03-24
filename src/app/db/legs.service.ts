@@ -83,7 +83,7 @@ export class LegsService {
       magicdefense: 1196,
       tenacity: 204,
       piety: 0,
-      skillspeed: 184,
+      skillspeed: 0,
       spellspeed: 0,
       photo: 'https://ffxiv.gamerescape.com/w/images/1/14/Augmented_Credendum_Breeches_of_Fending_Icon.png'
       },
