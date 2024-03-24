@@ -365,8 +365,8 @@ export class CharacterStatsService {
     switch(this.job.name) { 
       
       case 'Paladin': { 
-        this.characterStats.strength = (1.00 * this.characterStats.strength)
-        this.characterStats.vitality = (1.01 * this.characterStats.vitality)
+        this.characterStats.strength = (1.013 * this.characterStats.strength)
+        this.characterStats.vitality = (1.015 * this.characterStats.vitality)
         this.characterStats.dexterity = (1.00 * this.characterStats.dexterity)
         this.characterStats.intelligence = (0.60 * this.characterStats.intelligence)
         this.characterStats.mind = (1.00 * this.characterStats.mind)
@@ -374,8 +374,8 @@ export class CharacterStatsService {
      }
 
       case 'Warrior': { 
-        this.characterStats.strength = (1.01 * this.characterStats.strength)
-        this.characterStats.vitality = (1.02 * this.characterStats.vitality)
+        this.characterStats.strength = (1.013 * this.characterStats.strength)
+        this.characterStats.vitality = (1.015 * this.characterStats.vitality)
         this.characterStats.dexterity = (1.0 * this.characterStats.dexterity)
         this.characterStats.intelligence = (0.40 * this.characterStats.intelligence)
         this.characterStats.mind = (0.55 * this.characterStats.mind)
@@ -383,8 +383,8 @@ export class CharacterStatsService {
      }
 
       case 'Dark Knight': { 
-         this.characterStats.strength = (1.01 * this.characterStats.strength)
-         this.characterStats.vitality = (1.02 * this.characterStats.vitality)
+         this.characterStats.strength = (1.013 * this.characterStats.strength)
+         this.characterStats.vitality = (1.015 * this.characterStats.vitality)
          this.characterStats.dexterity = (1.0 * this.characterStats.dexterity)
          this.characterStats.intelligence = (0.60 * this.characterStats.intelligence)
          this.characterStats.mind = (0.40 * this.characterStats.mind)
@@ -392,8 +392,8 @@ export class CharacterStatsService {
       }
      
       case 'Gunbreaker': { 
-         this.characterStats.strength = (1.01 * this.characterStats.strength)
-         this.characterStats.vitality = (1.02 * this.characterStats.vitality)
+         this.characterStats.strength = (1.013 * this.characterStats.strength)
+         this.characterStats.vitality = (1.015 * this.characterStats.vitality)
          this.characterStats.dexterity = (1.0 * this.characterStats.dexterity)
          this.characterStats.intelligence = (0.60 * this.characterStats.intelligence)
          this.characterStats.mind = (1.00 * this.characterStats.mind)
@@ -405,7 +405,7 @@ export class CharacterStatsService {
          this.characterStats.vitality = (1.00 * this.characterStats.vitality)
          this.characterStats.dexterity = (1.00 * this.characterStats.dexterity)
          this.characterStats.intelligence = (1.00 * this.characterStats.intelligence)
-         this.characterStats.mind = (1.001 * this.characterStats.mind)
+         this.characterStats.mind = (1.013 * this.characterStats.mind)
          break; 
       }
      
@@ -414,7 +414,7 @@ export class CharacterStatsService {
          this.characterStats.vitality = (1.00 * this.characterStats.vitality)
          this.characterStats.dexterity = (1.00 * this.characterStats.dexterity)
          this.characterStats.intelligence = (1.00 * this.characterStats.intelligence)
-         this.characterStats.mind = (1.01 * this.characterStats.mind)
+         this.characterStats.mind = (1.013 * this.characterStats.mind)
          break; 
       }
      
@@ -423,7 +423,7 @@ export class CharacterStatsService {
          this.characterStats.vitality = (1.00 * this.characterStats.vitality)
          this.characterStats.dexterity = (1.00 * this.characterStats.dexterity)
          this.characterStats.intelligence = (1.00 * this.characterStats.intelligence)
-         this.characterStats.mind = (1.01 * this.characterStats.mind)
+         this.characterStats.mind = (1.013 * this.characterStats.mind)
          break; 
       }
      
@@ -431,13 +431,13 @@ export class CharacterStatsService {
          this.characterStats.strength = (0.60 * this.characterStats.strength)
          this.characterStats.vitality = (1.00 * this.characterStats.vitality)
          this.characterStats.dexterity = (1.00 * this.characterStats.dexterity)
-         this.characterStats.intelligence = (1.01 * this.characterStats.intelligence)
-         this.characterStats.mind = (1.01 * this.characterStats.mind)
+         this.characterStats.intelligence = (1.013 * this.characterStats.intelligence)
+         this.characterStats.mind = (1.013 * this.characterStats.mind)
          break; 
       }
      
       case 'Monk': { 
-         this.characterStats.strength = (1.01 * this.characterStats.strength)
+         this.characterStats.strength = (1.013 * this.characterStats.strength)
          this.characterStats.vitality = (1.00 * this.characterStats.vitality)
          this.characterStats.dexterity = (1.00 * this.characterStats.dexterity)
          this.characterStats.intelligence = (0.50 * this.characterStats.intelligence)
@@ -446,7 +446,7 @@ export class CharacterStatsService {
       }
      
       case 'Dragoon': { 
-         this.characterStats.strength = (1.01 * this.characterStats.strength)
+         this.characterStats.strength = (1.013 * this.characterStats.strength)
          this.characterStats.vitality = (1.00 * this.characterStats.vitality)
          this.characterStats.dexterity = (1.00 * this.characterStats.dexterity)
          this.characterStats.intelligence = (0.45 * this.characterStats.intelligence)
@@ -457,23 +457,23 @@ export class CharacterStatsService {
       case 'Ninja': { 
          this.characterStats.strength = (0.85 * this.characterStats.strength)
          this.characterStats.vitality = (1.00 * this.characterStats.vitality)
-         this.characterStats.dexterity = (1.01 * this.characterStats.dexterity)
+         this.characterStats.dexterity = (1.013 * this.characterStats.dexterity)
          this.characterStats.intelligence = (0.65 * this.characterStats.intelligence)
          this.characterStats.mind = (0.75 * this.characterStats.mind)
          break; 
       }
      
       case 'Samurai': { 
-         this.characterStats.strength = (1.01 * this.characterStats.strength)
+         this.characterStats.strength = (1.013 * this.characterStats.strength)
          this.characterStats.vitality = (1.00 * this.characterStats.vitality)
-         this.characterStats.dexterity = (1.01 * this.characterStats.dexterity)
+         this.characterStats.dexterity = (1.013 * this.characterStats.dexterity)
          this.characterStats.intelligence = (0.60 * this.characterStats.intelligence)
          this.characterStats.mind = (0.50 * this.characterStats.mind)
          break; 
       }
      
       case 'Reaper': { 
-         this.characterStats.strength = (1.01 * this.characterStats.strength)
+         this.characterStats.strength = (1.013 * this.characterStats.strength)
          this.characterStats.vitality = (1.00 * this.characterStats.vitality)
          this.characterStats.dexterity = (1.00 * this.characterStats.dexterity)
          this.characterStats.intelligence = (0.80 * this.characterStats.intelligence)
@@ -484,7 +484,7 @@ export class CharacterStatsService {
       case 'Bard': { 
          this.characterStats.strength = (0.90 * this.characterStats.strength)
          this.characterStats.vitality = (1.00 * this.characterStats.vitality)
-         this.characterStats.dexterity = (1.01 * this.characterStats.dexterity)
+         this.characterStats.dexterity = (1.013 * this.characterStats.dexterity)
          this.characterStats.intelligence = (0.85 * this.characterStats.intelligence)
          this.characterStats.mind = (0.80 * this.characterStats.mind)
          break; 
@@ -493,7 +493,7 @@ export class CharacterStatsService {
       case 'Machinist': { 
          this.characterStats.strength = (0.85 * this.characterStats.strength)
          this.characterStats.vitality = (1.00 * this.characterStats.vitality)
-         this.characterStats.dexterity = (1.01 * this.characterStats.dexterity)
+         this.characterStats.dexterity = (1.013 * this.characterStats.dexterity)
          this.characterStats.intelligence = (0.80 * this.characterStats.intelligence)
          this.characterStats.mind = (0.85 * this.characterStats.mind)
          break; 
@@ -502,7 +502,7 @@ export class CharacterStatsService {
       case 'Dancer': { 
          this.characterStats.strength = (0.90 * this.characterStats.strength)
          this.characterStats.vitality = (1.00 * this.characterStats.vitality)
-         this.characterStats.dexterity = (1.01 * this.characterStats.dexterity)
+         this.characterStats.dexterity = (1.013 * this.characterStats.dexterity)
          this.characterStats.intelligence = (0.85 * this.characterStats.intelligence)
          this.characterStats.mind = (0.80 * this.characterStats.mind)
          break; 
@@ -512,7 +512,7 @@ export class CharacterStatsService {
          this.characterStats.strength = (0.45 * this.characterStats.strength)
          this.characterStats.vitality = (1.00 * this.characterStats.vitality)
          this.characterStats.dexterity = (1.00 * this.characterStats.dexterity)
-         this.characterStats.intelligence = (1.01 * this.characterStats.intelligence)
+         this.characterStats.intelligence = (1.013 * this.characterStats.intelligence)
          this.characterStats.mind = (0.75 * this.characterStats.mind)
          break; 
       }
@@ -521,7 +521,7 @@ export class CharacterStatsService {
          this.characterStats.strength = (0.90 * this.characterStats.strength)
          this.characterStats.vitality = (1.00 * this.characterStats.vitality)
          this.characterStats.dexterity = (1.00 * this.characterStats.dexterity)
-         this.characterStats.intelligence = (1.01 * this.characterStats.intelligence)
+         this.characterStats.intelligence = (1.013 * this.characterStats.intelligence)
          this.characterStats.mind = (0.80 * this.characterStats.mind)
          break; 
       }
@@ -530,8 +530,8 @@ export class CharacterStatsService {
          this.characterStats.strength = (0.55 * this.characterStats.strength)
          this.characterStats.vitality = (1.00 * this.characterStats.vitality)
          this.characterStats.dexterity = (1.00 * this.characterStats.dexterity)
-         this.characterStats.intelligence = (1.01 * this.characterStats.intelligence)
-         this.characterStats.mind = (1.01 * this.characterStats.mind)
+         this.characterStats.intelligence = (1.013 * this.characterStats.intelligence)
+         this.characterStats.mind = (1.013 * this.characterStats.mind)
          break; 
       }
     } 
