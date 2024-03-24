@@ -1,3 +1,7 @@
+.necklacemix {
+  height: 420;
+}
+
 .choosetext {
     display: grid;
     text-align: center;
@@ -5,7 +9,9 @@
   }
 
   .statstext {
+    display: grid;
     text-align: left;
+    width: 250px;
   }
 
   .itemphoto {

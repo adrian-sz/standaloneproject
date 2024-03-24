@@ -16,20 +16,18 @@
     background-image: linear-gradient(to bottom right, lightblue, pink);
   }
 
- .racesmix {
-  width: 250px ;
-  display: flex ;
-  justify-content: left;
-  flex-direction: row;
-  float: left;
-  padding-left: 15px;
-  /* padding-right: 15px; */
-}
-
   .charactermix {
-    width: 250px ;
+    width: 300px ;
     padding-left: 15px;
-    /* padding-right: 15px; */
+    display: flex ;
+    justify-content: left;
+    flex-direction: row;
+    float: left;
+  }
+
+  .racesmix {
+    width: 300px ;
+    padding-left: 15px;
     display: flex ;
     justify-content: left;
     flex-direction: row;
@@ -37,113 +35,102 @@
   }
 
   .itemmix {
-    width: 250px ;
+    width: 300px ;
+    padding-left: 15px;
     display: flex ;
     justify-content: left;
     flex-direction: row;
     float: left;
-    padding-left: 15px;
-    /* padding-right: 15px; */
   }
 
   .headmix {
-    width: 250px ;
+    width: 300px ;
+    padding-left: 15px;
     display: flex ;
     justify-content: left;
     flex-direction: row;
     float: left;
-    padding-left: 15px;
-   /*  padding-right: 15px; */
   }  
 
   .bodymix {
-    width: 250px ;
+    width: 300px ;
+    padding-left: 15px;
     display: flex ;
     justify-content: left;
     flex-direction: row;
     float: left;
-    padding-left: 15px;
-    /* padding-right: 15px; */
   }  
 
   .handmix {
-    width: 250px ;
+    width: 300px ;
+    padding-left: 15px;
     display: flex ;
     justify-content: left;
     flex-direction: row;
     float: left;
-    padding-left: 15px;
-    /* padding-right: 15px; */
   } 
 
   .legmix {
-    width: 250px ;
+    width: 300px ;
+    padding-left: 15px;
     display: flex ;
     justify-content: left;
     flex-direction: row;
     float: left;
-    padding-left: 15px;
-    /* padding-right: 15px; */
   }  
 
   .footmix {
-    width: 250px ;
+    width: 300px ;
+    padding-left: 15px;
     display: flex ;
     justify-content: left;
     flex-direction: row;
     float: left;
-    padding-left: 15px;
-    /* padding-right: 15px; */
   }  
 
   .earringmix {
-    width: 250px ;
+    width: 300px ;
+    padding-left: 15px;
     display: flex ;
     justify-content: left;
     flex-direction: row;
     float: left;
-    padding-left: 15px;
-    /* padding-right: 15px; */
   }  
 
   .necklacemix {
-    width: 250px ;
+    width: 300px ;
+    padding-left: 15px;
     display: flex ;
     justify-content: left;
     flex-direction: row;
     float: left;
-    padding-left: 15px;
-    /* padding-right: 15px; */
   }  
 
   .braceletmix {
-    width: 250px ;
+    width: 300px ;
+    padding-left: 15px;
     display: flex ;
     justify-content: left;
     flex-direction: row;
     float: left;
-    padding-left: 15px;
-   /*  padding-right: 15px; */
   } 
 
   .leftringmix {
-    width: 250px ;
+    width: 300px ;
+    padding-left: 15px;
     display: flex ;
     justify-content: left;
     flex-direction: row;
     float: left;
-    padding-left: 15px;
-   /*  padding-right: 15px; */
   } 
 
   .rightringmix {
-    width: 250px ;
+    width: 300px ;
+    padding-left: 15px;
     display: flex ;
     justify-content: left;
     flex-direction: row;
     float: left;
-    padding-left: 15px;
-   /*  padding-right: 15px; */
   } 
 
   .menu {
@@ -185,8 +172,5 @@
   }
 
   .calculator {
-  /*   margin: auto;
-  width: 50%;
-  padding: 5px; */
   text-align: center;
   }  

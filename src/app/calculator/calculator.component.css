@@ -1,3 +1,12 @@
+.calculatorapp {
+  border: 3px solid plum;
+  width: 300px;
+  background-color: aliceblue;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .choosetext {
   display: grid;
   text-align: center;
@@ -6,10 +15,13 @@
 
   .statstext {
     text-align: center;
+    width: 300px
   }
 
   .statspriotext {
     text-align: center;
+    width: 300px;
+    border-bottom: 2px solid plum;
   }
 
   .itemphoto {
@@ -28,40 +40,49 @@
 
 .listing {
     display: grid;
-    grid-template-columns: 160px 50px;
+    grid-template-columns: 180px 120px;
 }
 
 .statprio {
   /* display: grid; */
   text-align: center;
-  grid-template-columns: 160px 50px;
-  padding-left: 15px;
+  /* grid-template-columns: 160px 50px; */
+  
 }
 
 ul {
   display: table; 
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   text-align: left;
 }
 
 .listinggreen {
   display: grid;
-  grid-template-columns: 160px 50px;
+  grid-template-columns: 180px 120px;
   color: limegreen;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .listingorange {
   display: grid;
-  grid-template-columns: 160px 50px;
-  color: orange;
+  grid-template-columns: 180px 120px;
+  color: darkorange;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .listingred {
   display: grid;
-  grid-template-columns: 160px 50px;
+  grid-template-columns: 180px 120px;
   color: red;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .listingname {
     display: grid;
+    margin-left: auto;
+  margin-right: auto;
 }

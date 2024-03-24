@@ -2,4 +2,6 @@
   text-align: center;
   border: 5px outset rgb(210, 132, 255);
   background-image: linear-gradient(to bottom right, lightblue, pink);
+  color: lightskyblue;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
 }
