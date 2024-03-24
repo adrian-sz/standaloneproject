@@ -2,14 +2,15 @@
   display: grid;
   text-align: center;
   width: 250px;
+  
 }
-
 
 .choosetext {
   display: grid;
   text-align: center;
   width: 250px;
 }
+
   .statstext {
     display: grid;
     text-align: left;

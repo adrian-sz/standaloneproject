@@ -7,10 +7,10 @@
 }
 
 .choosetext {
-    display: grid;
-    text-align: center;
-    width: 250px;
-  }
+  display: grid;
+  text-align: center;
+  width: 250px;
+}
 
   .statstext {
     display: grid;
