@@ -31,16 +31,16 @@
   }
 
   .charactermix {
-    width: 300px ;
-    height: 580px;
-    padding-left: 15px;
+    width: 250px;
+    height: 945px;
+    padding-left: 30px;
     padding-bottom: 15px;
     float: left;
     display: flex;
   }
 
   .racesmix {
-    width: 300px ;
+    width: 250px;
     height: 420px;
     padding-left: 15px;
     padding-bottom: 15px;
@@ -50,7 +50,7 @@
   }
 
   .itemmix {
-    width: 300px ;
+    width: 250px;
     height: 420px;
     padding-left: 15px;
     padding-bottom: 15px;
@@ -59,7 +59,7 @@
   }
 
   .headmix {
-    width: 300px ;
+    width: 250px;
     height: 420px;
     padding-left: 15px;
     padding-bottom: 15px;
@@ -68,7 +68,7 @@
   }  
 
   .bodymix {
-    width: 300px ;
+    width: 250px;
     height: 420px;
     padding-left: 15px;
     padding-bottom: 15px;
@@ -77,7 +77,7 @@
   }  
 
   .handmix {
-    width: 300px ;
+    width: 250px;
     height: 420px;
     padding-left: 15px;
     padding-bottom: 15px;
@@ -86,7 +86,7 @@
   } 
 
   .legmix {
-    width: 300px ;
+    width: 250px;
     height: 420px;
     padding-left: 15px;
     padding-bottom: 15px;
@@ -95,7 +95,7 @@
   }  
 
   .footmix {
-    width: 300px ;
+    width: 250px;
     height: 420px;
     padding-left: 15px;
     padding-bottom: 15px;
@@ -104,7 +104,7 @@
   }  
 
   .earringmix {
-    width: 300px ;
+    width: 250px;
     height: 420px;
     padding-left: 15px;
     padding-bottom: 15px;
@@ -113,7 +113,7 @@
   }  
 
   .necklacemix {
-    width: 300px ;
+    width: 250px;
     height: 420px;
     padding-left: 15px;
     padding-bottom: 15px;
@@ -122,7 +122,7 @@
   }  
 
   .braceletmix {
-    width: 300px ;
+    width: 250px;
     height: 420px;
     padding-left: 15px;
     padding-bottom: 15px;
@@ -131,7 +131,7 @@
   } 
 
   .leftringmix {
-    width: 300px ;
+    width: 250px;
     height: 420px;
     padding-left: 15px;
     padding-bottom: 15px;
@@ -140,7 +140,7 @@
   } 
 
   .rightringmix {
-    width: 300px ;
+    width: 250px;
     height: 420px;
     padding-left: 15px;
     padding-bottom: 15px;
