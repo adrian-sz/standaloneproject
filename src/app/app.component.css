@@ -18,119 +18,106 @@
 
   .charactermix {
     width: 300px ;
+    height: 824px;
     padding-left: 15px;
     float: left;
     display: flex ;
-    flex-direction: row;
-    justify-content: left;
   }
 
   .racesmix {
     width: 300px ;
+    height: 430px;
     padding-left: 15px;
     float: left;
     display: flex ;
-    flex-direction: row;
-    justify-content: left;
   }
 
   .itemmix {
     width: 300px ;
+    height: 430px;
     padding-left: 15px;
     float: left;
     display: flex ;
-    flex-direction: row;
-    justify-content: left;
   }
 
   .headmix {
     width: 300px ;
+    height: 430px;
     padding-left: 15px;
     float: left;
     display: flex ;
-    flex-direction: row;
-    justify-content: left;
   }  
 
   .bodymix {
     width: 300px ;
+    height: 430px;
     padding-left: 15px;
     float: left;
     display: flex ;
-    flex-direction: row;
-    justify-content: left;
   }  
 
   .handmix {
     width: 300px ;
+    height: 430px;
     padding-left: 15px;
     float: left;
     display: flex ;
-    flex-direction: row;
-    justify-content: left;
   } 
 
   .legmix {
     width: 300px ;
+    height: 430px;
     padding-left: 15px;
     float: left;
     display: flex ;
-    flex-direction: row;
-    justify-content: left;
   }  
 
   .footmix {
     width: 300px ;
+    height: 430px;
     padding-left: 15px;
     float: left;
     display: flex ;
-    flex-direction: row;
-    justify-content: left;
   }  
 
   .earringmix {
     width: 300px ;
+    height: 430px;
     padding-left: 15px;
     float: left;
     display: flex ;
-    flex-direction: row;
-    justify-content: left;
   }  
 
   .necklacemix {
     width: 300px ;
+    height: 430px;
     padding-left: 15px;
     float: left;
     display: flex ;
-    flex-direction: row;
-    justify-content: left;
   }  
 
   .braceletmix {
     width: 300px ;
+    height: 430px;
     padding-left: 15px;
     float: left;
     display: flex ;
-    flex-direction: row;
-    justify-content: left;
   } 
 
   .leftringmix {
     width: 300px ;
+    height: 430px;
     padding-left: 15px;
     float: left;
     display: flex ;
-    flex-direction: row;
-    justify-content: left;
   } 
 
   .rightringmix {
     width: 300px ;
+    height: 430px;
     padding-left: 15px;
     float: left;
     display: flex ;
-    flex-direction: row;
-    justify-content: left;
   } 
 
   .menu {
