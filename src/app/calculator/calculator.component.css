@@ -99,3 +99,70 @@ ul {
   text-align: justify;
   width: 250px;
 }
+
+.hide{
+  display: none;
+}
+
+.infodmg:hover + .hide{
+  display: block;
+  display: grid;
+  width: 205px;
+  text-align: left;
+}
+
+.infostr:hover + .hide{
+  display: block;
+  display: grid;
+  width: 205px;
+  text-align: left;
+}
+
+.infodex:hover + .hide{
+  display: block;
+  display: grid;
+  width: 205px;
+  text-align: left;
+}
+
+.infovit:hover + .hide{
+  display: block;
+  display: grid;
+  width: 205px;
+  text-align: left;
+}
+
+.infoint:hover + .hide{
+  display: block;
+  display: grid;
+  width: 205px;
+  text-align: left;
+}
+
+.infomnd:hover + .hide{
+  display: block;
+  display: grid;
+  width: 205px;
+  text-align: left;
+}
+
+.infocrt:hover + .hide{
+  display: block;
+  display: grid;
+  width: 205px;
+  text-align: left;
+}
+
+.infocrtch:hover + .hide{
+  display: block;
+  display: grid;
+  width: 205px;
+  text-align: left;
+}
+
+.infocrtdmg:hover + .hide{
+  display: block;
+  display: grid;
+  width: 205px;
+  text-align: left;
+}

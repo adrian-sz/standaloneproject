@@ -15,15 +15,24 @@
 
         <div class="statstext"  step="0.01">
         <ul>
-        <li class="listinggreen"><strong>Damage:</strong> <strong>{{ characterStatsService.characterStats.damage  | number: '0.0-0'  }}</strong></li>
-        <li class="listinggreen"><strong>Strength:</strong> <strong>{{ characterStatsService.characterStats.strength  | number: '0.0-0'}}</strong></li>
-        <li class="listingred"><strong>Dexterity:</strong> <strong>{{ characterStatsService.characterStats.dexterity  | number: '0.0-0'}}</strong></li>
-        <li class="listingred"><strong>Vitality:</strong> <strong>{{ characterStatsService.characterStats.vitality  | number: '0.0-0'}}</strong></li>
-        <li class="listingred"><strong>Intelligence:</strong> <strong>{{ characterStatsService.characterStats.intelligence  | number: '0.0-0' }}</strong></li>
-        <li class="listingred"><strong>Mind:</strong> <strong>{{ characterStatsService.characterStats.mind  | number: '0.0-0' }}</strong></li>
-        <li class="listinggreen"><strong>Critical hit:</strong> <strong>{{ characterStatsService.characterStats.criticalhit  | number: '0.0-0'  }}</strong></li>
-        <li class="listing"><strong>Crit chance:</strong> <strong>{{ characterStatsService.characterStats.critchance | number: '1.2-2'}}%</strong></li>
-        <li class="listing"><strong>Crit strength:</strong> <strong>{{ characterStatsService.characterStats.critstrength | number: '1.2-2'}}%</strong></li>
+        <div class="infodmg"><li class="listinggreen"><strong>Damage:</strong> <strong>{{ characterStatsService.characterStats.damage  | number: '0.0-0'  }}</strong></li></div>
+        <div class="hide">Higher number means more base damage before adding main stat.</div>
+        <div class="infostr"><li class="listinggreen"><strong>Strength:</strong> <strong>{{ characterStatsService.characterStats.strength  | number: '0.0-0'}}</strong></li></div>
+        <div class="hide">Main stat of damage based jobs.</div>
+        <div class="infodex"><li class="listingred"><strong>Dexterity:</strong> <strong>{{ characterStatsService.characterStats.dexterity  | number: '0.0-0'}}</strong></li></div>
+        <div class="hide">Main stat of crit based dps.</div>
+        <div class="infovit"><li class="listingred"><strong>Vitality:</strong> <strong>{{ characterStatsService.characterStats.vitality  | number: '0.0-0'}}</strong></li></div>
+        <div class="hide">Responsible for the amount of hp.</div>
+        <div class="infoint"><li class="listingred"><strong>Intelligence:</strong> <strong>{{ characterStatsService.characterStats.intelligence  | number: '0.0-0' }}</strong></li></div>
+        <div class="hide">Main stat of caster dps.</div>
+        <div class="infomnd"><li class="listingred"><strong>Mind:</strong> <strong>{{ characterStatsService.characterStats.mind  | number: '0.0-0' }}</strong></li></div>
+        <div class="hide">Main stat of healers.</div>
+        <div class="infocrt"><li class="listinggreen"><strong>Critical hit:</strong> <strong>{{ characterStatsService.characterStats.criticalhit  | number: '0.0-0'  }}</strong></li></div>
+        <div class="hide">Higher number means more crit chance and crit strength.</div>
+        <div class="infocrtch"><li class="listing"><strong>Crit chance:</strong> <strong>{{ characterStatsService.characterStats.critchance | number: '1.2-2'}}%</strong></li></div>
+        <div class="hide">Chance for an attack to critically strike.</div>
+        <div class="infocrtdmg"><li class="listing"><strong>Crit strength:</strong> <strong>{{ characterStatsService.characterStats.critstrength | number: '1.2-2'}}%</strong></li></div>
+        <div class="hide">Damage multiplier on a succesful critical strike.</div>
         <li class="listinggreen"><strong>Determination:</strong> <strong>{{ characterStatsService.characterStats.determination  | number: '0.0-0'  }}</strong></li>
         <li class="listing"><strong>Damage increase:</strong> <strong>{{ characterStatsService.characterStats.dmgincrease | number: '1.2-2'}}%</strong></li>
         <li class="listinggreen"><strong>Direct hit:</strong> <strong>{{ characterStatsService.characterStats.directhit  | number: '0.0-0'  }}</strong></li>
@@ -44,7 +53,7 @@
         </div>
 
         <div class="info text">
-          <strong>Paladin is a very versatile job, whose strength is solid damage, while offering a lot of team utility, focused mostly on damage mitigation and some emergency healing.</strong>
+          <strong>Paladin is a very versatile job, whose strength is a lot of team utility, focused mostly on damage mitigation while offering mixed magic and physical damage on the boss.</strong>
         </div>
     }
     @case ("Warrior") {
