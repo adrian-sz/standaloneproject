@@ -98,7 +98,7 @@ export class HandsService {
       intelligence: 0,
       mind: 0,
       criticalhit: 126,
-      determination: 200,
+      determination: 0,
       directhit: 0,
       defense: 873,
       magicdefense: 873,

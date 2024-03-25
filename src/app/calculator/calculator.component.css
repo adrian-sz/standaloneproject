@@ -57,6 +57,22 @@
   
 }
 
+.targetgcdinfo:hover + .hide{
+  display: block;
+  text-align: center;
+}
+
+.statpriorityinfo:hover + .hide{
+  display: block;
+  text-align: center;
+}
+
+.roleinfo:hover + .hide{
+  display: block;
+  text-align: center;
+}
+
+
 ul {
   display: table; 
   margin-left: auto;
@@ -161,6 +177,104 @@ ul {
 }
 
 .infocrtdmg:hover + .hide{
+  display: block;
+  display: grid;
+  width: 205px;
+  text-align: left;
+}
+
+.infodet:hover + .hide{
+  display: block;
+  display: grid;
+  width: 205px;
+  text-align: left;
+}
+
+.infodetdmg:hover + .hide{
+  display: block;
+  display: grid;
+  width: 205px;
+  text-align: left;
+}
+
+.infodh:hover + .hide{
+  display: block;
+  display: grid;
+  width: 205px;
+  text-align: left;
+}
+
+.infodhch:hover + .hide{
+  display: block;
+  display: grid;
+  width: 205px;
+  text-align: left;
+}
+
+.infodef:hover + .hide{
+  display: block;
+  display: grid;
+  width: 205px;
+  text-align: left;
+}
+
+.infodefres:hover + .hide{
+  display: block;
+  display: grid;
+  width: 205px;
+  text-align: left;
+}
+
+.infomdef:hover + .hide{
+  display: block;
+  display: grid;
+  width: 205px;
+  text-align: left;
+}
+
+.infomdefres:hover + .hide{
+  display: block;
+  display: grid;
+  width: 205px;
+  text-align: left;
+}
+
+.infoten:hover + .hide{
+  display: block;
+  display: grid;
+  width: 205px;
+  text-align: left;
+}
+
+.infotenmit:hover + .hide{
+  display: block;
+  display: grid;
+  width: 205px;
+  text-align: left;
+}
+
+.infopiemps:hover + .hide{
+  display: block;
+  display: grid;
+  width: 205px;
+  text-align: left;
+}
+
+.infosks:hover + .hide{
+  display: block;
+  display: grid;
+  width: 205px;
+  text-align: left;
+}
+
+.infosps:hover + .hide{
+  display: block;
+  display: grid;
+  width: 205px;
+  text-align: left;
+}
+
+.infogcd:hover + .hide{
   display: block;
   display: grid;
   width: 205px;
